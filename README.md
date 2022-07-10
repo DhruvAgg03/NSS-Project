@@ -1,5 +1,7 @@
 # PC03-NSS
 
+MOM google DOC : https://docs.google.com/document/d/1egNHOzUpCYlN0ukZGkxLbDn76kEuCFiMl2wOHI8L3Ss/edit
+
 July 9th, 2022
 Agenda-
 0) classify the work into different subsystems (as of now, vision, motion, and everything else….)
