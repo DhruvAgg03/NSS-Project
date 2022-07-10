@@ -4,10 +4,10 @@ MOM google DOC : https://docs.google.com/document/d/1egNHOzUpCYlN0ukZGkxLbDn76kE
 
 July 9th, 2022
 Agenda-
-0) classify the work into different subsystems (as of now, vision, motion, and everything else….)
-1) determining the roles each member will perform.
-2) finalize (or reach a certain conclusion) on the method we approach for each subsystem
-3) start coding
+	0) classify the work into different subsystems (as of now, vision, motion, and everything else….)
+	1) determining the roles each member will perform.
+	2) finalize (or reach a certain conclusion) on the method we approach for each subsystem
+	3) start coding
 
 Subsystems -
 	Universe creation (matrix) -
