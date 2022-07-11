@@ -3,6 +3,7 @@
 
 namespace namespace_Universe
 {
+    //Contains x,y deviation and dist from origin
     typedef struct step
     {
         int x;
