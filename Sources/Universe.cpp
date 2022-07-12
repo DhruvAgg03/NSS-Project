@@ -30,6 +30,10 @@ Universe::Universe(int maxR=5)
     }
     sort(moves.begin(),moves.end(),compare);
     moves.erase(moves.begin()); //removes (0,0,0) from the vector
+
+    // generating a random list of coordinates WIll look into it on 14th
+
+
 }
 
 /* Universe::getMoves()
@@ -52,6 +56,17 @@ Universe::printMoves()
         std::cout<<"("<<(this->moves)[i].dist<<","<<(this->moves[i]).x<<","<<(this->moves)[i].y<<") ";
     std::cout<<"\n i is "<<i<<"\n";
     return 0;
+}
+
+Universe::updateUniverse(int initX,int initY,int finalX, int finalY){
+    organism* movingObj = environment[initX][initY];
+    environment[finalX][finalY] = movingOgj;
+    environment[initX][initY] = void;
+}
+
+Universe::getObject(int posX, int posY){
+    organism* reqPoint = environment[posX][posY];
+    return reqPoint;
 }
 
 int main(){
