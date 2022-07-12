@@ -1,7 +1,10 @@
-#include"Universe.h"
-#include<algorithm.h>
-#include<math.h>
+#include "../headers/Universe.hpp"
+#include <algorithm>
+#include <math.h>
+#include <iostream>
+#include <vector>
 using namespace namespace_Universe;
+
 
 bool compare(const step &a,const step &b)
 {
@@ -17,23 +20,40 @@ Universe::Universe(int maxR=5)
         {
             if(x*x+y*y<=temp)
             {
-                this->moves.push_back({x,y,sqrt(x*x+y*y)});
+                struct step tempstep;
+                tempstep.x = x;
+                tempstep.y = y;
+                tempstep.dist = sqrt(x*x+y*y);
+                (this->moves).push_back(tempstep);
             }
         }
     }
     sort(moves.begin(),moves.end(),compare);
-    moves.erase(moves.begin()) //removes (0,0,0) from the vector
+    moves.erase(moves.begin()); //removes (0,0,0) from the vector
 }
 
-Universe::getMoves()
+/* Universe::getMoves()
 {
-    return this->moves;
-}
+    std::vector<struct step> allmoves;
+    for(int i = 0; i<(this->moves).size(); i++){
+        struct step tempstep;
+        tempstep.x = (this->moves)[i].x;
+        tempstep.y = (this->moves)[i].y;
+        tempstep.dist = (this->moves)[i].dist;
+        allmoves.push_back(tempstep);
+    }
+    return allmoves;
+}*/
 
 Universe::printMoves()
 {
     int i;//Counter
     for(i=0; i < (this->moves).size(); i++)
-        cout<<"("<<(this->moves)[i].dist<<","<<(this->moves[i]).x<<","<<(this->moves)[i].y<<") ";
-    cout<<"\n i is "<<i<<endl;
+        std::cout<<"("<<(this->moves)[i].dist<<","<<(this->moves[i]).x<<","<<(this->moves)[i].y<<") ";
+    std::cout<<"\n i is "<<i<<"\n";
+    return 0;
+}
+
+int main(){
+    std::cout << "Compiled"<<"\n";  
 }
