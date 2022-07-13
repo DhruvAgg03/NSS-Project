@@ -37,12 +37,12 @@ namespace namespace_organism
 	public:
 		Organism(int x, int y, int vision_radius, int *speed_list, int length_of_speed_list, int max_energy, int current_energy, unsigned short int name_of_individual);
 		~Organism();
-		int get_x();
-		int get_y();
-		int get_vision_radius();
-		struct speed_structure &get_speed_structure();
-		int get_max_energy();
-		int get_current_energy();
-		unsigned short int get_name_of_individual();
+		int get_x();								   // kumeresan
+		int get_y();								   // kumeresan
+		int get_vision_radius();					   // kumeresan
+		struct speed_structure &get_speed_structure(); // kumeresan
+		int get_max_energy();						   // kumeresan
+		int get_current_energy();					   // kumeresan
+		unsigned short int get_name_of_individual();   // kumeresan
 	};
 }
