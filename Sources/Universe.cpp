@@ -12,9 +12,39 @@ bool compare(const step &a,const step &b)
     return a.dist<b.dist;
 }
 
-Universe::Universe(int maxR=5)
+Universe::Universe(int maxR=5,int *organismCount)
 {
     //Populates static vector
+    this->createMovesVector(maxR);
+    // generating a random list of coordinates WIll look into it on 14th
+    this->initializeEnvironment(organismCount,N);
+
+}
+
+void Universe::initializeEnvironment(int *organismCount,int len)
+{
+    std::vector<std::tuple<int,int>> tempPoints;
+    for(int i=0;i<dimension;i++)
+        for(int j=0;j<dimension;j++)
+            tempPoints.push_back(std::make_tuple(i,j));
+    std::random_shuffle(tempPoints.begin(),tempPoints.end());
+    int counter=0;
+    for(int i=0;i<N;i++)
+    {
+        for(int j=0;j<organismCount[i];j++)
+        {
+            environment[tempPoints[counter][0]][tempPoints[counter][1]]=classes[i];
+            counter++;
+        }
+    }
+    for(int i=counter;i<dimension*dimension;i++)
+    {
+        environment[tempPoints[counter][0]][tempPoints[counter][1]]=NULL;
+    }
+}
+
+void Universe::createMovesVector(int maxR)
+{
     float temp=maxR*maxR;
     for(int x=-maxR;x<=maxR;x++)
     {
@@ -34,10 +64,6 @@ Universe::Universe(int maxR=5)
     moves.erase(moves.begin()); //removes (0,0,0) from the vector
 
     std::cout<<"Constructed!!\n";
-
-    // generating a random list of coordinates WIll look into it on 14th
-
-
 }
 
 std::vector<struct step> Universe::getMoves()
@@ -54,14 +80,18 @@ void Universe::printMoves()
     return;
 }
 
-/*
-void Universe::updateUniverse(int initX,int initY,int finalX, int finalY){
+
+Universe::updateUniverse(int initX,int initY,int finalX, int finalY){
     organism* movingObj = environment[initX][initY];
     environment[finalX][finalY] = movingOgj;
-    environment[initX][initY] = NULL;
+    environment[initX][initY] = void;
 }
 
-organims* Universe::getObject(int posX, int posY){
-    return environment[posX][posY];
+Universe::getObject(int posX, int posY){
+    organism* reqPoint = environment[posX][posY];
+    return reqPoint;
 }
-*/
+
+
+
+
