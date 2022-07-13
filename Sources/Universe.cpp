@@ -55,14 +55,13 @@ void Universe::printMoves()
 }
 
 /*
-Universe::updateUniverse(int initX,int initY,int finalX, int finalY){
+void Universe::updateUniverse(int initX,int initY,int finalX, int finalY){
     organism* movingObj = environment[initX][initY];
     environment[finalX][finalY] = movingOgj;
-    environment[initX][initY] = void;
+    environment[initX][initY] = NULL;
 }
 
-Universe::getObject(int posX, int posY){
-    organism* reqPoint = environment[posX][posY];
-    return reqPoint;
+organims* Universe::getObject(int posX, int posY){
+    return environment[posX][posY];
 }
 */
