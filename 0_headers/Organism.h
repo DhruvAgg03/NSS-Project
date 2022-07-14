@@ -45,4 +45,24 @@ namespace namespace_organism
 		int get_current_energy();					   // kumeresan
 		unsigned short int get_name_of_individual();   // kumeresan
 	};
+
+	class Insect: public Organism
+	{
+	
+	private:
+		int organism_ID;
+	
+	public:
+		Insect(int x, int y, int vision_radius, int *speed_list, int length_of_speed_list, int max_energy, int current_energy, unsigned short int name_of_individual, int organism_ID1);
+		~Insect();
+		int get_organism_ID();
+
+	};
+
+	class Plant: public Organism
+	{
+	
+	public:
+		Plant(int x, int y, int vision_radius, int *speed_list, int length_of_speed_list, int max_energy, int current_energy, unsigned short int name_of_individual);
+	};
 }
