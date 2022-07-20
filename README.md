@@ -1,6 +1,12 @@
 
 # PC03-NSS
 
+Few Ideas
+1) In the constructor of each object maybe a randomiser can be used to determine the traits of the organism, that way every time we create an instance, it should allow for a more diverse gene pool (but maybe later) 
+
+
+# PC03-NSS
+
 MOM google DOC : https://docs.google.com/document/d/1egNHOzUpCYlN0ukZGkxLbDn76kEuCFiMl2wOHI8L3Ss/edit
 
 July 9th, 2022
@@ -108,4 +114,5 @@ All organisms can't move simoltaneosly, they have to move independently of each 
 	// try db with 10 M rows and look up speed
 
 	// try db with 10 M rows and look up speed
+
 
