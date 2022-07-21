@@ -33,9 +33,10 @@ namespace namespace_organism
 		int max_energy;
 		int current_energy;
 		unsigned short int name_of_individual; // name of organism like John Doe
+		int speciesID;
 
 	public:
-		Organism(int x, int y, int vision_radius, int *speed_list, int length_of_speed_list, int max_energy, int current_energy, unsigned short int name_of_individual);
+		Organism(int x, int y, int vision_radius, int *speed_list, int length_of_speed_list, int max_energy, int current_energy, unsigned short int name_of_individual,int speciesID);
 		~Organism();
 		int get_x();								   // kumeresan
 		int get_y();								   // kumeresan
@@ -44,6 +45,7 @@ namespace namespace_organism
 		int get_max_energy();						   // kumeresan
 		int get_current_energy();					   // kumeresan
 		unsigned short int get_name_of_individual();   // kumeresan
+		int get_speciesID();
 	};
 
 	class Insect: public Organism
@@ -53,7 +55,7 @@ namespace namespace_organism
 		int organism_ID;
 	
 	public:
-		Insect(int x, int y, int vision_radius, int *speed_list, int length_of_speed_list, int max_energy, int current_energy, unsigned short int name_of_individual, int organism_ID1);
+		Insect(int x, int y, int vision_radius, int *speed_list, int length_of_speed_list, int max_energy, int current_energy, unsigned short int name_of_individual, int organism_ID1, int speciesID);
 		~Insect();
 		int get_organism_ID();
 
@@ -63,6 +65,6 @@ namespace namespace_organism
 	{
 	
 	public:
-		Plant(int x, int y, int vision_radius, int *speed_list, int length_of_speed_list, int max_energy, int current_energy, unsigned short int name_of_individual);
+		Plant(int x, int y, int vision_radius, int *speed_list, int length_of_speed_list, int max_energy, int current_energy, unsigned short int name_of_individual, int speciesID);
 	};
 }

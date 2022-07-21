@@ -2,7 +2,7 @@
 
 using namespace namespace_organism;
 
-Organism::Organism(int x, int y, int vision_radius, int *speed_list, int length_of_speed_list, int max_energy, int current_energy, unsigned short int name_of_individual)
+Organism::Organism(int x, int y, int vision_radius, int *speed_list, int length_of_speed_list, int max_energy, int current_energy, unsigned short int name_of_individual, int speciesID)
 {
 	this->position = {x, y};
 	this->vision_radius = vision_radius;
@@ -12,7 +12,7 @@ Organism::Organism(int x, int y, int vision_radius, int *speed_list, int length_
 	this->max_energy = max_energy;
 	this->current_energy = current_energy;
 	this->name_of_individual = name_of_individual;
-
+	this->speciesID = speciesID; // Represent which species it belongs to (0-> plant, 1-> Insect for now)
 	// update universe method
 
 	printf("Organism %hu born with %d / %d energy at (%d,%d)", name_of_individual, current_energy, max_energy, (this->position).x, (this->position).y);
@@ -25,7 +25,7 @@ Organism::~Organism()
 	printf("Organism %hu died with %d / %d energy at (%d,%d)", name_of_individual, current_energy, max_energy, (this->position).x, (this->position).y);
 }
 
-Insect::Insect(int x,int y,int vision_radius, int *speed_list, int length_of_speed_list, int max_energy, int current_energy, unsigned short int name_of_individual,int organism_ID1): Organism(x,y,vision_radius,speed_list,length_of_speed_list,max_energy,current_energy,name_of_individual)
+Insect::Insect(int x,int y,int vision_radius, int *speed_list, int length_of_speed_list, int max_energy, int current_energy, unsigned short int name_of_individual,int organism_ID1, int speciesID): Organism(x,y,vision_radius,speed_list,length_of_speed_list,max_energy,current_energy,name_of_individual, speciesID)
 {
 	this->organism_ID = organism_ID1;
 };
@@ -40,6 +40,9 @@ int Insect:: get_organism_ID()
 	return organism_ID;
 }
 
-Plant::Plant(int x,int y,int vision_radius, int *speed_list, int length_of_speed_list, int max_energy, int current_energy, unsigned short int name_of_individual): Organism(x,y,0,NULL,0,max_energy,0,name_of_individual)
+Plant::Plant(int x,int y,int vision_radius, int *speed_list, int length_of_speed_list, int max_energy, int current_energy, unsigned short int name_of_individual, int speciesID): Organism(x,y,0,NULL,0,max_energy,0,name_of_individual, speciesID)
 {};
 
+int Organism::get_speciesID(){
+	return this->current_energy;
+}
