@@ -38,13 +38,20 @@ namespace namespace_Universe
     class Universe
     {
         private:
-            namespace_organism::organism* classes[N]; //classes in terms of species ?? then we have only 2 varying species right rihght now ??
-            int organismCount[N]; // Plant(Producer) then Insect(First Trophic Level)
-            biodata_Plant variety_Plant[varieties_in_a_Species] = {{0}};
+            namespace_organism::Organism* classes[N]; //classes in terms of species ?? then we have only 2 varying species right rihght now ??
+
+            int organismCount[N]; // Plant(Producer) then Insect(First Trophic Level) Not required since mearely passed as an argument but maybe can store it as an attribute for later use
+            biodata_Plant variety_Plant[varieties_in_a_Species] = {{0}, {0}, {0}};
             biodata_Insect variety_Insect[varieties_in_a_Species]={{0}};
             std::vector<std::tuple<int, int>> InsectPosition;
+
             std::vector<step>moves;
+
             void* environment[dimension][dimension];
+
+            int displayEnvironment[dimension*dimension]; // For a given iteration holds the displayable data, (For now species is number) For now will be a flattened Matrix of the environment
+            std::vector<int[dimension*dimension]> historyEnvironment; //Hold atleast the layout of the environment at any point in the Iteration
+            std::vector<struct biodata_Insect> ledgerInsects; // Whether we should change the struct based on what we want to store in the beside vector is what I am thinking,Useful for graphing Traits and creating Histograms
 
         public:
             Universe(int maxR,int* organismCount, biodata_Plant* plantVarieties, biodata_Insect* insectVarieties);
@@ -55,16 +62,20 @@ namespace namespace_Universe
 
             void printMoves();
             std::vector<step> getMoves();
+
+            void createMovesVector(int maxR); //creates the Vision Array
+            void initializeVarieties(biodata_Plant* plantVarieties,biodata_Insect* insectVarieties); // A function that takes the varieties as input and creates the variety_Plant/Insect list
+            void initializeEnvironment(int *organismCount,int len); // Based on number of organisms create the necessary pointers
             
             void* getObject(int posX, int posY);  // Returns the void pointer to the specific location
             void updateUniverse(int initX,int initY,int finalX, int finalY); // Lets us move the initial to the final position, leaving the previous position blank
 
-            void createMovesVector(int maxR); //creates the Vision Array
+            void deathOfInsect(int i, int &counter); // Deletes that coordinate and pushes all the other tuples back up once, Also takes a counter/reference as an argument to update the counter as in an iteration we run over the InsectPoition list
+            int getNumberOfInsects(); // Returns the length of the InsectPosition list (ie number of organisms) This needs to run aftere every Travel of an organism
+            std::tuple<int, int> getAnInsect(int i); // Returns the Position of the ith Insect in the List InsectPosition
 
-            // A function that takes the varieties as input and creates the variety_Plant/Insect list
-            void initializeVarieties(biodata_Plant* plantVarieties,biodata_Insect* insectVarieties); // Creates the necessary varieties 
-            void initializeEnvironment(int *organismCount,int len); // Based on number of organisms create the necessary pointers
-
+            void creatingDisplayEnvironment(); // Shoould create a 1D array(For now) all the rows are flattened
+            void writingToFile();
     };
 
 }
