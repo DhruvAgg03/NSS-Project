@@ -156,16 +156,16 @@ void Universe::creatingAndUpdatingDisplayEnvironmentHistory(){
     for(int i = 0; i<dimension; i++){
         for(int j = 0; j<dimension; j++){
             if(environment[i][j] == NULL){
-                displayEnvironment[i+j] = -1; //Empty
+                displayEnvironment[dimension*i+j] = -1; //Empty
             }else{
                 int temp_speciesID = ((namespace_organism::Plant*)environment[i][j])->get_speciesID();
                 switch (temp_speciesID)
                 {
                 case 0: //Plant
-                    displayEnvironment[i+j] = 0;
+                    displayEnvironment[dimension*i+j] = 0;
                     break;
                 case 1: //Insect
-                    displayEnvironment[i+j] = 1;
+                    displayEnvironment[dimension*i+j] = 1;
                     break;
                 default:
                     break;
