@@ -49,7 +49,7 @@ namespace namespace_Universe
 
             void* environment[dimension][dimension];
 
-            int displayEnvironment[dimension*dimension]; // For a given iteration holds the displayable data, (For now species is number) For now will be a flattened Matrix of the environment
+            int displayEnvironment[dimension*dimension] = {0}; // For a given iteration holds the displayable data, (For now species is number) For now will be a flattened Matrix of the environment
             std::vector<int[dimension*dimension]> historyEnvironment; //Hold atleast the layout of the environment at any point in the Iteration
             std::vector<struct biodata_Insect> ledgerInsects; // Whether we should change the struct based on what we want to store in the beside vector is what I am thinking,Useful for graphing Traits and creating Histograms
 
@@ -74,7 +74,7 @@ namespace namespace_Universe
             int getNumberOfInsects(); // Returns the length of the InsectPosition list (ie number of organisms) This needs to run aftere every Travel of an organism
             std::tuple<int, int> getAnInsect(int i); // Returns the Position of the ith Insect in the List InsectPosition
 
-            void creatingDisplayEnvironment(); // Shoould create a 1D array(For now) all the rows are flattened
+            void creatingAndUpdatingDisplayEnvironmentHistory(); // Shoould create a 1D array(For now) all the rows are flattened
             void writingToFile();
     };
 
