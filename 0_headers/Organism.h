@@ -32,39 +32,38 @@ namespace namespace_organism
 		int vision_radius;
 		int max_energy;
 		int current_energy;
-		unsigned short int name_of_individual; // name of organism like John Doe
+		unsigned short int aadhar_number; // name of organism like John Doe
 		int speciesID;
 
 	public:
-		Organism(int x, int y, int vision_radius, int *speed_list, int length_of_speed_list, int max_energy, int current_energy, unsigned short int name_of_individual,int speciesID);
+		Organism(int x, int y, int vision_radius, int *speed_list, int length_of_speed_list, int max_energy, int current_energy, unsigned short int aadhar_number, int speciesID);
 		~Organism();
-		int get_x();								   // kumeresan
-		int get_y();								   // kumeresan
-		int get_vision_radius();					   // kumeresan
-		struct speed_structure &get_speed_structure(); // kumeresan
-		int get_max_energy();						   // kumeresan
-		int get_current_energy();					   // kumeresan
-		unsigned short int get_name_of_individual();   // kumeresan
+		int get_x() { return position.x; };										 // kumeresan
+		int get_y() { return position.y; };										 // kumeresan
+		int get_vision_radius() { return vision_radius; };						 // kumeresan
+		struct speed_structure get_speed_structure() { return organism_speed; }; // kumeresan
+		int get_max_energy() { return max_energy; };							 // kumeresan
+		int get_current_energy() { return current_energy; };					 // kumeresan
+		unsigned short int get_aadhar_number() { return aadhar_number; };		 // kumeresan
 		int get_speciesID();
 	};
 
-	class Insect: public Organism
+	class Insect : public Organism
 	{
-	
+
 	private:
 		int organism_ID;
-	
+
 	public:
-		Insect(int x, int y, int vision_radius, int *speed_list, int length_of_speed_list, int max_energy, int current_energy, unsigned short int name_of_individual, int organism_ID1, int speciesID);
+		Insect(int x, int y, int vision_radius, int *speed_list, int length_of_speed_list, int max_energy, int current_energy, unsigned short int aadhar_number, int organism_ID1, int speciesID);
 		~Insect();
 		int get_organism_ID();
-
 	};
 
-	class Plant: public Organism
+	class Plant : public Organism
 	{
-	
+
 	public:
-		Plant(int x, int y, int vision_radius, int *speed_list, int length_of_speed_list, int max_energy, int current_energy, unsigned short int name_of_individual, int speciesID);
+		Plant(int x, int y, int vision_radius, int *speed_list, int length_of_speed_list, int max_energy, int current_energy, unsigned short int aadhar_number, int speciesID);
 	};
 }

@@ -31,7 +31,7 @@ namespace namespace_Universe
         // int vision_radius; will be equal to zero
         // int speed zero
         int max_energy;
-        // unsigned short int name_of_individual Adhaar number is assigned while declaring
+        // unsigned short int aadhar_number Adhaar number is assigned while declaring
     } biodata_Plant;
 
     // Necessary Information to declare an Insect Object

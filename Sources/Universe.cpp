@@ -137,7 +137,7 @@ void Universe::printMoves()
 {
     int i; // Counter
     for (i = 0; i < (this->moves).size(); i++)
-        std::cout << "(" << (this->moves)[i].dist << "," << (this->moves[i]).x << "," << (this->moves)[i].y << ") ";
+        std::cout << "(" << (this->moves)[i].dist << "," << (this->moves[i]).x << "," << (this->moves)[i].y << ") " << endl;
     std::cout << "\n i is " << i << "\n";
     return;
 }
