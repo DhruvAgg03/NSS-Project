@@ -251,7 +251,7 @@ step Universe::scanNearestFoodSource(step current_position, int vision_radius)
             continue;
         //What are we placing for plant and insect? 1 for plant?
         namespace_organism::Plant *p;
-        if(environment[x][y] == p)
+        if(typeid(environment[x][y]) == typeid(p))
         {
             nearest_dist_index = i;
             break;
@@ -276,7 +276,7 @@ step Universe::scanNearestFoodSource(step current_position, int vision_radius)
 
         //What are we placing for plant and insect? 1 for plant?
         namespace_organism::Plant *p;
-        if(environment[x][y] == p)
+        if(typeid(environment[x][y]) == typeid(p))
         {
             struct step s;
             s.x = x;
@@ -298,7 +298,7 @@ vector<step> Universe::movesToLocation(step current_position, int number_of_step
     int y = current_position.y;
 
     namespace_organism::Insect *insect;
-    if( (x+1 >=dimension || environment[x+1][y]== insect) && (x-1 < 0 || environment[x-1][y]!=insect) && (y+1 >=dimension || environment[x][y+1]!=insect) && (y-1<0 || environment[x][y-1]!=insect))
+    if( (x+1 >=dimension || typeid(environment[x+1][y])== typeid(insect)) && (x-1 < 0 || typeid(environment[x-1][y])!=typeid(insect)) && (y+1 >=dimension || typeid(environment[x][y+1])!=typeid(insect)) && (y-1<0 || typeid(environment[x][y-1])!=typeid(insect)))
         return next_moves;
     
     next_moves.push_back(current_position);
