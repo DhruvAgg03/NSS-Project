@@ -85,5 +85,8 @@ namespace namespace_Universe
 
         void creatingAndUpdatingDisplayEnvironmentHistory(); // Shoould create a 1D array(For now) all the rows are flattened
         void writingToFile();
+        
+        step scanNearestFoodSource(step current_position,int vision_radius);  //returns the nearest food source from the current position. If none, returns -1,-1. (Can add in another parameter saying levelOfOrganism in case of multiple levels of predators and prey)
+        vector<step> movesToLocation(step current_position ,int number_of_steps,int vision_radius);  //returns the next few moves given current position and destination (shortest path, no diagonal movements)
     };
 }
