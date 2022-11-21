@@ -63,6 +63,9 @@ namespace namespace_Universe
         vector<struct biodata_Insect> ledgerInsects; // Whether we should change the struct based on what we want to store in the beside vector is what I am thinking,Useful for graphing Traits and creating Histograms
 
     public:
+        vector<namespace_organism::Insect *> insects;
+
+        void run();
         Universe(int maxR, int *organismCount, biodata_Plant *plantVarieties, biodata_Insect *insectVarieties);
         // maxR specifies the maximum vision radius
         // organismCount -> Number of induviduals in each species ([0] for food sources, [1] for first trophic level, [2] for second trophic level...(for now just till first trophic level))
@@ -85,8 +88,8 @@ namespace namespace_Universe
 
         void creatingAndUpdatingDisplayEnvironmentHistory(); // Shoould create a 1D array(For now) all the rows are flattened
         void writingToFile();
-        
-        step scanNearestFoodSource(step current_position,int vision_radius);  //returns the nearest food source from the current position. If none, returns -1,-1. (Can add in another parameter saying levelOfOrganism in case of multiple levels of predators and prey)
-        vector<step> movesToLocation(step current_position ,int number_of_steps,int vision_radius);  //returns the next few moves given current position and destination (shortest path, no diagonal movements)
+
+        step scanNearestFoodSource(step current_position, int vision_radius);                        // returns the nearest food source from the current position. If none, returns -1,-1. (Can add in another parameter saying levelOfOrganism in case of multiple levels of predators and prey)
+        vector<step> movesToLocation(step current_position, int number_of_steps, int vision_radius); // returns the next few moves given current position and destination (shortest path, no diagonal movements)
     };
 }
