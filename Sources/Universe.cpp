@@ -100,21 +100,22 @@ void Universe::initializeEnvironment(int *organismCount, int len)
     {
         for (int j = 0; j < organismCount[i]; j++)
         {
-            if (i == 0)
+            if (j == 0)
             {
                 int variety = random_range(0, varieties_in_a_Species); // I am calling it seperately so that later on can bring in variation in the food source amount
-                namespace_organism::Plant temp(std::get<0>(tempPoints[counter]),
-                                               std::get<1>(tempPoints[counter]), 0, NULL, 0,
-                                               variety_Plant[variety].max_energy,
-                                               variety_Plant[variety].max_energy, counter, 0);
-                environment[std::get<0>(tempPoints[counter])][std::get<1>(tempPoints[counter])] = &temp;
+                namespace_organism::Plant *temp = new namespace_organism::Plant(std::get<0>(tempPoints[counter]),
+                                                                                std::get<1>(tempPoints[counter]), 0, NULL, 0,
+                                                                                variety_Plant[variety].max_energy,
+                                                                                variety_Plant[variety].max_energy, counter, 0);
+                environment[std::get<0>(tempPoints[counter])][std::get<1>(tempPoints[counter])] = temp;
             }
-            else if (i == 1)
+            else if (j == 1)
             {
                 int variety = random_range(0, varieties_in_a_Species);
-                namespace_organism::Insect temp(std::get<0>(tempPoints[counter]), std::get<1>(tempPoints[counter]), variety_Insect[variety].vision_radius, NULL, variety_Insect[variety].speed, variety_Insect[variety].max_energy, variety_Insect[variety].max_energy, counter, counter, 1);
+                namespace_organism::Insect *temp = new namespace_organism::Insect(std::get<0>(tempPoints[counter]), std::get<1>(tempPoints[counter]), variety_Insect[variety].vision_radius, NULL, variety_Insect[variety].speed, variety_Insect[variety].max_energy, variety_Insect[variety].max_energy, counter, counter, 1);
                 environment[std::get<0>(tempPoints[counter])][std::get<1>(tempPoints[counter])] = &temp;
                 InsectPosition.push_back(std::make_tuple(std::get<0>(tempPoints[counter]), std::get<1>(tempPoints[counter])));
+                insects.push_back(temp);
             }
             counter++;
         }
@@ -230,28 +231,29 @@ void Universe::writingToFile()
     }
 }
 
-
 step Universe::scanNearestFoodSource(step current_position, int vision_radius)
 {
     std::vector<struct step> moves_array = getMoves();
     int nearest_dist_index = -1;
 
-    for(int i=0;i<moves_array.size();i++)
+    for (int i = 0; i < moves_array.size(); i++)
     {
-        if(vision_radius < moves_array[i].dist)
+        if (vision_radius < moves_array[i].dist)
         {
             struct step temp;
-            temp.x = -1; temp.y = -1; temp.dist = -1;
+            temp.x = -1;
+            temp.y = -1;
+            temp.dist = -1;
             return temp;
         }
 
         int x = current_position.x + moves_array[i].x;
         int y = current_position.y + moves_array[i].y;
-        if(x>=dimension || x < 0 || y>=dimension || y<0)
+        if (x >= dimension || x < 0 || y >= dimension || y < 0)
             continue;
-        //What are we placing for plant and insect? 1 for plant?
+        // What are we placing for plant and insect? 1 for plant?
         namespace_organism::Plant *p;
-        if(typeid(environment[x][y]) == typeid(p))
+        if (typeid(environment[x][y]) == typeid(p))
         {
             nearest_dist_index = i;
             break;
@@ -259,73 +261,75 @@ step Universe::scanNearestFoodSource(step current_position, int vision_radius)
     }
 
     float nearest_dist = moves_array[nearest_dist_index].dist;
-    while(nearest_dist_index>0 && nearest_dist == moves_array[nearest_dist_index].dist)
+    while (nearest_dist_index > 0 && nearest_dist == moves_array[nearest_dist_index].dist)
         nearest_dist_index--;
-    
+
     vector<step> possible_destinations;
-    while(moves_array[nearest_dist_index].dist == nearest_dist)
+    while (moves_array[nearest_dist_index].dist == nearest_dist)
     {
         int x = current_position.x + moves_array[nearest_dist_index].x;
         int y = current_position.y + moves_array[nearest_dist_index].y;
 
-        if(x>=dimension || x < 0 || y>=dimension || y<0)
+        if (x >= dimension || x < 0 || y >= dimension || y < 0)
         {
             nearest_dist_index++;
             continue;
         }
 
-        //What are we placing for plant and insect? 1 for plant?
+        // What are we placing for plant and insect? 1 for plant?
         namespace_organism::Plant *p;
-        if(typeid(environment[x][y]) == typeid(p))
+        if (typeid(environment[x][y]) == typeid(p))
         {
             struct step s;
             s.x = x;
             s.y = y;
-            s.dist = sqrt(x*x + y*y);
+            s.dist = sqrt(x * x + y * y);
             possible_destinations.push_back(s);
         }
         nearest_dist_index++;
     }
 
-    int random_index = rand()%(possible_destinations.size());
+    int random_index = rand() % (possible_destinations.size());
     return possible_destinations[random_index];
 }
 
-vector<step> Universe::movesToLocation(step current_position, int number_of_steps,int vision_radius)
+vector<step> Universe::movesToLocation(step current_position, int number_of_steps, int vision_radius)
 {
     vector<step> next_moves;
     int x = current_position.x;
     int y = current_position.y;
 
     namespace_organism::Insect *insect;
-    if( (x+1 >=dimension || typeid(environment[x+1][y])== typeid(insect)) && (x-1 < 0 || typeid(environment[x-1][y])!=typeid(insect)) && (y+1 >=dimension || typeid(environment[x][y+1])!=typeid(insect)) && (y-1<0 || typeid(environment[x][y-1])!=typeid(insect)))
+    if ((x + 1 >= dimension || typeid(environment[x + 1][y]) == typeid(insect)) && (x - 1 < 0 || typeid(environment[x - 1][y]) == typeid(insect)) && (y + 1 >= dimension || typeid(environment[x][y + 1]) == typeid(insect)) && (y - 1 < 0 || typeid(environment[x][y - 1]) != typeid(insect)))
         return next_moves;
-    
+
     next_moves.push_back(current_position);
 
-    for(int i=0;i<number_of_steps;i++)
+    for (int i = 0; i < number_of_steps; i++)
     {
         step curr = next_moves[i];
         int x = curr.x;
         int y = curr.y;
-        step nearest_food = scanNearestFoodSource(curr,vision_radius);
-        if(nearest_food.x < 0)
+        step nearest_food = scanNearestFoodSource(curr, vision_radius);
+        if (nearest_food.x < 0)
         {
             int flag = 1;
-            while(flag==1)
+            while (flag == 1)
             {
-                int x_disp = rand()%2;
-                if(x_disp == 0) x_disp--;
-                int y_disp = rand()%2;
-                if(y_disp == 0) y_disp--;
+                int x_disp = rand() % 2;
+                if (x_disp == 0)
+                    x_disp--;
+                int y_disp = rand() % 2;
+                if (y_disp == 0)
+                    y_disp--;
 
-                if(x+x_disp>=0 && x+x_disp<dimension && y+y_disp>=0 && y+y_disp<dimension && environment[x+x_disp][y+y_disp]==NULL)
+                if (x + x_disp >= 0 && x + x_disp < dimension && y + y_disp >= 0 && y + y_disp < dimension && environment[x + x_disp][y + y_disp] == NULL)
                 {
                     flag = 0;
                     step next;
-                    next.x = x+x_disp;
-                    next.y = y+y_disp;
-                    next.dist = sqrt(next.x*next.x + next.y*next.y);
+                    next.x = x + x_disp;
+                    next.y = y + y_disp;
+                    next.dist = sqrt(next.x * next.x + next.y * next.y);
                     next_moves.push_back(next);
                 }
             }
@@ -334,88 +338,88 @@ vector<step> Universe::movesToLocation(step current_position, int number_of_step
         {
             int x_disp = nearest_food.x - x;
             int y_disp = nearest_food.y - y;
-            if((abs(x_disp)==0 && abs(y_disp)==1) || (abs(x_disp)==1 && abs(y_disp)==0))
+            if ((abs(x_disp) == 0 && abs(y_disp) == 1) || (abs(x_disp) == 1 && abs(y_disp) == 0))
             {
                 step next;
-                next.x = x+x_disp;
-                next.y = y+y_disp;
-                next.dist = sqrt(next.x*next.x + next.y*next.y);
+                next.x = x + x_disp;
+                next.y = y + y_disp;
+                next.dist = sqrt(next.x * next.x + next.y * next.y);
                 next_moves.push_back(next);
                 next_moves.erase(next_moves.begin());
                 return next_moves;
             }
-        
-            //aosihniosbaifubiuabw
-            namespace_organism::Insect *ins;
-            int x1,y1;
-            if(x_disp==0)
-            {
-                y1 = y_disp/abs(y_disp);
-                if(y+y1>=dimension ||y+y1<0 || environment[x][y+y1]!=NULL)
-                {
-                    next_moves.erase(next_moves.begin());
-                    return next_moves;
-                }
-                else
-                {
-                    step next;
-                    next.x = x+x_disp;
-                    next.y = y+y_disp;
-                    next.dist = sqrt(next.x*next.x + next.y*next.y);
-                    next_moves.push_back(next);
-                    continue;
-                }
-            }
-            if(y_disp==0)
-            {
-                x1 = x_disp/abs(x_disp);
-                if(x+x1>=dimension || x+x1<0 || environment[x+x1][y]!=NULL)
-                {
-                    next_moves.erase(next_moves.begin());
-                    return next_moves;
-                }
-                else
-                {
-                    step next;
-                    next.x = x+x_disp;
-                    next.y = y+y_disp;
-                    next.dist = sqrt(next.x*next.x + next.y*next.y);
-                    next_moves.push_back(next);
-                    continue;
-                }
-            }
-            x1 = x_disp/abs(x_disp);
-            y1 = y_disp/abs(y_disp);
 
-            if( (x+x1>=dimension || x+x1<0 || environment[x+x1][y]!=NULL) && (y+y1>=dimension || y+y1<0 || environment[x][y+y1]!=NULL))
+            // aosihniosbaifubiuabw
+            namespace_organism::Insect *ins;
+            int x1, y1;
+            if (x_disp == 0)
+            {
+                y1 = y_disp / abs(y_disp);
+                if (y + y1 >= dimension || y + y1 < 0 || environment[x][y + y1] != NULL)
+                {
+                    next_moves.erase(next_moves.begin());
+                    return next_moves;
+                }
+                else
+                {
+                    step next;
+                    next.x = x + x_disp;
+                    next.y = y + y_disp;
+                    next.dist = sqrt(next.x * next.x + next.y * next.y);
+                    next_moves.push_back(next);
+                    continue;
+                }
+            }
+            if (y_disp == 0)
+            {
+                x1 = x_disp / abs(x_disp);
+                if (x + x1 >= dimension || x + x1 < 0 || environment[x + x1][y] != NULL)
+                {
+                    next_moves.erase(next_moves.begin());
+                    return next_moves;
+                }
+                else
+                {
+                    step next;
+                    next.x = x + x_disp;
+                    next.y = y + y_disp;
+                    next.dist = sqrt(next.x * next.x + next.y * next.y);
+                    next_moves.push_back(next);
+                    continue;
+                }
+            }
+            x1 = x_disp / abs(x_disp);
+            y1 = y_disp / abs(y_disp);
+
+            if ((x + x1 >= dimension || x + x1 < 0 || environment[x + x1][y] != NULL) && (y + y1 >= dimension || y + y1 < 0 || environment[x][y + y1] != NULL))
             {
                 next_moves.erase(next_moves.begin());
                 return next_moves;
             }
-            while(true)
+            while (true)
             {
-                int direction = rand()%2;
+                int direction = rand() % 2;
 
-                if(direction==0)
+                if (direction == 0)
                 {
-                    if(x+x1<dimension && x+x1>=0 && environment[x+x1][y]==NULL)
+                    if (x + x1 < dimension && x + x1 >= 0 && environment[x + x1][y] == NULL)
                     {
                         step next;
-                        next.x = x+x1;
+                        next.x = x + x1;
                         next.y = y;
-                        next.dist = sqrt(next.x*next.x + next.y*next.y);
+                        next.dist = sqrt(next.x * next.x + next.y * next.y);
                         next_moves.push_back(next);
                         break;
                     }
                 }
                 else
                 {
-                    if(y+y1<dimension && y+y1>=0 && environment[x][y+y1]==NULL)
+                    if (y + y1 < dimension && y + y1 >= 0 && environment[x][y + y1] == NULL)
                     {
                         step next;
                         next.x = x;
-                        next.y = y+y1;
-                        next.dist = sqrt(next.x*next.x + next.y*next.y);
+                        next.y = y + y1;
+                        next.dist = sqrt(next.x * next.x + next.y * next.y);
                         next_moves.push_back(next);
                         break;
                     }

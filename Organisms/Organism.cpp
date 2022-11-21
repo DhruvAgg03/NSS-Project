@@ -2,6 +2,7 @@
 
 using namespace namespace_organism;
 
+
 Organism::Organism(int x, int y, int vision_radius, int *speed_list, int length_of_speed_list, int max_energy, int current_energy, unsigned short int aadhar_number, int speciesID)
 {
 	this->position = {x, y};
