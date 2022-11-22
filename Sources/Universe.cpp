@@ -1,6 +1,6 @@
 
-#include "../headers/Universe.hpp"
-#include "../0_headers/Organism.h"
+#include "../includes/Universe.h"
+#include "../includes/Organism.h"
 
 #define __PLANT_VARIETY    \
     {                      \
