@@ -95,7 +95,37 @@ Role bifurcation -
 + Organism: Sumu, HHN, Dhanush, Kumaresan 
 + Universe: Dhruv, Dharani
 
+# Winter Break
 
++ **AlgoPhase** - (Dhruv, Kumaresan, Kalva and HHN)
+	+ Immediate Timeline (next 1 week)(-HHN) - 
+		Data Generation - Compile Code and get output (Kalva, Dhruv, Kumaresan)
+
+	Short Extended Timeline - (Next 3 Weeks)(Mid December)(-HHN) -
+	+ Tasks - 
+		Optimize the Present ….
+		Ideate the Next Model - 
+	+ Priority - 
+		Inheritance (Sexual Reproduction, Asexual Easier before to Implement)
+		Trophic Levels (Producer, Prey, Predator)	
+
+	End of December -
+		Continuity of the Positions -> (Risky)... (Tradeoff with Visualisation)...,
+		Continuity of traits 
+		Additional Traits - (Thirst, Size, Tradeoffs Between the Traits)
+
++ **VisPhase(Visualisation Phase)** - (Dharani)
+	+ Jan First Week - 
+		Data Output - 
+		100 Simulations
+	+ Visualisation - Matrix Representation of Environment (Selective Visualisation)
+	+ Time Series Data - Overall Population, Breakdown Based on Variants (Later on Continuous Histogram, and Ditribution) 
+
+Plot Generation - (Python)
+Time Series Data 
+Cross Sectional Data (through time)
+
+Animation - (Unity), (Avatar Creation), (Movement)
 
 add prev_position
 pathfinding
