@@ -8,11 +8,13 @@
 #include <tuple>
 #include <time.h>
 #define N 2                      // Changed it to 2
-#define dimension 10000          // Changing dimensions to 10k from 1k
+#define dimension 100         // Changing dimensions to 10k from 1k
 #define varieties_in_a_Species 3 // Three different Varieties For now there are three species varying
+#define iterationCount 3
 #include "../0_headers/Organism.h"
-namespace namespace_Universe
+#include <bits/stdc++.h>
 
+namespace namespace_Universe
 {
     using namespace std;
 
@@ -57,6 +59,7 @@ namespace namespace_Universe
 
         void *environment[dimension][dimension];
 
+        void updateOrganism(int x, int y, int finalX, int finalY);
         int displayEnvironment[dimension * dimension] = {0}; // For a given iteration holds the displayable data, (For now species is number) For now will be a flattened Matrix of the environment
         // vector<int[dimension * dimension]> historyEnvironment; // Hold atleast the layout of the environment at any point in the Iteration
         vector<int *> historyEnvironment;
@@ -78,18 +81,24 @@ namespace namespace_Universe
         void createMovesVector(int maxR);                                                         // creates the Vision Array
         void initializeVarieties(biodata_Plant *plantVarieties, biodata_Insect *insectVarieties); // A function that takes the varieties as input and creates the variety_Plant/Insect list
         void initializeEnvironment(int *organismCount, int len);                                  // Based on number of organisms create the necessary pointers
-
+        vector<namespace_organism::Insect*> getInsects();
         void *getObject(int posX, int posY);                               // Returns the void pointer to the specific location
-        void updateUniverse(int initX, int initY, int finalX, int finalY); // Lets us move the initial to the final position, leaving the previous position blank
+        int updateUniverse(int initX, int initY, int finalX, int finalY); // Lets us move the initial to the final position, leaving the previous position blank, returns non zero value if an insect was killed, -1 if movement not possible, -2 for death
 
         void deathOfInsect(int i, int &counter); // Deletes that coordinate and pushes all the other tuples back up once, Also takes a counter/reference as an argument to update the counter as in an iteration we run over the InsectPoition list
+        void killInsect(namespace_organism::Insect* insect);
+        
         int getNumberOfInsects();                // Returns the length of the InsectPosition list (ie number of organisms) This needs to run aftere every Travel of an organism
         tuple<int, int> getAnInsect(int i);      // Returns the Position of the ith Insect in the List InsectPosition
 
         void creatingAndUpdatingDisplayEnvironmentHistory(); // Shoould create a 1D array(For now) all the rows are flattened
         void writingToFile();
 
+        void printCompleteInfo();
+
         step scanNearestFoodSource(step current_position, int vision_radius);                        // returns the nearest food source from the current position. If none, returns -1,-1. (Can add in another parameter saying levelOfOrganism in case of multiple levels of predators and prey)
         vector<step> movesToLocation(step current_position, int number_of_steps, int vision_radius); // returns the next few moves given current position and destination (shortest path, no diagonal movements)
+step scanNearestFoodSourceNew(step current_position, int vision_radius, set<pair<int,int> > & ignore_food);
+        vector<step> movesToLocationNew(step current_position, int number_of_steps, int vision_radius);
     };
 }
