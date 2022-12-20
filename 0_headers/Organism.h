@@ -1,5 +1,5 @@
 #pragma once
-
+#define movementCost 1
 #include <stdio.h>
 namespace namespace_organism
 {
@@ -45,7 +45,12 @@ namespace namespace_organism
 		int get_max_energy() { return max_energy; };							 // kumeresan
 		int get_current_energy() { return current_energy; };					 // kumeresan
 		unsigned short int get_aadhar_number() { return aadhar_number; };		 // kumeresan
-		int get_speciesID();
+		int get_speciesID(){return speciesID;};
+    void addEnergy(int energy);
+    void changeX(int newX) {position.x=newX;};
+    void changeY(int newY) {position.y = newY;};
+    void update(int newX,int newY);
+    void die(){delete this;};
 	};
 
 	class Insect : public Organism
