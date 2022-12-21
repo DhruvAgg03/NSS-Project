@@ -1,6 +1,6 @@
 
-#include "../headers/Universe.hpp"
-#include "../0_headers/Organism.h"
+#include "../Headers/Universe.h"
+#include "../Headers/Organism.h"
 
 #define __PLANT_VARIETY                                                        \
   {                                                                            \
@@ -23,9 +23,7 @@ int random_range(int min, int max) {
 }
 // Generates a random number between given range [min, max)
 
-Universe::Universe(int maxR, int *organismCount,
-                   biodata_Plant variety_Plant[varieties_in_a_Species],
-                   biodata_Insect variety_Insect[varieties_in_a_Species]) {
+Universe::Universe(int maxR, int *organismCount, biodata_Plant variety_Plant[varieties_in_a_Species],biodata_Insect variety_Insect[varieties_in_a_Species]) {
   biodata_Plant vp[varieties_in_a_Species] = __PLANT_VARIETY;
   biodata_Insect vi[varieties_in_a_Species] = __INSECT_VARIETY;
   for (int i = 0; i < varieties_in_a_Species; i++) {
@@ -755,4 +753,31 @@ vector<step> Universe::movesToLocationNew(step current_position,
   }
   next_moves.erase(next_moves.begin());
   return next_moves;
+}
+
+void Universe::printCompleteInfo(int iteration)
+{
+  ofstream myfile;
+  if(iteration==1) 
+  {
+    myfile.open ("../Data/trail_1.csv", ios::out);
+    myfile<<"Iter_no,x,y,Spec_ID,Adhaar_number,SpeedLength,VisionRadius,MaxEnergy,CurrentEnergy\n";
+  }
+  else myfile.open ("../Data/trail_1.csv", ios::app);
+  
+  for(int i=0;i<dimension;i++)
+  {
+    for(int j=0;j<dimension;j++)
+    {
+      auto cell = getObject(i,j);
+      if(cell)
+      {
+        cout<<"Cell found at "<<i<<","<<j<<endl;
+        auto org=static_cast<Organism*>(cell);
+        myfile<<iteration<<","<<i<<","<<j<<","<<org->get_speciesID()<<","<<org->get_aadhar_number()<<","<<org->giveSpeed()<<","<<org->get_vision_radius()<<","<<org->get_max_energy()<<","<<org->get_current_energy()<<"\n";
+      }
+      else myfile<<iteration<<","<<i<<","<<j<<",-1,0,0,0,0,0\n";
+    }
+  }
+  myfile.close();
 }

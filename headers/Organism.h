@@ -38,20 +38,20 @@ namespace namespace_organism
 	public:
 		Organism(int x, int y, int vision_radius, int *speed_list, int length_of_speed_list, int max_energy, int current_energy, unsigned short int aadhar_number, int speciesID);
 		~Organism();
-		int get_x() { return position.x; };										 // kumeresan
-		int get_y() { return position.y; };										 // kumeresan
-		int get_vision_radius() { return vision_radius; };						 // kumeresan
-		struct speed_structure get_speed_structure() { return organism_speed; }; // kumeresan
-		int get_max_energy() { return max_energy; };							 // kumeresan
-		int get_current_energy() { return current_energy; };					 // kumeresan
-		unsigned short int get_aadhar_number() { return aadhar_number; };		 // kumeresan
+		int get_x() { return position.x; };										 
+		int get_y() { return position.y; };										 
+		int get_vision_radius() { return vision_radius; };						 
+		struct speed_structure get_speed_structure() { return organism_speed; }; 
+		int get_max_energy() { return max_energy; };							 
+		int get_current_energy() { return current_energy; };					 
+		unsigned short int get_aadhar_number() { return aadhar_number; };		 
 		int get_speciesID(){return speciesID;};
-    void addEnergy(int energy);
-    void changeX(int newX) {position.x=newX;};
-    void changeY(int newY) {position.y = newY;};
-    void update(int newX,int newY);
-    void die(){delete this;};
-    int giveSpeed(){return organism_speed.len_of_speed_list;};
+		void addEnergy(int energy);
+		void changeX(int newX) {position.x = newX;};
+		void changeY(int newY) {position.y = newY;};
+		void update(int newX,int newY);
+		void die(){delete this;};
+		int giveSpeed(){return organism_speed.len_of_speed_list;};
 	};
 
 	class Insect : public Organism

@@ -1,10 +1,12 @@
-#include "../headers/Universe.hpp"
+#include "../Headers/Universe.h"
 #include <iostream>
 
 using namespace namespace_Universe;
 using namespace namespace_organism;
 using namespace std;
-int main() {
+using std::cout;
+int main()
+{
   srand(time(0));
   int iter = 30;
   std::cout << "Hello world!\n";
@@ -29,6 +31,7 @@ int main() {
   for (int j = 0; j < iter; j++) // j is iteration number
   {
     auto InsectCopy = myUni.getInsects();
+    myUni.printCompleteInfo(j+1);
     for (int i = 0; i < InsectCopy.size(); i++) {
       auto temp = InsectCopy[i];
       int x = temp->get_x();
