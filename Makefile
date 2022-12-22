@@ -1,13 +1,13 @@
 main.out: Organism.o Universe.o simulation.o main.o
 	g++ -o main.out Organism.o Universe.o simulation.o main.o
 
-Organism.o: ./Sources/Organism.cpp ./headers/Organism.h
+Organism.o: ./Sources/Organism.cpp ./Headers/Organism.h
 	g++ -c -g  ./Sources/Organism.cpp
 
-Universe.o: ./Sources/Universe.cpp ./headers/Universe.h 
+Universe.o: ./Sources/Universe.cpp ./Headers/Universe.h 
 	g++ -c -g  ./Sources/Universe.cpp
 
-simulation.o: ./Sources/simulation.cpp ./headers/Universe.h
+simulation.o: ./Sources/simulation.cpp ./Headers/Universe.h
 	g++ -c -g ./Sources/simulation.cpp
 
 main.o: ./Sources/main.cpp
