@@ -1,6 +1,6 @@
 
-#include "../Headers/Universe.h"
-#include "../Headers/Organism.h"
+#include "../headers/Universe.h"
+#include "../headers/Organism.h"
 
 #define __PLANT_VARIETY                                                        \
   {                                                                            \
@@ -85,7 +85,7 @@ void Universe::initializeEnvironment(int *organismCount, int len) {
   int counter = 0; // Running over the temporary array
   for (int i = 0; i < N; i++) {
     for (int j = 0; j < organismCount[i]; j++) {
-      if (i == 0) {
+      if (i == PLANT) {
         int variety = random_range(
             0, varieties_in_a_Species); // I am calling it seperately so that
                                         // later on can bring in variation in
@@ -96,7 +96,7 @@ void Universe::initializeEnvironment(int *organismCount, int len) {
             variety_Plant[variety].max_energy, counter, 0);
         environment[std::get<0>(tempPoints[counter])]
                    [std::get<1>(tempPoints[counter])] = temp;
-      } else if (i == 1) {
+      } else if (i == INSECT) {
         int variety = random_range(0, varieties_in_a_Species);
         namespace_organism::Insect *temp = new namespace_organism::Insect(
             std::get<0>(tempPoints[counter]), std::get<1>(tempPoints[counter]),
@@ -140,8 +140,8 @@ int Universe::updateUniverse(int initX, int initY, int finalX, int finalY) {
   int returnValue=0;
   if (movingObj != NULL) {
     auto OrganismObj = (Organism*)movingObj;
-    if (OrganismObj->get_speciesID() == 0) return -1;
-    else if (OrganismObj->get_speciesID() == 1)
+    if (OrganismObj->get_speciesID() == PLANT) return -1;
+    else if (OrganismObj->get_speciesID() == INSECT)
     {
       if(OrganismObj->get_current_energy()<=movementCost)
       {
@@ -153,11 +153,10 @@ int Universe::updateUniverse(int initX, int initY, int finalX, int finalY) {
       void *newObj = getObject(finalX,finalY);
       if(newObj!=NULL)
       {
-        if(((Organism*)newObj)->get_speciesID()==0) 
+        if(((Organism*)newObj)->get_speciesID()==PLANT) 
         {
           OrganismObj->addEnergy(((Organism*)newObj)->get_current_energy());
           ((Organism*)newObj)->die();
-          //cout<<"Insect is eating a plant"<<endl;
         }
       }
     }
@@ -179,8 +178,6 @@ void *Universe::getObject(int posX, int posY) {
 int Universe::getNumberOfInsects() { return insects.size(); }
 
 std::tuple<int, int> Universe::getAnInsect(int i) {
-  // std::tuple<int, int> temp = InsectPosition[i];
-  // return temp;
   std::tuple<int,int> temp;
   get<0>(temp) = insects[i]->get_x();
   get<1>(temp) = insects[i]->get_y();
@@ -189,12 +186,10 @@ std::tuple<int, int> Universe::getAnInsect(int i) {
 
 void Universe::killInsect(Insect* insect)
 {
-  cout<<"predeath "<<insects.size()<<endl;
   environment[insect->get_x()][insect->get_y()]=NULL;
   Insect*copy=insect;
   
   insects.erase(std::remove(insects.begin(),insects.end(),copy),insects.end());
-  cout<<"post death "<<insects.size()<<endl;
   insect->die();
 }
 
@@ -215,10 +210,10 @@ void Universe::creatingAndUpdatingDisplayEnvironmentHistory() {
         int temp_speciesID =
             ((namespace_organism::Plant *)environment[i][j])->get_speciesID();
         switch (temp_speciesID) {
-        case 0: // Plant
+        case PLANT: // Plant
           displayEnvironment[dimension * i + j] = 0;
           break;
-        case 1: // Insect
+        case INSECT: // Insect
           displayEnvironment[dimension * i + j] = 1;
           break;
         default:
@@ -228,8 +223,6 @@ void Universe::creatingAndUpdatingDisplayEnvironmentHistory() {
     }
   }
   printf("displayEnvironment created\n");
-  // historyEnvironment.push_back(displayEnvironment);
-  printf("historyEnvironment updated\n");
 }
 
 void Universe::writingToFile() {
@@ -248,218 +241,12 @@ void Universe::writingToFile() {
   }
 }
 
-// void Universe::printCompleteInfo()
-// {
-//   for(int i=0;i<dimension;i++)
-//     {
-//       for(int j=0;j<dimension;j++)
-//         {
-          
-//         }
-//     }
-// }
 
-step Universe::scanNearestFoodSource(step current_position, int vision_radius) {
-  std::vector<struct step> moves_array = getMoves();
-  int nearest_dist_index = -1;
-
-  for (int i = 0; i < moves_array.size(); i++) {
-    if (vision_radius < moves_array[i].dist) {
-      struct step temp;
-      temp.x = -1;
-      temp.y = -1;
-      temp.dist = -1;
-      return temp;
-    }
-
-    int x = current_position.x + moves_array[i].x;
-    int y = current_position.y + moves_array[i].y;
-    if (x >= dimension || x < 0 || y >= dimension || y < 0)
-      continue;
-    // What are we placing for plant and insect? 1 for plant?
-    namespace_organism::Plant *p;
-    if (((namespace_organism::Organism *)environment[x][y])->get_speciesID() ==
-        0) {
-      nearest_dist_index = i;
-      break;
-    }
-  }
-
-  float nearest_dist = moves_array[nearest_dist_index].dist;
-  while (nearest_dist_index > 0 &&
-         nearest_dist == moves_array[nearest_dist_index].dist)
-    nearest_dist_index--;
-
-  vector<step> possible_destinations;
-  while (moves_array[nearest_dist_index].dist == nearest_dist) {
-    int x = current_position.x + moves_array[nearest_dist_index].x;
-    int y = current_position.y + moves_array[nearest_dist_index].y;
-
-    if (x >= dimension || x < 0 || y >= dimension || y < 0) {
-      nearest_dist_index++;
-      continue;
-    }
-
-    // What are we placing for plant and insect? 1 for plant?
-    namespace_organism::Plant *p;
-    if (((namespace_organism::Organism *)environment[x][y])->get_speciesID() ==
-        0) {
-      struct step s;
-      s.x = x;
-      s.y = y;
-      s.dist = sqrt(x * x + y * y);
-      possible_destinations.push_back(s);
-    }
-    nearest_dist_index++;
-  }
-
-  int random_index = rand() % (possible_destinations.size());
-  return possible_destinations[random_index];
-}
-
-vector<step> Universe::movesToLocation(step current_position,
-                                       int number_of_steps, int vision_radius) {
-  vector<step> next_moves;
-  int x = current_position.x;
-  int y = current_position.y;
-
-  namespace_organism::Insect *insect;
-  if ((x + 1 >= dimension ||
-       (((namespace_organism::Organism *)environment[x + 1][y])
-            ->get_speciesID() == 1)) &&
-      (x - 1 < 0 || (((namespace_organism::Organism *)environment[x - 1][y])
-                         ->get_speciesID() == 1)) &&
-      (y + 1 >= dimension ||
-       (((namespace_organism::Organism *)environment[x][y + 1])
-            ->get_speciesID() == 1)) &&
-      (y - 1 < 0 || (((namespace_organism::Organism *)environment[x][y - 1])
-                         ->get_speciesID() == 1)))
-    return next_moves;
-
-  next_moves.push_back(current_position);
-
-  for (int i = 0; i < number_of_steps; i++) {
-    step curr = next_moves[i];
-    int x = curr.x;
-    int y = curr.y;
-    step nearest_food = scanNearestFoodSource(curr, vision_radius);
-    if (nearest_food.x < 0) {
-      int flag = 1;
-      while (flag == 1) {
-        int x_disp = rand() % 2;
-        if (x_disp == 0)
-          x_disp--;
-        int y_disp = rand() % 2;
-        if (y_disp == 0)
-          y_disp--;
-
-        if (x + x_disp >= 0 && x + x_disp < dimension && y + y_disp >= 0 &&
-            y + y_disp < dimension &&
-            environment[x + x_disp][y + y_disp] == NULL) {
-          flag = 0;
-          step next;
-          next.x = x + x_disp;
-          next.y = y + y_disp;
-          next.dist = sqrt(next.x * next.x + next.y * next.y);
-          next_moves.push_back(next);
-        }
-      }
-    } else {
-      int x_disp = nearest_food.x - x;
-      int y_disp = nearest_food.y - y;
-      if ((abs(x_disp) == 0 && abs(y_disp) == 1) ||
-          (abs(x_disp) == 1 && abs(y_disp) == 0)) {
-        step next;
-        next.x = x + x_disp;
-        next.y = y + y_disp;
-        next.dist = sqrt(next.x * next.x + next.y * next.y);
-        next_moves.push_back(next);
-        next_moves.erase(next_moves.begin());
-        return next_moves;
-      }
-
-      // aosihniosbaifubiuabw
-      namespace_organism::Insect *ins;
-      int x1, y1;
-      if (x_disp == 0) {
-        y1 = y_disp / abs(y_disp);
-        if (y + y1 >= dimension || y + y1 < 0 ||
-            environment[x][y + y1] != NULL) {
-          next_moves.erase(next_moves.begin());
-          return next_moves;
-        } else {
-          step next;
-          next.x = x + x_disp;
-          next.y = y + y_disp;
-          next.dist = sqrt(next.x * next.x + next.y * next.y);
-          next_moves.push_back(next);
-          continue;
-        }
-      }
-      if (y_disp == 0) {
-        x1 = x_disp / abs(x_disp);
-        if (x + x1 >= dimension || x + x1 < 0 ||
-            environment[x + x1][y] != NULL) {
-          next_moves.erase(next_moves.begin());
-          return next_moves;
-        } else {
-          step next;
-          next.x = x + x_disp;
-          next.y = y + y_disp;
-          next.dist = sqrt(next.x * next.x + next.y * next.y);
-          next_moves.push_back(next);
-          continue;
-        }
-      }
-      x1 = x_disp / abs(x_disp);
-      y1 = y_disp / abs(y_disp);
-
-      if ((x + x1 >= dimension || x + x1 < 0 ||
-           environment[x + x1][y] != NULL) &&
-          (y + y1 >= dimension || y + y1 < 0 ||
-           environment[x][y + y1] != NULL)) {
-        next_moves.erase(next_moves.begin());
-        return next_moves;
-      }
-      while (true) {
-        int direction = rand() % 2;
-
-        if (direction == 0) {
-          if (x + x1 < dimension && x + x1 >= 0 &&
-              environment[x + x1][y] == NULL) {
-            step next;
-            next.x = x + x1;
-            next.y = y;
-            next.dist = sqrt(next.x * next.x + next.y * next.y);
-            next_moves.push_back(next);
-            break;
-          }
-        } else {
-          if (y + y1 < dimension && y + y1 >= 0 &&
-              environment[x][y + y1] == NULL) {
-            step next;
-            next.x = x;
-            next.y = y + y1;
-            next.dist = sqrt(next.x * next.x + next.y * next.y);
-            next_moves.push_back(next);
-            break;
-          }
-        }
-      }
-    }
-  }
-
-  next_moves.erase(next_moves.begin());
-  return next_moves;
-}
 
 step Universe::scanNearestFoodSourceNew(step current_position,
                                         int vision_radius,
                                         set<pair<int, int>> &ignore_food) {
-  //cout << "New invocation " << current_position.x << " " << current_position.y<<endl;
   vector<step> moves_array = getMoves();
-  // cout<<moves_array.size()<<" array size"<<endl;
-  // cout<<vision_radius<<" vision"<<endl;
   int nearest_dist_index = -1;
 
   for (int i = 0; i < moves_array.size(); i++) {
@@ -479,7 +266,7 @@ step Universe::scanNearestFoodSourceNew(step current_position,
     // if (typeid(environment[x][y]) == typeid(p))
     if (environment[x][y] != NULL &&
         ((namespace_organism::Organism *)environment[x][y])->get_speciesID() ==
-            0) {
+            PLANT) {
       // IGNORING FOOD
       if (ignore_food.find({x, y}) != ignore_food.end())
         continue;
@@ -488,13 +275,10 @@ step Universe::scanNearestFoodSourceNew(step current_position,
       break;
     }
   }
-  // cout<<nearest_dist_index<<endl;
-  // cout << "No errors till now" << endl;
   float nearest_dist = moves_array[nearest_dist_index].dist;
   while (nearest_dist_index > 0 &&
          nearest_dist == moves_array[nearest_dist_index - 1].dist)
     nearest_dist_index--;
-  // cout << "still correct" << endl;
   vector<step> possible_destinations;
 
   int tempct = 0;
@@ -515,7 +299,7 @@ step Universe::scanNearestFoodSourceNew(step current_position,
     // if (typeid(environment[x][y]) == typeid(p))
     if (environment[x][y] != NULL &&
         ((namespace_organism::Organism *)environment[x][y])->get_speciesID() ==
-            0) {
+            PLANT) {
 
       // IGNORING FOOD
       if (ignore_food.find({x, y}) != ignore_food.end()) {
@@ -530,12 +314,8 @@ step Universe::scanNearestFoodSourceNew(step current_position,
       possible_destinations.push_back(s);
     }
     nearest_dist_index++;
-    //cout << "dist is " << tempct << endl;
   }
-  // cout << "exited loop" << endl;
-  // cout << possible_destinations.size() << endl;
   int random_index = rand() % (possible_destinations.size());
-  // cout << "Done" << endl;
   return possible_destinations[random_index];
   // return possible_destinations[0];
 }
@@ -561,31 +341,28 @@ vector<step> Universe::movesToLocationNew(step current_position,
       if (((x + 1 >= dimension) ||
            ((environment[x + 1][y] != NULL) &&
             (((namespace_organism::Organism *)environment[x + 1][y])
-                 ->get_speciesID() == 1))) &&
+                 ->get_speciesID() == INSECT))) &&
           ((x - 1 < 0) ||
            ((environment[x - 1][y] != NULL) &&
             (((namespace_organism::Organism *)environment[x - 1][y])
-                 ->get_speciesID() == 1))) &&
+                 ->get_speciesID() == INSECT))) &&
           ((y + 1 >= dimension) ||
            ((environment[x][y + 1] != NULL) &&
             (((namespace_organism::Organism *)environment[x][y + 1])
-                 ->get_speciesID() == 1))) &&
+                 ->get_speciesID() == INSECT))) &&
           ((y - 1 < 0) ||
            ((environment[x][y - 1] != NULL) &&
             (((namespace_organism::Organism *)environment[x][y - 1])
-                 ->get_speciesID() == 1))))
+                 ->get_speciesID() == INSECT))))
         no_empty_spot = true;
 
       while (flag == 1) {
-        // cout << "boo" << endl;
-        // cout << no_empty_spot << endl;
         int x_disp = rand() % 2;
         if (x_disp == 0)
           x_disp--;
         int y_disp = rand() % 2;
         if (y_disp == 0)
           y_disp--;
-        // cout << x_disp << " " << y_disp << endl;
         int axis = rand() % 2;
         if (axis == 0)
           x_disp = 0;
@@ -601,7 +378,7 @@ vector<step> Universe::movesToLocationNew(step current_position,
              ((environment[x + x_disp][y + y_disp] == NULL) ||
               (((namespace_organism::Organism *)
                     environment[x + x_disp][y + y_disp])
-                   ->get_speciesID()) == 0))) {
+                   ->get_speciesID()) == PLANT))) {
           flag = 0;
           step next;
           next.x = x + x_disp;
@@ -642,7 +419,7 @@ vector<step> Universe::movesToLocationNew(step current_position,
         if ((y + y1 >= dimension) || (y + y1 < 0) ||
             ((environment[x][y + y1] != NULL) &&
              (((namespace_organism::Organism *)environment[x][y + y1])
-                  ->get_speciesID() == 1))) {
+                  ->get_speciesID() == INSECT))) {
           if ((y + y1 >= 0) && (y + y1 < dimension)) {
             step next;
             next.x = x + x_disp;
@@ -668,7 +445,7 @@ vector<step> Universe::movesToLocationNew(step current_position,
         if ((x + x1 >= dimension) || (x + x1 < 0) ||
             ((environment[x + x1][y] != NULL) &&
              (((namespace_organism::Organism *)environment[x + x1][y])
-                  ->get_speciesID() == 1))) {
+                  ->get_speciesID() == INSECT))) {
           if ((x + x1 >= 0) && (x + x1 < dimension)) {
             step next;
             next.x = x + x_disp;
@@ -700,11 +477,11 @@ vector<step> Universe::movesToLocationNew(step current_position,
       if (((x + x1 >= dimension) || (x + x1 < 0) ||
            ((environment[x + x1][y] != NULL) &&
             (((namespace_organism::Organism *)environment[x + x1][y])
-                 ->get_speciesID() == 0))) &&
+                 ->get_speciesID() == PLANT))) &&
           ((y + y1 >= dimension) || (y + y1 < 0) ||
            ((environment[x][y + y1] != NULL) &&
             (((namespace_organism::Organism *)environment[x][y + y1])
-                 ->get_speciesID() == 0))))
+                 ->get_speciesID() == PLANT))))
         no_empty_spot = true;
 
       while (true) {
@@ -716,7 +493,7 @@ vector<step> Universe::movesToLocationNew(step current_position,
               ((x + x1 < dimension) && (x + x1 >= 0) &&
                ((environment[x + x1][y] == NULL) ||
                 (((namespace_organism::Organism *)environment[x + x1][y])
-                     ->get_speciesID() != 1)))) {
+                     ->get_speciesID() != INSECT)))) {
             step next;
             next.x = x + x1;
             next.y = y;
@@ -733,7 +510,7 @@ vector<step> Universe::movesToLocationNew(step current_position,
               ((y + y1 < dimension) && (y + y1 >= 0) &&
                ((environment[x][y + y1] == NULL) ||
                 (((namespace_organism::Organism *)environment[x][y + y1])
-                     ->get_speciesID() != 1)))) {
+                     ->get_speciesID() != INSECT)))) {
             step next;
             next.x = x;
             next.y = y + y1;
@@ -772,7 +549,7 @@ void Universe::printCompleteInfo(int iteration)
       auto cell = getObject(i,j);
       if(cell)
       {
-        cout<<"Cell found at "<<i<<","<<j<<endl;
+        //cout<<"Cell found at "<<i<<","<<j<<endl;
         auto org=static_cast<Organism*>(cell);
         myfile<<iteration<<","<<i<<","<<j<<","<<org->get_speciesID()<<","<<org->get_aadhar_number()<<","<<org->giveSpeed()<<","<<org->get_vision_radius()<<","<<org->get_max_energy()<<","<<org->get_current_energy()<<"\n";
       }

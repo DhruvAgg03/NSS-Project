@@ -1,4 +1,6 @@
 #pragma once
+#define INSECT 1
+#define PLANT 0
 #define movementCost 1
 #include <stdio.h>
 namespace namespace_organism

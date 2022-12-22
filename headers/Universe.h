@@ -5,8 +5,9 @@
 #define dimension 100         // Changing dimensions to 10k from 1k
 #define varieties_in_a_Species 3 // Three different Varieties For now there are three species varying
 #define iterationCount 3
-
-
+#define maxVision 15
+#define PlantCount 5
+#define InsectCount 10
 
 namespace namespace_Universe
 {
@@ -52,8 +53,6 @@ namespace namespace_Universe
         vector<step> moves;
 
         void *environment[dimension][dimension];
-
-        void updateOrganism(int x, int y, int finalX, int finalY){}; // Write Definition later
         int displayEnvironment[dimension * dimension] = {0}; // For a given iteration holds the displayable data, (For now species is number) For now will be a flattened Matrix of the environment
         // vector<int[dimension * dimension]> historyEnvironment; // Hold atleast the layout of the environment at any point in the Iteration
         vector<int *> historyEnvironment;
@@ -90,9 +89,7 @@ namespace namespace_Universe
 
         void printCompleteInfo(int iteration); // Prints the complete information of the Insects in the Universe
 
-        step scanNearestFoodSource(step current_position, int vision_radius);                        // returns the nearest food source from the current position. If none, returns -1,-1. (Can add in another parameter saying levelOfOrganism in case of multiple levels of predators and prey)
-        vector<step> movesToLocation(step current_position, int number_of_steps, int vision_radius); // returns the next few moves given current position and destination (shortest path, no diagonal movements)
-        step scanNearestFoodSourceNew(step current_position, int vision_radius, set<pair<int,int> > & ignore_food);
-        vector<step> movesToLocationNew(step current_position, int number_of_steps, int vision_radius);
+        step scanNearestFoodSourceNew(step current_position, int vision_radius, set<pair<int,int> > & ignore_food); // returns the nearest food source from the current position. If none, returns -1,-1. (Can add in another parameter saying levelOfOrganism in case of multiple levels of predators and prey)
+        vector<step> movesToLocationNew(step current_position, int number_of_steps, int vision_radius); // returns the next few moves given current position and destination (shortest path, no diagonal movements)
     };
 }

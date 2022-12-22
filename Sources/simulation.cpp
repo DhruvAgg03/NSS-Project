@@ -5,36 +5,33 @@ using namespace namespace_Universe;
 using namespace namespace_organism;
 void Universe::run() {
 
-  // for (int i = 0; i < InsectPosition.size(); i++)
-  // {
-  //     Insect *insect = (Insect
-  //     *)environment[get<0>(InsectPosition[i])][get<1>(InsectPosition[i])];
+  for(int j=0;j<iterationCount;j++)
+  {
+    auto InsectCopy = getInsects();
+    printCompleteInfo(j+1);
 
-  //     step initial_posn = {get<0>(InsectPosition[i]),
-  //     get<1>(InsectPosition[i]), 0}; #warning "steps are always constant"
-  //     vector<step> path = movesToLocationNew(initial_posn, 2,
-  //     insect->get_vision_radius());
+    for(int i=0;i<InsectCopy.size();i++)
+    {
+      auto currInsect = InsectCopy[i];
+      int x = currInsect->get_x();
+      int y = currInsect->get_y();
+      auto moves = movesToLocationNew({x,y,0},currInsect->giveSpeed(),currInsect->get_vision_radius());
 
-  // }
+      for(int l=0;l<moves.size();l++)
+      {
+        auto nextObj = getObject(moves[l].x,moves[l].y);
+        if(nextObj!=NULL)
+        {
+          if(((Organism*)nextObj)->get_speciesID()==1) cout<<"Insect Detected"<<endl;
+          else if(((Organism*)nextObj)->get_speciesID()==0) updateUniverse(x,y,moves[l].x,moves[l].y);
 
-  for (int j = 0; j < iterationCount; j++) {
-    for (int i = 0; i < InsectPosition.size(); i++) {
-      auto [x, y] = getAnInsect(i);
-      auto temp = (namespace_organism::Organism *)getObject(x, y);
-      auto moves = movesToLocationNew({x, y, 0}, 5, temp->get_vision_radius());
-      for (int j = 0; j < moves.size(); j++) {
-        auto tempPtr = getObject(moves[j].x, moves[j].y);
-        updateUniverse(x, y, moves[j].x, moves[j].y);
-        if (tempPtr != NULL) {
-          if (((Organism *)tempPtr)->get_speciesID() == 1) {
-            cout << "Collision with an insect, insect overridden" << endl;
-            break;
-          }
           break;
         }
-        x = moves[j].x;
-        y = moves[j].y;
+        if(updateUniverse(x,y,moves[l].x,moves[l].y)!=0) break;
+        x = moves[l].x;
+        y = moves[l].y;
       }
     }
+    random_shuffle(insects.begin(),insects.end());
   }
 }
