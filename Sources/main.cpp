@@ -1,8 +1,6 @@
 #include "../Headers/Universe.h"
 #include <iostream>
 
-using namespace namespace_Universe;
-using namespace namespace_organism;
 using namespace std;
 using std::cout;
 int main()
@@ -20,5 +18,5 @@ int main()
   // the different plant sources, insectVarieties the three unique combinations
   // for {vision_radius, speed, and max_energy}
   myUni.run();
-  return 0;  
+  return 0;
 }
