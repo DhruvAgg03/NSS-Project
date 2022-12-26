@@ -1,8 +1,37 @@
-#include "../Headers/Organism.h"
 #include "../Headers/Universe.h"
+// #include "../Headers/Organism.h"
+// using namespace namespace_organism;
+using namespace std;
 
-using namespace namespace_organism;
-using namespace namespace_Universe;
+pair<power, power> Organism::getChildEnergy()
+{
+	power parent_energy = this->get_current_energy();
+	return {parent_energy / 2, parent_energy / 2};
+}
+
+double Organism::reproduce_roll_ceil()
+{
+	return 0.5;
+	// can tweak the ceil based on number of iterations and energy
+}
+
+pair<bool, cordinates2D> Organism::reproduce_oracle(vector<cordinates2D> &poss_posns)
+{
+	// adjacent positions which are in bounds and empty
+	cordinates2D child_position;
+	if (poss_posns.size() == 0)
+		return {false, child_position};
+	random_shuffle(poss_posns.begin(), poss_posns.end());
+	child_position = poss_posns[0];
+	srand(time(NULL));
+	double roll = rand();
+	roll = roll / RAND_MAX;
+	double roll_ceil = reproduce_roll_ceil();
+	// higher roll_ceil -> higher probabiltiy of binary fission
+	if (roll < roll_ceil)
+		return {true, child_position};
+	return {false, child_position};
+}
 
 Organism::Organism(int x, int y, int vision_radius, int *speed_list, int length_of_speed_list, int max_energy, int current_energy, unsigned short int aadhar_number, int speciesID)
 {
@@ -29,20 +58,20 @@ Organism::~Organism()
 
 void Organism::addEnergy(int energy)
 {
-  if(energy>0)
-    current_energy = current_energy+energy>max_energy? max_energy:current_energy+energy;
-  else
-    current_energy = current_energy+energy>0?current_energy+energy:0;
+	if (energy > 0)
+		current_energy = current_energy + energy > max_energy ? max_energy : current_energy + energy;
+	else
+		current_energy = current_energy + energy > 0 ? current_energy + energy : 0;
 }
 
-void Organism::update(int newX,int newY)
+void Organism::update(int newX, int newY)
 {
-  int energyChange = 0;
-  energyChange-= newX>position.x? newX-position.x:position.x-newX;
-  energyChange-= newY>position.y? newY-position.y:position.y-newY;
-  addEnergy(energyChange*movementCost);
-  changeX(newX);
-  changeY(newY);
+	int energyChange = 0;
+	energyChange -= newX > position.x ? newX - position.x : position.x - newX;
+	energyChange -= newY > position.y ? newY - position.y : position.y - newY;
+	addEnergy(energyChange * movementCost);
+	changeX(newX);
+	changeY(newY);
 }
 
 Insect::Insect(int x, int y, int vision_radius, int *speed_list, int length_of_speed_list, int max_energy, int current_energy, unsigned short int aadhar_number, int organism_ID1, int speciesID) : Organism(x, y, vision_radius, speed_list, length_of_speed_list, max_energy, current_energy, aadhar_number, speciesID)
@@ -61,4 +90,3 @@ int Insect::get_organism_ID()
 }
 
 Plant::Plant(int x, int y, int vision_radius, int *speed_list, int length_of_speed_list, int max_energy, int current_energy, unsigned short int aadhar_number, int speciesID) : Organism(x, y, 0, NULL, 0, max_energy, current_energy, aadhar_number, speciesID){};
-
