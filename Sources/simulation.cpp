@@ -5,7 +5,8 @@
 // using namespace namespace_organism;
 void Universe::run()
 {
-
+  ofstream outfile;
+  outfile.open("./Output/universelog.txt", ios::app);
   for (int j = 0; j < iterationCount; j++)
   {
     auto InsectCopy = getInsects();
@@ -25,22 +26,22 @@ void Universe::run()
         if (nextObj != NULL)
         {
           if (((Organism *)nextObj)->get_speciesID() == 1)
-            cout << "Insect Detected" << endl;
+            outfile << "Insect Detected" << endl;
           else if (((Organism *)nextObj)->get_speciesID() == 0)
-            updateUniverse(x, y, moves[l].x, moves[l].y);
+            updateUniverse(x, y, moves[l].x, moves[l].y ,outfile);
 
           break;
         }
-        if (updateUniverse(x, y, moves[l].x, moves[l].y) != 0)
+        if (updateUniverse(x, y, moves[l].x, moves[l].y , outfile) != 0)
           break;
         x = moves[l].x;
         y = moves[l].y;
       }
-      cordinates2D posn;
+      coordinates2D posn;
       posn.x = currInsect->get_x();
       posn.y = currInsect->get_y();
-      vector<cordinates2D> poss_posns = adjcent_posns(posn);
-      pair<bool, cordinates2D> reproduce_roll = currInsect->reproduce_oracle(poss_posns);
+      vector<coordinates2D> poss_posns = adjcent_posns(posn);
+      pair<bool, coordinates2D> reproduce_roll = currInsect->reproduce_oracle(poss_posns);
       if (reproduce_roll.first == true)
       {
         pair<power, power> parent_child_energy = currInsect->getChildEnergy();
@@ -53,4 +54,5 @@ void Universe::run()
     }
     random_shuffle(insects.begin(), insects.end());
   }
+  outfile.close();
 }

@@ -9,6 +9,8 @@ int main()
   int organismCount[2] = {PlantCount, InsectCount};
   biodata_Plant variety_Plant[varieties_in_a_Species];
   biodata_Insect variety_Insect[varieties_in_a_Species];
+  ofstream outfile;
+  outfile.open("./Output/universelog.txt", ios::out);
   Universe myUni(maxVision, organismCount, variety_Plant, variety_Insect);
   // Universe(int maxR, int *organismCount, biodata_Plant *plantVarieties,
   // biodata_Insect *insectVarieties); maxVision specifies the maximum vision radius
@@ -18,5 +20,6 @@ int main()
   // the different plant sources, insectVarieties the three unique combinations
   // for {vision_radius, speed, and max_energy}
   myUni.run();
+  outfile.close();
   return 0;
 }

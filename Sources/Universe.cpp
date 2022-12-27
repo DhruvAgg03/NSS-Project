@@ -29,13 +29,13 @@ int random_range(int min, int max)
 }
 // Generates a random number between given range [min, max)
 
-vector<cordinates2D> Universe::adjcent_posns(cordinates2D posn)
+vector<coordinates2D> Universe::adjcent_posns(coordinates2D posn)
 {
   int x = posn.x;
   int y = posn.y;
 
-  vector<cordinates2D> possible_positions;
-  cordinates2D west, east, north, south;
+  vector<coordinates2D> possible_positions;
+  coordinates2D west, east, north, south;
   if (x != 0 && this->getObject(x - 1, y) == NULL)
   {
     west.x = x - 1;
@@ -75,7 +75,7 @@ Universe::Universe(int maxR, int *organismCount, biodata_Plant variety_Plant[var
     // temp array holding the variety of plants because we are too lazy to
     // change everything
   }
-
+  ofstream outfile;
   this->createMovesVector(maxR);
   // Creates the VisionArray
   this->initializeVarieties(variety_Plant, variety_Insect);
@@ -88,6 +88,8 @@ Universe::Universe(int maxR, int *organismCount, biodata_Plant variety_Plant[var
 
 void Universe::createMovesVector(int maxR)
 {
+  ofstream outfile;
+  outfile.open("./Output/universelog.txt", ios::app);
   float temp = maxR * maxR;
   for (int x = -maxR; x <= maxR; x++)
   {
@@ -95,7 +97,7 @@ void Universe::createMovesVector(int maxR)
     {
       if (x * x + y * y <= temp)
       {
-        struct step tempstep;
+        step tempstep;
         tempstep.x = x;
         tempstep.y = y;
         tempstep.dist = sqrt(x * x + y * y);
@@ -105,8 +107,8 @@ void Universe::createMovesVector(int maxR)
   }
   sort(moves.begin(), moves.end(), compare);
   moves.erase(moves.begin()); // removes (0,0,0) from the vector
-
-  std::cout << "Constructed!!\n";
+  outfile << "Constructed!!\n";
+  outfile.close();
 }
 
 void Universe::initializeVarieties(biodata_Plant *plantVarieties,
@@ -181,17 +183,17 @@ void Universe::initializeEnvironment(int *organismCount, int len)
 
 std::vector<struct step> Universe::getMoves() { return this->moves; }
 
-void Universe::printMoves()
+void Universe::printMoves(ofstream& outfile)
 {
   int i; // Counter
   for (i = 0; i < (this->moves).size(); i++)
-    std::cout << "(" << (this->moves)[i].dist << "," << (this->moves[i]).x
+    outfile << "(" << (this->moves)[i].dist << "," << (this->moves[i]).x
               << "," << (this->moves)[i].y << ") " << endl;
-  std::cout << "\n i is " << i << "\n";
+  outfile << "\n i is " << i << "\n";
   return;
 }
 
-int Universe::updateUniverse(int initX, int initY, int finalX, int finalY)
+int Universe::updateUniverse(int initX, int initY, int finalX, int finalY,ofstream& outfile)
 {
   void *movingObj = getObject(initX, initY);
   int returnValue = 0;
@@ -220,7 +222,7 @@ int Universe::updateUniverse(int initX, int initY, int finalX, int finalY)
       }
     }
     else
-      cout << "error parsing" << endl;
+      outfile << "error parsing" << endl;
   }
   environment[finalX][finalY] = movingObj;
   environment[initX][initY] = NULL;
@@ -264,7 +266,7 @@ void Universe::deathOfInsect(int i, int &counter)
   counter--;
 }
 
-void Universe::creatingAndUpdatingDisplayEnvironmentHistory()
+void Universe::creatingAndUpdatingDisplayEnvironmentHistory(ofstream& outfile)
 {
   for (int i = 0; i < dimension; i++)
   {
@@ -292,16 +294,16 @@ void Universe::creatingAndUpdatingDisplayEnvironmentHistory()
       }
     }
   }
-  printf("displayEnvironment created\n");
+  outfile<<"displayEnvironment created\n";
 }
 
-void Universe::writingToFile()
+void Universe::writingToFile(ofstream& outfile)
 {
   FILE *fptr;
   fptr = fopen("Data.txt", "w");
   if (fptr == NULL)
   {
-    printf("Error !!");
+    outfile<<"Couldn't open file Data.txt!!\n";
   }
   else
   {
@@ -317,9 +319,7 @@ void Universe::writingToFile()
   }
 }
 
-step Universe::scanNearestFoodSourceNew(step current_position,
-                                        int vision_radius,
-                                        set<pair<int, int>> &ignore_food)
+step Universe::scanNearestFoodSourceNew(step current_position, int vision_radius,set<pair<int, int>>& ignore_food)
 {
   vector<step> moves_array = getMoves();
   int nearest_dist_index = -1;
@@ -340,10 +340,7 @@ step Universe::scanNearestFoodSourceNew(step current_position,
       continue;
     // What are we placing for plant and insect? 1 for plant?
     Plant *p;
-    // if (typeid(environment[x][y]) == typeid(p))
-    if (environment[x][y] != NULL &&
-        ((Organism *)environment[x][y])->get_speciesID() ==
-            PLANT)
+    if ( environment[x][y] != NULL && ((Organism *)environment[x][y])->get_speciesID() == PLANT )
     {
       // IGNORING FOOD
       if (ignore_food.find({x, y}) != ignore_food.end())
@@ -399,12 +396,9 @@ step Universe::scanNearestFoodSourceNew(step current_position,
   }
   int random_index = rand() % (possible_destinations.size());
   return possible_destinations[random_index];
-  // return possible_destinations[0];
 }
 
-vector<step> Universe::movesToLocationNew(step current_position,
-                                          int number_of_steps,
-                                          int vision_radius)
+vector<step> Universe::movesToLocationNew(step current_position, int number_of_steps, int vision_radius)
 {
   int safe_last = 0;
   vector<step> next_moves;
@@ -536,8 +530,6 @@ vector<step> Universe::movesToLocationNew(step current_position,
       if (y_disp == 0)
       {
         x1 = x_disp / abs(x_disp);
-        // if (x + x1 >= dimension || x + x1 < 0 || typeid(environment[x +
-        // x1][y]) == typeid(ins))
         if ((x + x1 >= dimension) || (x + x1 < 0) ||
             ((environment[x + x1][y] != NULL) &&
              (((Organism *)environment[x + x1][y])
@@ -569,11 +561,6 @@ vector<step> Universe::movesToLocationNew(step current_position,
       y1 = y_disp / abs(y_disp);
 
       bool no_empty_spot = false;
-      // if((x+x1 >= dimension || x+x1 < 0 || typeid(environment[x+x1][y]) ==
-      // typeid(ins)) && (y+y1 >=dimension || y+y1 < 0 ||
-      // typeid(environment[x][y+y1]) == typeid(ins)))
-      //    no_empty_spot = true;
-
       if (((x + x1 >= dimension) || (x + x1 < 0) ||
            ((environment[x + x1][y] != NULL) &&
             (((Organism *)environment[x + x1][y])
@@ -589,8 +576,6 @@ vector<step> Universe::movesToLocationNew(step current_position,
         int direction = rand() % 2;
         if (direction == 0)
         {
-          // if(no_empty_spot || (x+x1 < dimension && x+x1 >=0 &&
-          // typeid(environment[x+x1][y]) != typeid(ins)))
           if (no_empty_spot ||
               ((x + x1 < dimension) && (x + x1 >= 0) &&
                ((environment[x + x1][y] == NULL) ||
@@ -609,8 +594,6 @@ vector<step> Universe::movesToLocationNew(step current_position,
         }
         else
         {
-          // if(no_empty_spot || (y+y1 < dimension && y+y1>=0 &&
-          // typeid(environment[x][y+y1])!=typeid(ins)))
           if (no_empty_spot ||
               ((y + y1 < dimension) && (y + y1 >= 0) &&
                ((environment[x][y + y1] == NULL) ||
@@ -648,7 +631,7 @@ void Universe::printCompleteInfo(int iteration)
     myfile << "Iter_no,x,y,Spec_ID,Adhaar_number,SpeedLength,VisionRadius,MaxEnergy,CurrentEnergy\n";
   }
   else
-    myfile.open("../Data/trail_1.csv", ios::app);
+    myfile.open("./Data/trail_1.csv", ios::app);
 
   for (int i = 0; i < dimension; i++)
   {
@@ -657,7 +640,6 @@ void Universe::printCompleteInfo(int iteration)
       auto cell = getObject(i, j);
       if (cell)
       {
-        // cout<<"Cell found at "<<i<<","<<j<<endl;
         auto org = static_cast<Organism *>(cell);
         myfile << iteration << "," << i << "," << j << "," << org->get_speciesID() << "," << org->get_aadhar_number() << "," << org->giveSpeed() << "," << org->get_vision_radius() << "," << org->get_max_energy() << "," << org->get_current_energy() << "\n";
       }

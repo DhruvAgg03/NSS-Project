@@ -1,6 +1,4 @@
 #include "../Headers/Universe.h"
-// #include "../Headers/Organism.h"
-// using namespace namespace_organism;
 using namespace std;
 
 pair<power, power> Organism::getChildEnergy()
@@ -15,10 +13,10 @@ double Organism::reproduce_roll_ceil()
 	// can tweak the ceil based on number of iterations and energy
 }
 
-pair<bool, cordinates2D> Organism::reproduce_oracle(vector<cordinates2D> &poss_posns)
+pair<bool, coordinates2D> Organism::reproduce_oracle(vector<coordinates2D> &poss_posns)
 {
 	// adjacent positions which are in bounds and empty
-	cordinates2D child_position;
+	coordinates2D child_position;
 	if (poss_posns.size() == 0)
 		return {false, child_position};
 	random_shuffle(poss_posns.begin(), poss_posns.end());
@@ -37,23 +35,24 @@ Organism::Organism(int x, int y, int vision_radius, int *speed_list, int length_
 {
 	this->position = {x, y};
 	this->vision_radius = vision_radius;
-	this->organism_speed = {speed_list,
-							length_of_speed_list,
-							0};
+	this->organism_speed = {speed_list, length_of_speed_list, 0};
 	this->max_energy = max_energy;
 	this->current_energy = current_energy;
 	this->aadhar_number = aadhar_number;
 	this->speciesID = speciesID; // Represent which species it belongs to (0-> plant, 1-> Insect for now)
 	// update universe method
-
-	printf("Organism %hu born with %d / %d energy at (%d,%d)", aadhar_number, current_energy, max_energy, (this->position).x, (this->position).y);
+	ofstream outfile;
+	outfile.open("./Output/universelog.txt", ios::app);
+	outfile<<"Organism "<<aadhar_number <<" born with "<< current_energy<< '/'<< max_energy<< " energy at ("<< (this->position).x <<','<<(this->position).y<<")\n";
+	outfile.close();
 };
 
 Organism::~Organism()
 {
-	// update universe method
-
-	printf("Organism %hu died with %d / %d energy at (%d,%d)", aadhar_number, current_energy, max_energy, (this->position).x, (this->position).y);
+	ofstream outfile;
+	outfile.open("./Output/universelog.txt", ios::app);
+	outfile<<"Organism "<< aadhar_number<<" died with "<< current_energy<< '/'<< max_energy<< " energy at ("<< (this->position).x <<','<<(this->position).y<<")\n";
+	outfile.close();
 }
 
 void Organism::addEnergy(int energy)
@@ -81,7 +80,10 @@ Insect::Insect(int x, int y, int vision_radius, int *speed_list, int length_of_s
 
 Insect::~Insect()
 {
-	printf("Organism %hu, with ID %d died with %d / %d energy at (%d,%d)", get_aadhar_number(), organism_ID, get_current_energy(), get_max_energy(), get_x(), get_y());
+	ofstream outfile;
+	outfile.open("./Output/universelog.txt", ios::app);
+	outfile<<"Organism "<<get_aadhar_number()<<" with ID "<< organism_ID<<" died with " <<get_current_energy()<<'/'<<get_max_energy()<<" energy at ("<<get_x()<<','<<get_y()<< ")\n";
+	outfile.close();
 }
 
 int Insect::get_organism_ID()
