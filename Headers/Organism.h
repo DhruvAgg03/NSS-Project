@@ -6,10 +6,7 @@ typedef int power;
 #include <bits/stdc++.h>
 using namespace std;
 
-// namespace namespace_organism
-// {
-
-struct cordinates2D
+struct coordinates2D
 {
 	int x;
 	int y;
@@ -32,7 +29,7 @@ class Organism
 
 private:
 	// add reference to unvierse
-	struct cordinates2D position;
+	struct coordinates2D position;
 	struct speed_structure organism_speed;
 	int age = 0;
 	int vision_radius;
@@ -61,7 +58,7 @@ public:
 	void update(int newX, int newY);
 	void die() { delete this; };
 	int giveSpeed() { return organism_speed.len_of_speed_list; };
-	pair<bool, cordinates2D> reproduce_oracle(vector<cordinates2D> &poss_posns);
+	pair<bool, coordinates2D> reproduce_oracle(vector<coordinates2D> &poss_posns);
 	pair<power, power> getChildEnergy();
 	double reproduce_roll_ceil();
 };
@@ -84,4 +81,4 @@ class Plant : public Organism
 public:
 	Plant(int x, int y, int vision_radius, int *speed_list, int length_of_speed_list, int max_energy, int current_energy, unsigned short int aadhar_number, int speciesID);
 };
-// }
+

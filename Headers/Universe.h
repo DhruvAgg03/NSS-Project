@@ -9,41 +9,39 @@
 #define PlantCount 5
 #define InsectCount 10
 
-// namespace namespace_Universe
-// {
 using namespace std;
 
 // Contains x,y deviation and dist from origin
-typedef struct step
+struct step
 {
     int x;
     int y;
     float dist;
-} step;
+};
 
 // Necessary Information to declare a Plant Object
-typedef struct biodata_Plant
+struct biodata_Plant
 {
     // struct coordinates2D position; since position decided from the random temporary array
     // int vision_radius; will be equal to zero
     // int speed zero
     int max_energy;
     // unsigned short int aadhar_number Adhaar number is assigned while declaring
-} biodata_Plant;
+};
 
 // Necessary Information to declare an Insect Object
-typedef struct biodata_Insect
+struct biodata_Insect
 {
     // struct coordinates2D position; since position decided from the random temporary array
     int vision_radius;
     int speed; // struct speed_structure speed_structure;
     int max_energy;
-} biodata_Insect;
+};
 
 class Universe
 {
 private:
-    Organism *classes[N]; // classes in terms of species ?? then we have only 2 varying species right rihght now ??
+    Organism *classes[N]; // classes in terms of species ?? then we have only 2 varying species right right now ??
 
     int organismCount[N]; // Plant(Producer) then Insect(First Trophic Level) Not required since mearely passed as an argument but maybe can store it as an attribute for later use
     biodata_Plant variety_Plant[varieties_in_a_Species] = {{0}, {0}, {0}};
@@ -62,14 +60,13 @@ public:
     vector<Insect *> insects;
 
     void run();
-    vector<cordinates2D> adjcent_posns(cordinates2D pos);
+    vector<coordinates2D> adjcent_posns(coordinates2D pos);
     Universe(int maxR, int *organismCount, biodata_Plant variety_Plant[varieties_in_a_Species], biodata_Insect variety_Insect[varieties_in_a_Species]);
     // maxR specifies the maximum vision radius
     // organismCount -> Number of induviduals in each species ([0] for food sources, [1] for first trophic level, [2] for second trophic level...(for now just till first trophic level))
     // plantVarieties list of maxenergies of the different plant sources,
     // insectVarieties the three unique combinations for {vision_radius, speed, and max_energy}
-
-    void printMoves();
+    void printMoves(ofstream& outfile);
     vector<step> getMoves();
 
     void createMovesVector(int maxR);                                                         // creates the Vision Array
@@ -77,7 +74,7 @@ public:
     void initializeEnvironment(int *organismCount, int len);                                  // Based on number of organisms create the necessary pointers
     vector<Insect *> getInsects();
     void *getObject(int posX, int posY);                              // Returns the void pointer to the specific location
-    int updateUniverse(int initX, int initY, int finalX, int finalY); // Lets us move the initial to the final position, leaving the previous position blank, returns non zero value if an insect was killed, -1 if movement not possible, -2 for death
+    int updateUniverse(int initX, int initY, int finalX, int finalY, ofstream& outfile); // Lets us move the initial to the final position, leaving the previous position blank, returns non zero value if an insect was killed, -1 if movement not possible, -2 for death
 
     void deathOfInsect(int i, int &counter); // Deletes that coordinate and pushes all the other tuples back up once, Also takes a counter/reference as an argument to update the counter as in an iteration we run over the InsectPoition list
     void killInsect(Insect *insect);
@@ -85,12 +82,13 @@ public:
     int getNumberOfInsects();           // Returns the length of the InsectPosition list (ie number of organisms) This needs to run aftere every Travel of an organism
     tuple<int, int> getAnInsect(int i); // Returns the Position of the ith Insect in the List InsectPosition
 
-    void creatingAndUpdatingDisplayEnvironmentHistory(); // Shoould create a 1D array(For now) all the rows are flattened
-    void writingToFile();
+    void creatingAndUpdatingDisplayEnvironmentHistory(ofstream& outfile); // Should create a 1D array(For now) all the rows are flattened
+    void writingToFile(ofstream& outfile);
 
     void printCompleteInfo(int iteration); // Prints the complete information of the Insects in the Universe
 
     step scanNearestFoodSourceNew(step current_position, int vision_radius, set<pair<int, int>> &ignore_food); // returns the nearest food source from the current position. If none, returns -1,-1. (Can add in another parameter saying levelOfOrganism in case of multiple levels of predators and prey)
     vector<step> movesToLocationNew(step current_position, int number_of_steps, int vision_radius);            // returns the next few moves given current position and destination (shortest path, no diagonal movements)
+
 };
-// }
+
