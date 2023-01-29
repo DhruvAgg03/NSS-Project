@@ -1,5 +1,5 @@
-
 #include "../Headers/Universe.h"
+extern std::ofstream outfile;
 
 #define __PLANT_VARIETY \
   {                     \
@@ -11,9 +11,9 @@
 
 #define __INSECT_VARIETY      \
   {                           \
-    {4, 3, 300}, {6, 2, 200}, \
+    {4, 3, 300}, {6, 3, 300}, \
     {                         \
-      7, 5, 100               \
+      7, 3, 300               \
     }                         \
   }
 
@@ -29,7 +29,7 @@ int random_range(int min, int max)
 }
 // Generates a random number between given range [min, max)
 
-vector<coordinates2D> Universe::adjcent_posns(coordinates2D posn)
+vector<coordinates2D> Universe::adjacent_posns(coordinates2D posn)
 {
   int x = posn.x;
   int y = posn.y;
@@ -75,9 +75,7 @@ Universe::Universe(int maxR, int *organismCount, biodata_Plant variety_Plant[var
     // temp array holding the variety of plants because we are too lazy to
     // change everything
   }
-  ofstream outfile;
-  this->createMovesVector(maxR);
-  // Creates the VisionArray
+  this->createMovesVector(maxR);  // Creates the VisionArray
   this->initializeVarieties(variety_Plant, variety_Insect);
   this->initializeEnvironment(organismCount, N);
 }
@@ -86,10 +84,8 @@ Universe::Universe(int maxR, int *organismCount, biodata_Plant variety_Plant[var
 // function calls onto create movesVector (Cater to maximum radius and speed)
 // and initialise Environment (Can we rename it VisionArray ??)
 
-void Universe::createMovesVector(int maxR)
+void Universe::createMovesVector(int maxR) // Creates the VisionArray
 {
-  ofstream outfile;
-  outfile.open("./Output/universelog.txt", ios::app);
   float temp = maxR * maxR;
   for (int x = -maxR; x <= maxR; x++)
   {
@@ -108,7 +104,6 @@ void Universe::createMovesVector(int maxR)
   sort(moves.begin(), moves.end(), compare);
   moves.erase(moves.begin()); // removes (0,0,0) from the vector
   outfile << "Constructed!!\n";
-  outfile.close();
 }
 
 void Universe::initializeVarieties(biodata_Plant *plantVarieties,
@@ -119,8 +114,8 @@ void Universe::initializeVarieties(biodata_Plant *plantVarieties,
     this->variety_Plant[i] = plantVarieties[i];
     this->variety_Insect[i] = insectVarieties[i];
   }
-  // The memory address initially stored in the pointers
-  // are the same the vakues it points are different
+  // The memory address initially stored in the pointers are the same 
+  // the values it points are different
 }
 
 void Universe::initializeEnvironment(int *organismCount, int len)
@@ -154,11 +149,22 @@ void Universe::initializeEnvironment(int *organismCount, int len)
       else if (i == INSECT)
       {
         int variety = random_range(0, varieties_in_a_Species);
-        Insect *temp = new Insect(
-            std::get<0>(tempPoints[counter]), std::get<1>(tempPoints[counter]),
-            variety_Insect[variety].vision_radius, NULL,
-            variety_Insect[variety].speed, variety_Insect[variety].max_energy,
-            variety_Insect[variety].max_energy, counter, counter, 1);
+
+        coordinates2D posn = {std::get<0>(tempPoints[counter]),std::get<1>(tempPoints[counter])};
+        int vision_radius = variety_Insect[variety].vision_radius;
+        int speed = variety_Insect[variety].speed;
+        int max_energy = variety_Insect[variety].max_energy;
+        Traits t{max_energy, vision_radius, speed};
+
+        // New Insect constructor
+        Insect *temp = new Insect(posn, t, counter, 1,this);
+
+        // Insect *temp = new Insect(
+        //     std::get<0>(tempPoints[counter]), std::get<1>(tempPoints[counter]),
+        //     variety_Insect[variety].vision_radius, NULL,
+        //     variety_Insect[variety].speed, variety_Insect[variety].max_energy,
+        //     variety_Insect[variety].max_energy, counter, counter, 1);
+        
         environment[std::get<0>(tempPoints[counter])]
                    [std::get<1>(tempPoints[counter])] = temp;
         InsectPosition.push_back(
@@ -233,6 +239,7 @@ vector<Insect *> Universe::getInsects() { return insects; }
 
 void *Universe::getObject(int posX, int posY)
 {
+  if(posX < 0 || posX >= dimension || posY < 0 || posY >= dimension)return NULL;
   void *reqPoint = environment[posX][posY];
   return reqPoint;
 }
@@ -250,8 +257,8 @@ std::tuple<int, int> Universe::getAnInsect(int i)
 void Universe::killInsect(Insect *insect)
 {
   environment[insect->get_x()][insect->get_y()] = NULL;
+  organismCount[insectIndex]--;
   Insect *copy = insect;
-
   insects.erase(std::remove(insects.begin(), insects.end(), copy), insects.end());
   insect->die();
 }
@@ -648,4 +655,59 @@ void Universe::printCompleteInfo(int iteration)
     }
   }
   myfile.close();
+}
+
+void Universe::addInsect(Insect *insect)
+{
+  environment[insect->get_x()][insect->get_y()] = insect;
+  organismCount[insectIndex]++;
+  insects.push_back(insect);
+}
+
+void Universe::addPlant(Plant *plant)
+{
+  environment[plant->get_x()][plant->get_y()] = plant;
+  organismCount[plantIndex]++;
+}
+
+bool Universe::locked(coordinates2D pos)
+{
+  vector<pair<int,int>> neigh{{-1,1},{0,1},{1,1},{-1,0},{1,0},{-1,-1},{0,-1},{1,-1}};
+  for(auto ele:neigh)
+  {
+    auto delx=ele.first;
+    auto dely=ele.second;
+    if(!getObject(pos.x+delx,pos.y+dely)) return false;
+  }
+  return true;
+}
+
+void Universe::reSpawnPlant()
+{
+  auto newcells = emptycells(plantSpawnNumber);
+  outfile<<"New plants spawned: "<<newcells.size()<<'\n';
+  vector<biodata_Plant> plantvariety =  __PLANT_VARIETY;
+  for(auto ele: newcells)
+  {
+    auto newplant = new Plant(ele, plantvariety[rand()%varieties_in_a_Species].max_energy,
+                        static_cast<unsigned short>(Organism::get_latest_organism_ID()+1)); 
+                        //energy of new plant is taken from hardcoded varities
+    addPlant(newplant);
+  }
+}
+
+vector<coordinates2D> Universe::emptycells(int k)
+{
+  int max_threshold = max(500, k * 5);
+  vector<coordinates2D> emptycells;
+  while(emptycells.size()<k && max_threshold--)
+  {
+    auto x = rand()%dimension;
+    auto y = rand()%dimension;
+    if(!getObject(x,y))
+    {
+      emptycells.push_back({x,y});
+    }
+  }
+  return emptycells;
 }

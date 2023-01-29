@@ -1,0 +1,38 @@
+Header proper format -> #include, using , #define etc
+environment -> void* to Organism*
+convention -> double comment for comment out code , single for documentation
+
+Clarify purpose(documentation)
+* historyEnvironment
+* ledgerInsects
+* writingToFile
+
+To do:
+* macro defining ofstream
+* plant population in check
+
+Suggestions:
+* Account for energy losses during cell division?
+* predicted overflow for aadhar_number?
+
+WorkLog:
+Kums(27/1/23):
+* Added comments for all functions (and some code maintenance)
+* created new class Aphrodite (godsaidyes,split)
+* altered killinsect,added addinsect
+* changed constructor used for insects in initializeEnvironment
+Kums(28/1/23):
+* added reference to universe in aphrodite and organism class
+* altered getObj() func -> asserts if (x,y) is a valid cell
+* added new bool func Universe::locked()
+* added new func get_traits()
+* added new static member Organism::latest_organism_ID
+Kums(29/1/23):
+* respawnplant() done
+
+
+//Don't forget
+* analyse file structure -> dependencies
+* plant constructor
+* continous variation
+* outfile from organism to insect and plant 

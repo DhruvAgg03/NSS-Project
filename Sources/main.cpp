@@ -1,16 +1,17 @@
 #include "../Headers/Universe.h"
 #include <iostream>
-
 using namespace std;
 using std::cout;
+
+extern std::ofstream outfile;
+ofstream outfile;
 int main()
 {
   srand(time(0));
-  int organismCount[2] = {PlantCount, InsectCount};
+  outfile.open("./Output/universelog.txt", ios::out);
+  int organismCount[2] = {initialPlantCount, initialInsectCount};
   biodata_Plant variety_Plant[varieties_in_a_Species];
   biodata_Insect variety_Insect[varieties_in_a_Species];
-  ofstream outfile;
-  outfile.open("./Output/universelog.txt", ios::out);
   Universe myUni(maxVision, organismCount, variety_Plant, variety_Insect);
   // Universe(int maxR, int *organismCount, biodata_Plant *plantVarieties,
   // biodata_Insect *insectVarieties); maxVision specifies the maximum vision radius
@@ -22,4 +23,5 @@ int main()
   myUni.run();
   outfile.close();
   return 0;
+  
 }

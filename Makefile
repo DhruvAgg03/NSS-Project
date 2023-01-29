@@ -1,13 +1,19 @@
-main.out: Organism.o Universe.o simulation.o main.o
-	g++ -o main.out Organism.o Universe.o simulation.o main.o
+main: Aphrodite.o Traits.o Organism.o Universe.o simulation.o main.o
+	g++ -o main Aphrodite.o Traits.o Organism.o Universe.o simulation.o main.o -lgcc
 
-Organism.o: ./Sources/Organism.cpp ./Headers/Organism.h
+Aphrodite.o: ./Sources/Aphrodite.cpp ./Headers
+	g++ -c -g  ./Sources/Aphrodite.cpp
+
+Traits.o: ./Sources/Traits.cpp ./Headers
+	g++ -c -g  ./Sources/Traits.cpp
+
+Organism.o: ./Sources/Organism.cpp ./Headers
 	g++ -c -g  ./Sources/Organism.cpp
 
-Universe.o: ./Sources/Universe.cpp ./Headers/Universe.h 
+Universe.o: ./Sources/Universe.cpp ./Headers 
 	g++ -c -g  ./Sources/Universe.cpp
 
-simulation.o: ./Sources/simulation.cpp ./Headers/Universe.h
+simulation.o: ./Sources/simulation.cpp ./Headers
 	g++ -c -g ./Sources/simulation.cpp
 
 main.o: ./Sources/main.cpp
