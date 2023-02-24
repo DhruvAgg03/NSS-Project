@@ -9,12 +9,12 @@ void Universe::run()
   Aphrodite cupid{this};
   ofstream ofile;
   ofile.open("./Output/Output.txt");
-  ofile<<"Insects,Plants\n";
-  for (int j = 0; j < iterationCount; j++)
+  ofile << "Insects,Plants\n";
+  for (int j = 0; j < iterationCount; j++ && printCompleteInfo(j + 1))
   {
-    ofile<<organismCount[1]<<","<<organismCount[0]<<'\n';
+
+    ofile << organismCount[1] << "," << organismCount[0] << '\n';
     auto InsectCopy = getInsects();
-    printCompleteInfo(j + 1);
     for (int i = 0; i < InsectCopy.size(); i++)
     {
       auto currInsect = InsectCopy[i];
@@ -26,20 +26,18 @@ void Universe::run()
       for (int l = 0; l < moves.size(); l++)
       {
         auto nextObj = getObject(moves[l].x, moves[l].y);
-        if (nextObj != NULL)
-        {
-          if (((Organism *)nextObj)->get_speciesID() == 1)
-            outfile << "Insect Detected" << endl;
-          else if (((Organism *)nextObj)->get_speciesID() == 0)
-            updateUniverse(x, y, moves[l].x, moves[l].y ,outfile);
+        // if (nextObj != NULL )
+        // {
+        // bool isInsect = ((Organism *)nextObj)->get_speciesID() == INSECT;
 
+        outfile << "Insect Detected" << endl;
+        if (updateUniverse(x, y, moves[l].x, moves[l].y, outfile) != SUCCESS)
           break;
-        }
-        if (updateUniverse(x, y, moves[l].x, moves[l].y , outfile) != 0)
-          break;
+        // }
         x = moves[l].x;
         y = moves[l].y;
       }
+
       // HHN's Code:
       // coordinates2D posn;
       // posn.x = currInsect->get_x();
@@ -57,17 +55,20 @@ void Universe::run()
       // }
 
       // Asexual Reproduction
-      if(cupid.godSaidYes(currInsect))
+      if (cupid.godSaidYes(currInsect))
       {
-        vector<Insect*> daughters = cupid.split(currInsect);
-        addInsect(daughters[0]);
-        addInsect(daughters[1]);
+        vector<Insect *> daughters = cupid.split(currInsect);
+        if (daughters.size() == 2)
+        {
+          addInsect(daughters[0]);
+          addInsect(daughters[1]);
+        }
       }
     }
     std::random_shuffle(insects.begin(), insects.end());
 
     // Plant Spawning
-    if(j%plantSpawnInterval == 0)
+    if (j % plantSpawnInterval == 0)
     {
       reSpawnPlant();
     }

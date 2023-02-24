@@ -25,6 +25,14 @@ struct step
     float dist;
 };
 
+enum UpdateUniverse_rt
+{
+  SUCCESS = 0,
+  INVALID_ORGANISM = 1,
+  DYING_ORGANISM = -2,
+  STOP_PATH = -3,
+};
+
 // Necessary Information to declare a Plant Object
 struct biodata_Plant
 {
@@ -118,7 +126,7 @@ public:
     void *getObject(int posX, int posY);
     // Returns the void pointer to the specific location
 
-    int updateUniverse(int initX, int initY, int finalX, int finalY, ofstream& outfile);
+    UpdateUniverse_rt updateUniverse(int initX, int initY, int finalX, int finalY, ofstream& outfile);
     // Lets us move the initial to the final position, leaving the previous position blank,
     // returns non zero value if an insect was killed, -1 if movement not possible, -2 for death
 
@@ -142,7 +150,7 @@ public:
     
     void writingToFile(ofstream& outfile);
 
-    void printCompleteInfo(int iteration);
+    bool printCompleteInfo(int iteration);
     // Prints the complete information of the Insects in the Universe
 
     step scanNearestFoodSourceNew(step current_position, int vision_radius, set<pair<int, int>> &ignore_food); // returns the nearest food source from the current position. If none, returns -1,-1. (Can add in another parameter saying levelOfOrganism in case of multiple levels of predators and prey)

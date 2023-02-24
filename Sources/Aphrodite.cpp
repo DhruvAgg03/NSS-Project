@@ -9,6 +9,7 @@ bool Aphrodite::godSaidYes(Insect* insect)
     float pr = probFunc(insect->get_age(),insect->get_current_energy());
     float roll_die = (float)rand()/(float)RAND_MAX; 
     return (pr && roll_die>pr && !universe->locked(insect->get_posn()));
+    // return 1;
 }
 
 vector<Insect*> Aphrodite::split(Insect* insect)
@@ -17,6 +18,8 @@ vector<Insect*> Aphrodite::split(Insect* insect)
     coordinates2D posn1 = insect->get_posn();
     vector<coordinates2D> adj_posns = universe->adjacent_posns(posn1);
     int len = adj_posns.size();
+    if(len == 0)
+        return {};
     coordinates2D posn2 = adj_posns[rand()%len];
     vector<Traits*> v = inheritedTraits(insect);
     Traits* t1 = v[0];
@@ -41,17 +44,23 @@ vector<Traits*> Aphrodite::inheritedTraits(Insect* insect)
 
     int loSPeed = insect->get_traits().get_speed()*(1-variation);
     int hiSpeed = insect->get_traits().get_speed()*(1+variation);
+
     int loVision = insect->get_traits().get_visionradius()*(1-variation);
     int hiVision = insect->get_traits().get_visionradius()*(1+variation);
+
     int loEnergy = insect->get_current_energy()*0.5*(1-variation);
     int hiEnergy = insect->get_current_energy()*0.5*(1+variation);
+
+    if(hiSpeed-loSPeed == 0)
+     hiSpeed++;
     
     t1->set_speed(loSPeed + rand()%(hiSpeed-loSPeed));
-    t1->set_visionradius(loVision + rand()%(hiVision-loVision));
+    t1->set_visionradius(loVision + rand()%(hiVision-loVision + 1));
+    t1->set_maxenergy(loEnergy + rand()%(hiEnergy-loEnergy + 1));
+
     t2->set_speed(loSPeed + rand()%(hiSpeed-loSPeed));
-    t2->set_visionradius(loVision + rand()%(hiVision-loVision));
-    t1->set_maxenergy(loEnergy + rand()%(hiEnergy-loEnergy));
-    t2->set_maxenergy(insect->get_current_energy() - t1->get_maxenergy());
+    t2->set_visionradius(loVision + rand()%(hiVision-loVision + 1));
+    t2->set_maxenergy(insect->get_current_energy() - t1->get_maxenergy() + 1);
 
     return {t1,t2};
 }

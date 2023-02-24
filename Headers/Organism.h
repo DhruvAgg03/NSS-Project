@@ -74,7 +74,12 @@ namespace namespace_organism
     {
       delete this; 
     }
-    int giveSpeed() { return organism_speed.len_of_speed_list; }
+    /* organism speed is defined as a structure with 3 fields. 
+    Array (why not a vector?) of possible speeds
+    the length of array
+    the index (round robin count)
+    */
+    int giveSpeed() { return get_speciesID() == INSECT ? organism_speed.speed_list[organism_speed.rr_count] : 0; }
   };
 
   class Insect : public Organism {

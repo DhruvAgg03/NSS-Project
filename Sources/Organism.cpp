@@ -30,6 +30,9 @@ Organism::Organism(coordinates2D posn, Traits t,unsigned short int aadhar_number
                   int speciesID, Universe * universe)
   : position{posn}, traits{t}, aadhar_number{aadhar_number}, speciesID{speciesID} , universe{universe}
 {
+  int * _speedList = new int[1];
+  _speedList[0] = t.get_speed();
+  this->organism_speed = {_speedList, 1, 0};
   current_energy = traits.get_maxenergy();
   max_energy = traits.get_maxenergy();
   vision_radius = traits.get_visionradius();

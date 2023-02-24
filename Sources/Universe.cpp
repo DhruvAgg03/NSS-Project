@@ -75,7 +75,7 @@ Universe::Universe(int maxR, int *organismCount, biodata_Plant variety_Plant[var
     // temp array holding the variety of plants because we are too lazy to
     // change everything
   }
-  this->createMovesVector(maxR);  // Creates the VisionArray
+  this->createMovesVector(maxR); // Creates the VisionArray
   this->initializeVarieties(variety_Plant, variety_Insect);
   this->initializeEnvironment(organismCount, N);
 }
@@ -114,7 +114,7 @@ void Universe::initializeVarieties(biodata_Plant *plantVarieties,
     this->variety_Plant[i] = plantVarieties[i];
     this->variety_Insect[i] = insectVarieties[i];
   }
-  // The memory address initially stored in the pointers are the same 
+  // The memory address initially stored in the pointers are the same
   // the values it points are different
 }
 
@@ -150,21 +150,21 @@ void Universe::initializeEnvironment(int *organismCount, int len)
       {
         int variety = random_range(0, varieties_in_a_Species);
 
-        coordinates2D posn = {std::get<0>(tempPoints[counter]),std::get<1>(tempPoints[counter])};
+        coordinates2D posn = {std::get<0>(tempPoints[counter]), std::get<1>(tempPoints[counter])};
         int vision_radius = variety_Insect[variety].vision_radius;
         int speed = variety_Insect[variety].speed;
         int max_energy = variety_Insect[variety].max_energy;
         Traits t{max_energy, vision_radius, speed};
 
         // New Insect constructor
-        Insect *temp = new Insect(posn, t, counter, 1,this);
+        Insect *temp = new Insect(posn, t, counter, 1, this);
 
         // Insect *temp = new Insect(
         //     std::get<0>(tempPoints[counter]), std::get<1>(tempPoints[counter]),
         //     variety_Insect[variety].vision_radius, NULL,
         //     variety_Insect[variety].speed, variety_Insect[variety].max_energy,
         //     variety_Insect[variety].max_energy, counter, counter, 1);
-        
+
         environment[std::get<0>(tempPoints[counter])]
                    [std::get<1>(tempPoints[counter])] = temp;
         InsectPosition.push_back(
@@ -189,57 +189,51 @@ void Universe::initializeEnvironment(int *organismCount, int len)
 
 std::vector<struct step> Universe::getMoves() { return this->moves; }
 
-void Universe::printMoves(ofstream& outfile)
+void Universe::printMoves(ofstream &outfile)
 {
   int i; // Counter
   for (i = 0; i < (this->moves).size(); i++)
     outfile << "(" << (this->moves)[i].dist << "," << (this->moves[i]).x
-              << "," << (this->moves)[i].y << ") " << endl;
+            << "," << (this->moves)[i].y << ") " << endl;
   outfile << "\n i is " << i << "\n";
   return;
 }
 
-int Universe::updateUniverse(int initX, int initY, int finalX, int finalY,ofstream& outfile)
+UpdateUniverse_rt Universe::updateUniverse(int initX, int initY, int finalX, int finalY, ofstream &outfile)
 {
-  void *movingObj = getObject(initX, initY);
-  int returnValue = 0;
-  if (movingObj != NULL)
+  Insect *org = (Insect *)getObject(initX, initY);
+  if (org == NULL || org->get_speciesID() != INSECT)
+    return INVALID_ORGANISM;
+  Organism *finalPosn = (Organism *)getObject(finalX, finalY);
+
+  if (org->get_current_energy() <= movementCost)
   {
-    auto OrganismObj = (Organism *)movingObj;
-    if (OrganismObj->get_speciesID() == PLANT)
-      return -1;
-    else if (OrganismObj->get_speciesID() == INSECT)
-    {
-      if (OrganismObj->get_current_energy() <= movementCost)
-      {
-        killInsect((Insect *)OrganismObj);
-        environment[initX][initY] = NULL;
-        return -2;
-      }
-      OrganismObj->update(finalX, finalY);
-      void *newObj = getObject(finalX, finalY);
-      if (newObj != NULL)
-      {
-        if (((Organism *)newObj)->get_speciesID() == PLANT)
-        {
-          OrganismObj->addEnergy(((Organism *)newObj)->get_current_energy());
-          ((Organism *)newObj)->die();
-        }
-      }
-    }
-    else
-      outfile << "error parsing" << endl;
+    killInsect(org);
+    environment[initX][initY] = NULL;
+    return DYING_ORGANISM;
   }
-  environment[finalX][finalY] = movingObj;
+
+  if (finalPosn != NULL && finalPosn->get_speciesID() == INSECT)
+    return STOP_PATH;
+
+  org->update(finalX, finalY);
+
+  if (finalPosn != NULL)
+  {
+    org->addEnergy(finalPosn->get_current_energy());
+    finalPosn->die();
+  }
+  environment[finalX][finalY] = org;
   environment[initX][initY] = NULL;
-  return returnValue;
+  return SUCCESS;
 }
 
 vector<Insect *> Universe::getInsects() { return insects; }
 
 void *Universe::getObject(int posX, int posY)
 {
-  if(posX < 0 || posX >= dimension || posY < 0 || posY >= dimension)return NULL;
+  if (posX < 0 || posX >= dimension || posY < 0 || posY >= dimension)
+    return NULL;
   void *reqPoint = environment[posX][posY];
   return reqPoint;
 }
@@ -273,7 +267,7 @@ void Universe::deathOfInsect(int i, int &counter)
   counter--;
 }
 
-void Universe::creatingAndUpdatingDisplayEnvironmentHistory(ofstream& outfile)
+void Universe::creatingAndUpdatingDisplayEnvironmentHistory(ofstream &outfile)
 {
   for (int i = 0; i < dimension; i++)
   {
@@ -301,16 +295,16 @@ void Universe::creatingAndUpdatingDisplayEnvironmentHistory(ofstream& outfile)
       }
     }
   }
-  outfile<<"displayEnvironment created\n";
+  outfile << "displayEnvironment created\n";
 }
 
-void Universe::writingToFile(ofstream& outfile)
+void Universe::writingToFile(ofstream &outfile)
 {
   FILE *fptr;
   fptr = fopen("Data.txt", "w");
   if (fptr == NULL)
   {
-    outfile<<"Couldn't open file Data.txt!!\n";
+    outfile << "Couldn't open file Data.txt!!\n";
   }
   else
   {
@@ -326,7 +320,7 @@ void Universe::writingToFile(ofstream& outfile)
   }
 }
 
-step Universe::scanNearestFoodSourceNew(step current_position, int vision_radius,set<pair<int, int>>& ignore_food)
+step Universe::scanNearestFoodSourceNew(step current_position, int vision_radius, set<pair<int, int>> &ignore_food)
 {
   vector<step> moves_array = getMoves();
   int nearest_dist_index = -1;
@@ -347,7 +341,7 @@ step Universe::scanNearestFoodSourceNew(step current_position, int vision_radius
       continue;
     // What are we placing for plant and insect? 1 for plant?
     Plant *p;
-    if ( environment[x][y] != NULL && ((Organism *)environment[x][y])->get_speciesID() == PLANT )
+    if (environment[x][y] != NULL && ((Organism *)environment[x][y])->get_speciesID() == PLANT)
     {
       // IGNORING FOOD
       if (ignore_food.find({x, y}) != ignore_food.end())
@@ -471,6 +465,18 @@ vector<step> Universe::movesToLocationNew(step current_position, int number_of_s
           step next;
           next.x = x + x_disp;
           next.y = y + y_disp;
+          next.dist = sqrt(next.x * next.x + next.y * next.y);
+          next_moves.push_back(next);
+          if (!no_empty_spot)
+            safe_last = i + 1;
+        }
+        else
+        {
+          // final posn has insect, stops moving in that case
+          flag = 0;
+          step next;
+          next.x = x;
+          next.y = y;
           next.dist = sqrt(next.x * next.x + next.y * next.y);
           next_moves.push_back(next);
           if (!no_empty_spot)
@@ -629,17 +635,17 @@ vector<step> Universe::movesToLocationNew(step current_position, int number_of_s
   return next_moves;
 }
 
-void Universe::printCompleteInfo(int iteration)
+bool Universe::printCompleteInfo(int iteration)
 {
   ofstream myfile;
-  int pc=0,ic=0;
+  int pc = 0, ic = 0;
   if (iteration == 1)
   {
-    myfile.open("./Data/trail_1.csv", ios::out);
+    myfile.open("Data/trail_1.csv", ios::out);
     myfile << "Iter_no,x,y,Spec_ID,Adhaar_number,SpeedLength,VisionRadius,MaxEnergy,CurrentEnergy\n";
   }
   else
-    myfile.open("./Data/trail_1.csv", ios::app);
+    myfile.open("Data/trail_1.csv", ios::app);
 
   for (int i = 0; i < dimension; i++)
   {
@@ -649,18 +655,19 @@ void Universe::printCompleteInfo(int iteration)
       if (cell)
       {
         auto org = static_cast<Organism *>(cell);
-        if(org->get_speciesID()==plantIndex)
+        if (org->get_speciesID() == plantIndex)
           pc++;
         else
           ic++;
         myfile << iteration << "," << i << "," << j << "," << org->get_speciesID() << "," << org->get_aadhar_number() << "," << org->giveSpeed() << "," << org->get_vision_radius() << "," << org->get_max_energy() << "," << org->get_current_energy() << "\n";
       }
-      else
-        myfile << iteration << "," << i << "," << j << ",-1,0,0,0,0,0\n";
+      // else
+      // myfile << iteration << "," << i << "," << j << ",-1,0,0,0,0,0\n";
     }
   }
-  cout<<pc<<" "<<ic<<'\n';
+  cout << pc << " " << ic << '\n';
   myfile.close();
+  return true;
 }
 
 void Universe::addInsect(Insect *insect)
@@ -678,12 +685,13 @@ void Universe::addPlant(Plant *plant)
 
 bool Universe::locked(coordinates2D pos)
 {
-  vector<pair<int,int>> neigh{{-1,1},{0,1},{1,1},{-1,0},{1,0},{-1,-1},{0,-1},{1,-1}};
-  for(auto ele:neigh)
+  vector<pair<int, int>> neigh{{-1, 1}, {0, 1}, {1, 1}, {-1, 0}, {1, 0}, {-1, -1}, {0, -1}, {1, -1}};
+  for (auto ele : neigh)
   {
-    auto delx=ele.first;
-    auto dely=ele.second;
-    if(!getObject(pos.x+delx,pos.y+dely)) return false;
+    auto delx = ele.first;
+    auto dely = ele.second;
+    if (!getObject(pos.x + delx, pos.y + dely))
+      return false;
   }
   return true;
 }
@@ -691,13 +699,13 @@ bool Universe::locked(coordinates2D pos)
 void Universe::reSpawnPlant()
 {
   vector<coordinates2D> newcells = emptycells(plantSpawnNumber);
-  outfile<<"New plants spawned: "<<newcells.size()<<'\n';
-  vector<biodata_Plant> plantvariety =  __PLANT_VARIETY;
-  for(auto ele: newcells)
+  outfile << "New plants spawned: " << newcells.size() << '\n';
+  vector<biodata_Plant> plantvariety = __PLANT_VARIETY;
+  for (auto ele : newcells)
   {
-    Plant* newplant = new Plant(ele, plantvariety[rand()%varieties_in_a_Species].max_energy,
-                        static_cast<unsigned short>(Organism::get_latest_organism_ID()+1)); 
-                        //energy of new plant is taken from hardcoded varities
+    Plant *newplant = new Plant(ele, plantvariety[rand() % varieties_in_a_Species].max_energy,
+                                static_cast<unsigned short>(Organism::get_latest_organism_ID() + 1));
+    // energy of new plant is taken from hardcoded varities
     addPlant(newplant);
   }
 }
@@ -706,13 +714,13 @@ vector<coordinates2D> Universe::emptycells(int k)
 {
   int max_threshold = max(500, k * 5);
   vector<coordinates2D> emptycells;
-  while(emptycells.size()<k && max_threshold--)
+  while (emptycells.size() < k && max_threshold--)
   {
-    int x = rand()%dimension;
-    int y = rand()%dimension;
-    if(!getObject(x,y))
+    int x = rand() % dimension;
+    int y = rand() % dimension;
+    if (!getObject(x, y))
     {
-      emptycells.push_back({x,y});
+      emptycells.push_back({x, y});
     }
   }
   return emptycells;
