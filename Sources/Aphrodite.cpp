@@ -13,7 +13,7 @@ bool Aphrodite::godSaidYes(Insect* insect)
 
 vector<Insect*> Aphrodite::split(Insect* insect)
 {
-    outfile << "Insect " << insect->get_aadhar_number() << " is splitting\n";
+    outfile << "Insect " << insect->get_aadhar_number() <<" is splitting\n";
     coordinates2D posn1 = insect->get_posn();
     vector<coordinates2D> adj_posns = universe->adjacent_posns(posn1);
     int len = adj_posns.size();

@@ -36,3 +36,8 @@ Kums(29/1/23):
 * plant constructor
 * continous variation
 * outfile from organism to insect and plant 
+
+Bugs
+* organismCount
+* makefile not Changing
+* not updating after some iterations

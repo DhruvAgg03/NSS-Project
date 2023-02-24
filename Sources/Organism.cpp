@@ -23,7 +23,7 @@ Organism::Organism(int x, int y, int vision_radius, int *speed_list,
   // update universe method
   this->traits = Traits(max_energy, 3, vision_radius);
   vector<string> vs{"Plant ","Insect "};
-  outfile<<vs[speciesID]<<"SpecId "<<speciesID<<" "<<aadhar_number<<" born with "<<current_energy<<"/"<<max_energy<<" energy at ("<<(this->position).x<<","<<(this->position).y<<")\n";
+  outfile<<vs[speciesID]<<" "<<aadhar_number<<" born with "<<current_energy<<"/"<<max_energy<<" energy at ("<<(this->position).x<<","<<(this->position).y<<")\n";
 };
 
 Organism::Organism(coordinates2D posn, Traits t,unsigned short int aadhar_number, 
@@ -35,13 +35,13 @@ Organism::Organism(coordinates2D posn, Traits t,unsigned short int aadhar_number
   vision_radius = traits.get_visionradius();
   this->latest_organism_ID = aadhar_number;
   vector<string> vs{"Plant ","Insect "};
-  outfile<<vs[speciesID]<<"SpecId "<<speciesID<<" "<<aadhar_number<<" born with "<<current_energy<<"/"<<max_energy<<" energy at ("<<(this->position).x<<","<<(this->position).y<<")\n";
+  outfile<<vs[speciesID]<<aadhar_number<<" born with "<<current_energy<<"/"<<max_energy<<" energy at ("<<(this->position).x<<","<<(this->position).y<<")\n";
 }
 
 Organism::~Organism() {
   // update universe method
   vector<string> vs{"Plant ","Insect "};
-  outfile<<vs[speciesID]<<"SpecId "<<speciesID<<" "<<aadhar_number<<" died with "<<current_energy<<"/"<<max_energy<<" energy at ("<<(this->position).x<<","<<(this->position).y<<")\n";
+  outfile<<vs[speciesID]<<aadhar_number<<" died with "<<current_energy<<"/"<<max_energy<<" energy at ("<<(this->position).x<<","<<(this->position).y<<")\n";
 }
 
 void Organism::addEnergy(int energy) {

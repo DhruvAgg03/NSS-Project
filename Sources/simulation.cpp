@@ -7,8 +7,12 @@ extern std::ofstream outfile;
 void Universe::run()
 {
   Aphrodite cupid{this};
+  ofstream ofile;
+  ofile.open("./Output/Output.txt");
+  ofile<<"Insects,Plants\n";
   for (int j = 0; j < iterationCount; j++)
   {
+    ofile<<organismCount[1]<<","<<organismCount[0]<<'\n';
     auto InsectCopy = getInsects();
     printCompleteInfo(j + 1);
     for (int i = 0; i < InsectCopy.size(); i++)
@@ -68,4 +72,5 @@ void Universe::run()
       reSpawnPlant();
     }
   }
+  ofile.close();
 }

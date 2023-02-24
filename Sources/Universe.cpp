@@ -632,6 +632,7 @@ vector<step> Universe::movesToLocationNew(step current_position, int number_of_s
 void Universe::printCompleteInfo(int iteration)
 {
   ofstream myfile;
+  int pc=0,ic=0;
   if (iteration == 1)
   {
     myfile.open("./Data/trail_1.csv", ios::out);
@@ -648,12 +649,17 @@ void Universe::printCompleteInfo(int iteration)
       if (cell)
       {
         auto org = static_cast<Organism *>(cell);
+        if(org->get_speciesID()==plantIndex)
+          pc++;
+        else
+          ic++;
         myfile << iteration << "," << i << "," << j << "," << org->get_speciesID() << "," << org->get_aadhar_number() << "," << org->giveSpeed() << "," << org->get_vision_radius() << "," << org->get_max_energy() << "," << org->get_current_energy() << "\n";
       }
       else
         myfile << iteration << "," << i << "," << j << ",-1,0,0,0,0,0\n";
     }
   }
+  cout<<pc<<" "<<ic<<'\n';
   myfile.close();
 }
 
@@ -684,12 +690,12 @@ bool Universe::locked(coordinates2D pos)
 
 void Universe::reSpawnPlant()
 {
-  auto newcells = emptycells(plantSpawnNumber);
+  vector<coordinates2D> newcells = emptycells(plantSpawnNumber);
   outfile<<"New plants spawned: "<<newcells.size()<<'\n';
   vector<biodata_Plant> plantvariety =  __PLANT_VARIETY;
   for(auto ele: newcells)
   {
-    auto newplant = new Plant(ele, plantvariety[rand()%varieties_in_a_Species].max_energy,
+    Plant* newplant = new Plant(ele, plantvariety[rand()%varieties_in_a_Species].max_energy,
                         static_cast<unsigned short>(Organism::get_latest_organism_ID()+1)); 
                         //energy of new plant is taken from hardcoded varities
     addPlant(newplant);
@@ -702,8 +708,8 @@ vector<coordinates2D> Universe::emptycells(int k)
   vector<coordinates2D> emptycells;
   while(emptycells.size()<k && max_threshold--)
   {
-    auto x = rand()%dimension;
-    auto y = rand()%dimension;
+    int x = rand()%dimension;
+    int y = rand()%dimension;
     if(!getObject(x,y))
     {
       emptycells.push_back({x,y});
