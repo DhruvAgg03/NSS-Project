@@ -1,6 +1,6 @@
 #include "../Headers/Universe.h"
 extern std::ofstream outfile;
-
+#define MaleRatio 0.5
 #define __PLANT_VARIETY \
   {                     \
     {10}, {20},         \
@@ -16,7 +16,7 @@ extern std::ofstream outfile;
       7, 3, 300,150,30               \
     }                         \
   }
-
+using namespace std;
 // using namespace namespace_Universe;
 bool compare(const step &a, const step &b) { return a.dist < b.dist; }
 // Compare function used for sorting moves vector comparing two structs
@@ -157,9 +157,10 @@ void Universe::initializeEnvironment(int *organismCount, int len)
         int maxSexUrge = variety_Insect[variety].maxSexualUrge;
         int desirability = variety_Insect[variety].desirability;
         Traits t{max_energy, vision_radius, speed,maxSexUrge,desirability};
-
+        float temp = rand()%1;
+        int g = temp>MaleRatio?FEMALE:MALE;
         // New Insect constructor
-        Insect *temp = new Insect(posn, t, counter, 1, this);
+        Insect *temp = new Insect(posn, t, counter, 1, this,g);
 
         // Insect *temp = new Insect(
         //     std::get<0>(tempPoints[counter]), std::get<1>(tempPoints[counter]),
