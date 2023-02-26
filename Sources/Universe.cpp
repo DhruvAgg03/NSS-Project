@@ -11,9 +11,9 @@ extern std::ofstream outfile;
 
 #define __INSECT_VARIETY      \
   {                           \
-    {4, 3, 300}, {6, 3, 300}, \
+    {4, 3, 300,200,20}, {6, 3, 300,100,60}, \
     {                         \
-      7, 3, 300               \
+      7, 3, 300,150,30               \
     }                         \
   }
 
@@ -154,7 +154,9 @@ void Universe::initializeEnvironment(int *organismCount, int len)
         int vision_radius = variety_Insect[variety].vision_radius;
         int speed = variety_Insect[variety].speed;
         int max_energy = variety_Insect[variety].max_energy;
-        Traits t{max_energy, vision_radius, speed};
+        int maxSexUrge = variety_Insect[variety].maxSexualUrge;
+        int desirability = variety_Insect[variety].desirability;
+        Traits t{max_energy, vision_radius, speed,maxSexUrge,desirability};
 
         // New Insect constructor
         Insect *temp = new Insect(posn, t, counter, 1, this);
