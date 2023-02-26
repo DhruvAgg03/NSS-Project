@@ -28,9 +28,10 @@ Organism::Organism(int x, int y, int vision_radius, int *speed_list,
 };
 
 Organism::Organism(coordinates2D posn, Traits t,unsigned short int aadhar_number, 
-                  int speciesID, Universe * universe)
+                  int speciesID, Universe * universe, bool g)
   : position{posn}, traits{t}, aadhar_number{aadhar_number}, speciesID{speciesID} , universe{universe}
 {
+  this->gender = g;
   int * _speedList = new int[1];
   _speedList[0] = t.get_speed();
   this->organism_speed = {_speedList, 1, 0};
