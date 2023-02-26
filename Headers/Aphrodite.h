@@ -1,6 +1,7 @@
 #pragma once
 #include "Traits.h"
 #include "Universe.h"
+#include "Organism.h"
 #define iterationCount 100  //Have to think of a way to #define it elsewhere
 #define plantSpawnInterval iterationCount/plantSpawnFreq
 
@@ -20,5 +21,7 @@ class Aphrodite
         vector<Insect*> split(Insect* insect); //Returns vector of pointers to daughters (kills the parent)
         vector<Traits*> inheritedTraits(Insect* insect); //Returns vector of traits of daughters
         
+        //Sexual
+        bool willReproduce(Insect* I1, Insect* I2);
         
 };
