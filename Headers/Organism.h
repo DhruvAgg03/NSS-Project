@@ -45,6 +45,7 @@ namespace namespace_organism
     unsigned short int aadhar_number; // Name of organism like John Wick
     int speciesID;  // Represent which species it belongs to (0-> plant, 1-> Insect for now)
     Traits traits;  // class which contains all the traits of the organism (DNA)
+    int sexualUrge;
 
   public:
     Organism(int x, int y, int vision_radius, int *speed_list,
