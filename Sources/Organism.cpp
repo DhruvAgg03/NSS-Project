@@ -18,6 +18,7 @@ Organism::Organism(int x, int y, int vision_radius, int *speed_list,
   this->current_energy = current_energy;
   this->aadhar_number = aadhar_number;
   this->latest_organism_ID = aadhar_number;
+  this->sexualUrge = 0;
   this->speciesID = speciesID; // Represent which species it belongs to (0->
                                // plant, 1-> Insect for now)
   // update universe method
