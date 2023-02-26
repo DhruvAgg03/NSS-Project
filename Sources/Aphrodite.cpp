@@ -64,3 +64,18 @@ vector<Traits*> Aphrodite::inheritedTraits(Insect* insect)
 
     return {t1,t2};
 }
+
+
+bool Aphrodite::willReproduce(Insect* I1,Insect* I2)
+{
+    //Assuming both insects are of different gender
+    int dist = 0;
+    dist+=std::abs((I1->position).x - (I2->position).x);
+    dist++std::abs((I2->position).y - (I2->position).y);
+    float r1 = ((float)(I1->currentEnergy))/(I1->maxEnergy);
+    float r2 = ((float)(I2->currentEnergy))/(I2->maxEnergy);
+    float sexProduct = (I1->sexualUrge)*(I2->sexualUrge);
+    float NotNormalised = (sexProduct*r1*r2)/dist;
+    float probab = NotNormalise/40000;
+    return probab > (rand()%1);
+}
