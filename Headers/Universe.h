@@ -50,6 +50,8 @@ struct biodata_Insect
     int vision_radius;
     int speed; // struct speed_structure speed_structure;
     int max_energy;
+    int maxSexualUrge;
+    int desirablity; //Random number from 1 to 100
 };
 
 class Universe
@@ -67,7 +69,7 @@ private:
     // three unique types of plants-> as in all instances fall in one of these three categories 
     
     biodata_Insect variety_Insect[varieties_in_a_Species]; 
-    // three unique combinations for {vision_radius, speed, and max_energy} -> all instances of organisms fall in one of these three categories
+    // three unique combinations for {vision_radius, speed, and max_energy,sexualUrge} -> all instances of organisms fall in one of these three categories
     
     vector<tuple<int, int>> InsectPosition; //record of all insect positions
 
