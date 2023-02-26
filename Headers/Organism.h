@@ -2,6 +2,8 @@
 #define INSECT 1
 #define PLANT 0
 #define movementCost 1
+#define MALE 0
+#define FEMALE 1
 #include "../Headers/Traits.h"
 #include <bits/stdc++.h>
 using namespace std;
@@ -46,13 +48,14 @@ namespace namespace_organism
     int speciesID;  // Represent which species it belongs to (0-> plant, 1-> Insect for now)
     Traits traits;  // class which contains all the traits of the organism (DNA)
     int sexualUrge;
+    bool gender;
 
   public:
     Organism(int x, int y, int vision_radius, int *speed_list,
             int length_of_speed_list, int max_energy, int current_energy,
             unsigned short int aadhar_number, int speciesID);
     Organism(coordinates2D posn, Traits t,unsigned short int aadhar_number, 
-              int speciesID,Universe * universe); //overloaded constructor with Traits object
+              int speciesID,Universe * universe,gender); //overloaded constructor with Traits object
     ~Organism();
     int get_x() { return position.x; };
     int get_y() { return position.y; };
