@@ -55,7 +55,7 @@ namespace namespace_organism
             int length_of_speed_list, int max_energy, int current_energy,
             unsigned short int aadhar_number, int speciesID);
     Organism(coordinates2D posn, Traits t,unsigned short int aadhar_number, 
-              int speciesID,Universe * universe,gender); //overloaded constructor with Traits object
+              int speciesID,Universe * universe,bool gender); //overloaded constructor with Traits object
     ~Organism();
     int get_x() { return position.x; };
     int get_y() { return position.y; };
