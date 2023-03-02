@@ -1,3690 +1,621 @@
 Constructed!!
-Plant  0 born with 10/10 energy at (61,63)
-Plant  1 born with 30/30 energy at (52,31)
-Plant  2 born with 30/30 energy at (13,75)
-Plant  3 born with 20/20 energy at (61,89)
-Plant  4 born with 30/30 energy at (30,45)
-Plant  5 born with 10/10 energy at (5,79)
-Plant  6 born with 10/10 energy at (74,96)
-Plant  7 born with 30/30 energy at (6,3)
-Plant  8 born with 30/30 energy at (10,27)
-Plant  9 born with 30/30 energy at (4,39)
-Plant  10 born with 30/30 energy at (64,19)
-Plant  11 born with 30/30 energy at (9,91)
-Plant  12 born with 10/10 energy at (38,98)
-Plant  13 born with 30/30 energy at (86,43)
-Plant  14 born with 10/10 energy at (16,22)
-Plant  15 born with 30/30 energy at (76,65)
-Plant  16 born with 10/10 energy at (57,69)
-Plant  17 born with 20/20 energy at (27,51)
-Plant  18 born with 10/10 energy at (85,15)
-Plant  19 born with 30/30 energy at (41,26)
-Insect 20 born with 300/300 energy at (23,34)
-Insect 21 born with 300/300 energy at (66,99)
-Insect 22 born with 300/300 energy at (56,36)
-Insect 23 born with 300/300 energy at (28,10)
-Insect 24 born with 300/300 energy at (54,41)
-Insect 25 born with 300/300 energy at (97,43)
-Insect 26 born with 300/300 energy at (58,50)
-Insect 27 born with 300/300 energy at (19,63)
-Insect 28 born with 300/300 energy at (47,14)
-Insect 29 born with 300/300 energy at (9,86)
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect 20 is splitting
-Insect 30 born with 158/158 energy at (26,34)
-Insect 31 born with 136/136 energy at (26,35)
-Insect 20 died with 293/300 energy at (26,34)
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect 26 is splitting
-Insect 32 born with 145/145 energy at (58,51)
-Insect 33 born with 155/155 energy at (59,51)
-Insect 26 died with 299/300 energy at (58,51)
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect 28 is splitting
-Insect 34 born with 146/146 energy at (47,16)
-Insect 35 born with 151/151 energy at (47,17)
-Insect 28 died with 296/300 energy at (47,16)
-Insect Detected
-Insect Detected
-Insect 29 is splitting
-Insect 36 born with 152/152 energy at (8,86)
-Insect 37 born with 148/148 energy at (8,85)
-Insect 29 died with 299/300 energy at (8,86)
-New plants spawned: 4
-Plant  38 born with 10/10 energy at (2,40)
-Plant  39 born with 10/10 energy at (71,2)
-Plant  40 born with 20/20 energy at (14,31)
-Plant  41 born with 30/30 energy at (64,10)
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect 31 is splitting
-Insect 42 born with 64/64 energy at (26,36)
-Insect 43 born with 70/70 energy at (26,35)
-Insect 31 died with 133/136 energy at (26,36)
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect 32 is splitting
-Insect 44 born with 63/63 energy at (59,50)
-Insect 45 born with 79/79 energy at (59,49)
-Insect 32 died with 141/145 energy at (59,50)
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect 30 is splitting
-Insect 46 born with 77/77 energy at (26,30)
-Insect 47 born with 76/76 energy at (26,31)
-Insect 30 died with 152/158 energy at (26,30)
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect 33 is splitting
-Insect 48 born with 77/77 energy at (58,51)
-Insect 49 born with 78/78 energy at (57,51)
-Insect 33 died with 154/155 energy at (58,51)
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect 37 is splitting
-Insect 50 born with 63/63 energy at (9,82)
-Insect 51 born with 80/80 energy at (9,81)
-Insect 37 died with 142/148 energy at (9,82)
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect 22 is splitting
-Insect 52 born with 137/137 energy at (59,37)
-Insect 53 born with 156/156 energy at (60,37)
-Insect 22 died with 292/300 energy at (59,37)
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-New plants spawned: 4
-Plant  54 born with 10/10 energy at (58,95)
-Plant  55 born with 20/20 energy at (49,67)
-Plant  56 born with 20/20 energy at (75,34)
-Plant  57 born with 10/10 energy at (87,55)
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect 36 is splitting
-Insect 58 born with 68/68 energy at (7,87)
-Insect 59 born with 83/83 energy at (8,87)
-Insect 36 died with 150/152 energy at (7,87)
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect 53 is splitting
-Insect 60 born with 82/82 energy at (60,37)
-Insect 61 born with 75/75 energy at (60,36)
-Insect 53 died with 156/156 energy at (60,37)
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect 34 is splitting
-Insect 62 born with 66/66 energy at (48,15)
-Insect 63 born with 75/75 energy at (48,16)
-Insect 34 died with 140/146 energy at (48,15)
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect 35 is splitting
-Insect 64 born with 71/71 energy at (45,21)
-Insect 65 born with 75/75 energy at (44,21)
-Insect 35 died with 145/151 energy at (45,21)
-Insect Detected
-Insect Detected
-New plants spawned: 4
-Plant  66 born with 10/10 energy at (87,45)
-Plant  67 born with 10/10 energy at (38,59)
-Plant  68 born with 20/20 energy at (90,65)
-Plant  69 born with 20/20 energy at (61,83)
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Plant 5 died with 10/10 energy at (5,79)
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-New plants spawned: 4
-Plant  70 born with 20/20 energy at (92,50)
-Plant  71 born with 30/30 energy at (89,82)
-Plant  72 born with 10/10 energy at (68,21)
-Plant  73 born with 10/10 energy at (77,4)
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect 23 is splitting
-Insect 74 born with 131/131 energy at (24,12)
-Insect 75 born with 148/148 energy at (23,12)
-Insect 23 died with 278/300 energy at (24,12)
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect 24 is splitting
-Insect 76 born with 154/154 energy at (56,48)
-Insect 77 born with 128/128 energy at (57,48)
-Insect 24 died with 281/300 energy at (56,48)
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
+Insect 0 born with 300/300 energy at (70,98)
+Insect 1 born with 300/300 energy at (33,76)
+Insect 2 born with 300/300 energy at (92,65)
+Insect 3 born with 300/300 energy at (89,40)
+Insect 4 born with 300/300 energy at (3,87)
+Insect 5 born with 300/300 energy at (66,27)
+Insect 6 born with 300/300 energy at (91,99)
+Insect 7 born with 300/300 energy at (8,39)
+Insect 8 born with 300/300 energy at (47,61)
+Insect 9 born with 300/300 energy at (50,24)
+Insect 10 born with 300/300 energy at (29,5)
+Insect 11 born with 300/300 energy at (73,52)
+Insect 12 born with 300/300 energy at (29,6)
+Insect 13 born with 300/300 energy at (80,7)
+Insect 14 born with 300/300 energy at (69,15)
+Insect 15 born with 300/300 energy at (78,55)
+Insect 16 born with 300/300 energy at (42,76)
+Insect 17 born with 300/300 energy at (39,77)
+Insect 18 born with 300/300 energy at (27,91)
+Insect 19 born with 300/300 energy at (44,87)
+*************************************************
+Iteration: 1
+New plants spawned: 0
+*************************************************
+Iteration: 2
+*************************************************
+Iteration: 3
+Insect 12 is splitting
+Insect 20 born with 132/132 energy at (29,7)
+Insect 21 born with 154/154 energy at (30,7)
+Insect 12 died with 285/300 energy at (29,7)
+*************************************************
+Iteration: 4
+*************************************************
+Iteration: 5
+*************************************************
+Iteration: 6
+Insect 2 is splitting
+Insect 22 born with 154/154 energy at (92,71)
+Insect 23 born with 129/129 energy at (93,71)
+Insect 2 died with 282/300 energy at (92,71)
+*************************************************
+Iteration: 7
+Insect 19 is splitting
+Insect 24 born with 132/132 energy at (42,85)
+Insect 25 born with 143/143 energy at (41,85)
+Insect 19 died with 274/300 energy at (42,85)
+*************************************************
+Iteration: 8
+*************************************************
+Iteration: 9
+Insect 0 is splitting
+Insect 26 born with 124/124 energy at (73,97)
+Insect 27 born with 147/147 energy at (72,97)
+Insect 0 died with 270/300 energy at (73,97)
+*************************************************
+Iteration: 10
+Insect 17 is splitting
+Insect 28 born with 130/130 energy at (36,75)
+Insect 29 born with 124/124 energy at (36,74)
+Insect 17 died with 253/300 energy at (36,75)
+*************************************************
+Iteration: 11
 Insect 27 is splitting
-Insect 78 born with 136/136 energy at (20,69)
-Insect 79 born with 136/136 energy at (20,68)
-Insect 27 died with 271/300 energy at (20,69)
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
+Insect 30 born with 80/80 energy at (72,97)
+Insect 31 born with 68/68 energy at (71,97)
+Insect 27 died with 147/147 energy at (72,97)
+*************************************************
+Iteration: 12
+Insect 5 is splitting
+Insect 32 born with 120/120 energy at (70,30)
+Insect 33 born with 144/144 energy at (70,29)
+Insect 5 died with 263/300 energy at (70,30)
+Insect 14 is splitting
+Insect 34 born with 129/129 energy at (69,19)
+Insect 35 born with 114/114 energy at (69,20)
+Insect 14 died with 242/300 energy at (69,19)
+*************************************************
+Iteration: 13
+*************************************************
+Iteration: 14
+Insect 9 is splitting
+Insect 36 born with 128/128 energy at (48,22)
+Insect 37 born with 139/139 energy at (48,23)
+Insect 9 died with 266/300 energy at (48,22)
+*************************************************
+Iteration: 15
+Insect 18 is splitting
+Insect 38 born with 115/115 energy at (23,86)
+Insect 39 born with 117/117 energy at (23,87)
+Insect 18 died with 231/300 energy at (23,86)
+*************************************************
+Iteration: 16
+*************************************************
+Iteration: 17
+Insect 1 is splitting
+Insect 40 born with 115/115 energy at (37,81)
+Insect 41 born with 113/113 energy at (38,81)
+Insect 1 died with 227/300 energy at (37,81)
+Insect 10 is splitting
+Insect 42 born with 105/105 energy at (21,15)
+Insect 43 born with 114/114 energy at (21,16)
+Insect 10 died with 218/300 energy at (21,15)
+*************************************************
+Iteration: 18
+Insect 4 is splitting
+Insect 44 born with 122/122 energy at (2,85)
+Insect 45 born with 126/126 energy at (3,85)
+Insect 4 died with 247/300 energy at (2,85)
+Insect 6 is splitting
+Insect 46 born with 131/131 energy at (96,97)
+Insect 47 born with 147/147 energy at (96,98)
+Insect 6 died with 277/300 energy at (96,97)
+*************************************************
+Iteration: 19
+Insect 16 is splitting
+Insect 48 born with 104/104 energy at (27,82)
+Insect 49 born with 102/102 energy at (28,82)
+Insect 16 died with 205/300 energy at (27,82)
+*************************************************
+Iteration: 20
+Insect 42 is splitting
+Insect 50 born with 45/45 energy at (20,16)
+Insect 51 born with 51/51 energy at (20,15)
+Insect 42 died with 95/105 energy at (20,16)
+*************************************************
+Iteration: 21
 Insect 25 is splitting
-Insect 80 born with 136/136 energy at (98,39)
-Insect 81 born with 148/148 energy at (98,40)
-Insect 25 died with 283/300 energy at (98,39)
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Plant 11 died with 30/30 energy at (9,91)
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-New plants spawned: 4
-Plant  82 born with 10/10 energy at (49,28)
-Plant  83 born with 30/30 energy at (98,78)
-Plant  84 born with 10/10 energy at (67,33)
-Plant  85 born with 30/30 energy at (8,56)
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect 75 is splitting
-Insect 86 born with 68/68 energy at (23,11)
-Insect 87 born with 80/80 energy at (22,11)
-Insect 75 died with 147/148 energy at (23,11)
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect 76 is splitting
-Insect 88 born with 78/78 energy at (55,48)
-Insect 89 born with 76/76 energy at (55,47)
-Insect 76 died with 153/154 energy at (55,48)
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect 79 is splitting
-Insect 90 born with 63/63 energy at (19,65)
-Insect 91 born with 68/68 energy at (19,66)
-Insect 79 died with 130/136 energy at (19,65)
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect 77 is splitting
-Insect 92 born with 66/66 energy at (56,48)
-Insect 93 born with 62/62 energy at (56,47)
-Insect 77 died with 127/128 energy at (56,48)
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect 21 is splitting
-Insect 94 born with 144/144 energy at (63,93)
-Insect 95 born with 120/120 energy at (64,93)
-Insect 21 died with 263/300 energy at (63,93)
-Insect Detected
-Insect Detected
-Insect Detected
-Insect 80 is splitting
-Insect 96 born with 65/65 energy at (95,36)
-Insect 97 born with 66/66 energy at (95,35)
-Insect 80 died with 130/136 energy at (95,36)
-Insect Detected
-Insect Detected
-Insect Detected
-Insect 52 is splitting
-Insect 98 born with 65/65 energy at (58,35)
-Insect 99 born with 62/62 energy at (59,35)
-Insect 52 died with 126/137 energy at (58,35)
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect 74 is splitting
-Insect 100 born with 66/66 energy at (27,13)
-Insect 101 born with 58/58 energy at (28,13)
-Insect 74 died with 123/131 energy at (27,13)
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect 81 is splitting
-Insect 102 born with 76/76 energy at (98,40)
-Insect 103 born with 67/67 energy at (99,40)
-Insect 81 died with 142/148 energy at (98,40)
-Insect Detected
-Insect Detected
-Insect 78 is splitting
-Insect 104 born with 60/60 energy at (19,69)
-Insect 105 born with 76/76 energy at (18,69)
-Insect 78 died with 135/136 energy at (19,69)
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect 94 is splitting
-Insect 106 born with 71/71 energy at (62,96)
-Insect 107 born with 68/68 energy at (62,97)
-Insect 94 died with 138/144 energy at (62,96)
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect 95 is splitting
-Insect 108 born with 50/50 energy at (67,91)
-Insect 109 born with 62/62 energy at (66,91)
-Insect 95 died with 111/120 energy at (67,91)
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Plant 54 died with 10/10 energy at (58,95)
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Plant 3 died with 20/20 energy at (61,89)
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Plant 6 died with 10/10 energy at (74,96)
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect 42 died with 1/64 energy at (28,33)
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect 58 died with 1/68 energy at (7,94)
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect 47 died with 1/76 energy at (29,29)
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect 46 died with 1/77 energy at (18,20)
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect 50 died with 1/63 energy at (12,89)
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect 44 died with 1/63 energy at (61,58)
-Insect Detected
-Plant 19 died with 30/30 energy at (41,26)
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect 104 died with 1/60 energy at (19,66)
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect 43 died with 1/70 energy at (28,32)
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect 49 died with 1/78 energy at (62,53)
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect 108 died with 1/50 energy at (75,88)
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect 51 died with 1/80 energy at (6,73)
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect 90 died with 1/63 energy at (9,65)
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect 101 died with 1/58 energy at (32,26)
-Insect Detected
-Insect Detected
-Insect 93 died with 1/62 energy at (60,40)
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect 107 died with 1/68 energy at (49,97)
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect 89 died with 1/76 energy at (61,42)
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect 59 died with 1/83 energy at (18,84)
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect 92 died with 1/66 energy at (70,45)
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect 45 died with 1/79 energy at (60,40)
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect 109 died with 1/62 energy at (73,91)
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect 48 died with 1/77 energy at (57,54)
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect 86 died with 1/68 energy at (15,12)
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect 105 died with 1/76 energy at (20,60)
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect 100 died with 1/66 energy at (28,13)
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect 91 died with 1/68 energy at (24,76)
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect 87 died with 1/80 energy at (16,6)
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect 88 died with 1/78 energy at (72,46)
-Insect Detected
-Insect 106 died with 1/71 energy at (63,95)
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Plant 82 died with 10/10 energy at (49,28)
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect 61 died with 1/75 energy at (57,35)
-Insect Detected
-Insect Detected
-Insect 96 died with 1/65 energy at (93,24)
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect 99 died with 1/62 energy at (59,46)
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect 62 died with 1/66 energy at (44,30)
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect 98 died with 1/65 energy at (63,40)
-Insect Detected
-Insect Detected
-Insect 103 died with 1/67 energy at (95,34)
-Insect Detected
-Insect Detected
-Insect 97 died with 1/66 energy at (98,25)
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect 60 died with 1/82 energy at (54,40)
-Insect Detected
-Insect 63 died with 1/75 energy at (42,4)
-Insect Detected
-Insect Detected
-Insect Detected
-Insect 102 died with 1/76 energy at (86,37)
-Insect Detected
-Insect 65 died with 1/75 energy at (37,20)
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect Detected
-Insect 64 died with 1/71 energy at (35,31)
+Insect 52 born with 48/48 energy at (49,89)
+Insect 53 born with 50/50 energy at (50,89)
+Insect 25 died with 97/143 energy at (49,89)
+*************************************************
+Iteration: 22
+Insect 38 is splitting
+Insect 54 born with 46/46 energy at (29,91)
+Insect 55 born with 47/47 energy at (30,91)
+Insect 38 died with 92/115 energy at (29,91)
+Insect 22 is splitting
+Insect 56 born with 52/52 energy at (95,66)
+Insect 57 born with 53/53 energy at (95,67)
+Insect 22 died with 104/154 energy at (95,66)
+*************************************************
+Iteration: 23
+Insect 28 is splitting
+Insect 58 born with 34/34 energy at (34,73)
+Insect 59 born with 43/43 energy at (34,72)
+Insect 28 died with 76/130 energy at (34,73)
+Insect 7 is splitting
+Insect 60 born with 103/103 energy at (11,47)
+Insect 61 born with 99/99 energy at (12,47)
+Insect 7 died with 201/300 energy at (11,47)
+*************************************************
+Iteration: 24
+Insect 37 is splitting
+Insect 62 born with 58/58 energy at (42,22)
+Insect 63 born with 51/51 energy at (41,22)
+Insect 37 died with 108/139 energy at (42,22)
+*************************************************
+Iteration: 25
+Insect 3 is splitting
+Insect 64 born with 90/90 energy at (95,27)
+Insect 65 born with 102/102 energy at (94,27)
+Insect 3 died with 191/300 energy at (95,27)
+Insect 56 is splitting
+Insect 66 born with 22/22 energy at (95,63)
+Insect 67 born with 22/22 energy at (94,63)
+Insect 56 died with 43/52 energy at (95,63)
+*************************************************
+Iteration: 26
+*************************************************
+Iteration: 27
+*************************************************
+Iteration: 28
+Insect 41 is splitting
+Insect 68 born with 34/34 energy at (48,82)
+Insect 69 born with 39/39 energy at (48,83)
+Insect 41 died with 72/113 energy at (48,82)
+Insect 11 is splitting
+Insect 70 born with 109/109 energy at (80,59)
+Insect 71 born with 114/114 energy at (79,59)
+Insect 11 died with 222/300 energy at (80,59)
+*************************************************
+Iteration: 29
+*************************************************
+Iteration: 30
+Insect 15 is splitting
+Insect 72 born with 98/98 energy at (79,73)
+Insect 73 born with 94/94 energy at (78,73)
+Insect 15 died with 191/300 energy at (79,73)
+Insect 50 died with 1/45 energy at (19,25)
+*************************************************
+Iteration: 31
+Insect 66 died with 1/22 energy at (95,62)
+*************************************************
+Iteration: 32
+*************************************************
+Iteration: 33
+Insect 67 died with 1/22 energy at (98,62)
+*************************************************
+Iteration: 34
+Insect 52 died with 1/48 energy at (50,79)
+Insect 51 died with 1/51 energy at (21,4)
+*************************************************
+Iteration: 35
+Insect 57 is splitting
+Insect 74 born with 5/5 energy at (96,64)
+Insect 75 born with 9/9 energy at (95,64)
+Insect 57 died with 13/53 energy at (96,64)
+Insect 58 died with 1/34 energy at (34,76)
+Insect 55 died with 1/47 energy at (27,92)
+Insect 65 is splitting
+Insect 76 born with 31/31 energy at (93,26)
+Insect 77 born with 30/30 energy at (92,26)
+Insect 65 died with 60/102 energy at (93,26)
+*************************************************
+Iteration: 36
+Insect 53 died with 1/50 energy at (44,94)
+Insect 54 died with 1/46 energy at (25,96)
+*************************************************
+Iteration: 37
+Insect 74 died with 1/5 energy at (96,64)
+*************************************************
+Iteration: 38
+Insect 13 is splitting
+Insect 78 born with 95/95 energy at (77,3)
+Insect 79 born with 85/85 energy at (77,2)
+Insect 13 died with 179/300 energy at (77,3)
+Insect 75 died with 1/9 energy at (99,62)
+*************************************************
+Iteration: 39
+Insect 69 died with 1/39 energy at (52,95)
+Insect 68 died with 1/34 energy at (50,81)
+Insect 59 died with 1/43 energy at (44,74)
+*************************************************
+Iteration: 40
+Insect 63 died with 1/51 energy at (44,19)
+Insect 71 is splitting
+Insect 80 born with 37/37 energy at (73,69)
+Insect 81 born with 36/36 energy at (73,70)
+Insect 71 died with 72/114 energy at (73,69)
+Insect 31 died with 1/68 energy at (68,91)
+Insect 32 is splitting
+Insect 82 born with 19/19 energy at (76,28)
+Insect 83 born with 26/26 energy at (77,28)
+Insect 32 died with 44/120 energy at (76,28)
+Insect 35 died with 1/114 energy at (69,7)
+Insect 21 died with 1/154 energy at (40,4)
+*************************************************
+Iteration: 41
+Insect 30 died with 1/80 energy at (65,95)
+New plants spawned: 0
+*************************************************
+Iteration: 42
+*************************************************
+Iteration: 43
+Insect 43 died with 1/114 energy at (7,17)
+Insect 64 is splitting
+Insect 84 born with 13/13 energy at (98,18)
+Insect 85 born with 18/18 energy at (99,18)
+Insect 64 died with 30/90 energy at (98,18)
+Insect 77 died with 1/30 energy at (89,32)
+Insect 76 died with 1/31 energy at (87,22)
+Insect 62 died with 1/58 energy at (42,29)
+*************************************************
+Iteration: 44
+Insect 36 is splitting
+Insect 86 born with 23/23 energy at (50,21)
+Insect 87 born with 21/21 energy at (50,22)
+Insect 36 died with 43/128 energy at (50,21)
+Insect 40 died with 1/115 energy at (58,86)
+*************************************************
+Iteration: 45
+Insect 61 died with 1/99 energy at (13,54)
+Insect 29 died with 1/124 energy at (40,89)
+*************************************************
+Iteration: 46
+Insect 20 died with 1/132 energy at (17,6)
+Insect 82 died with 1/19 energy at (75,25)
+*************************************************
+Iteration: 47
+Insect 24 died with 1/132 energy at (48,98)
+Insect 39 died with 1/117 energy at (31,79)
+*************************************************
+Iteration: 48
+Insect 49 died with 1/102 energy at (25,88)
+Insect 47 is splitting
+Insect 88 born with 30/30 energy at (92,96)
+Insect 89 born with 36/36 energy at (93,96)
+Insect 47 died with 65/147 energy at (92,96)
+*************************************************
+Iteration: 49
+Insect 81 died with 1/36 energy at (69,73)
+Insect 83 died with 1/26 energy at (80,32)
+*************************************************
+Iteration: 50
+*************************************************
+Iteration: 51
+Insect 87 died with 1/21 energy at (53,15)
+Insect 85 died with 1/18 energy at (94,16)
+Insect 60 died with 1/103 energy at (22,50)
+Insect 34 died with 1/129 energy at (62,16)
+Insect 80 died with 1/37 energy at (82,70)
+*************************************************
+Iteration: 52
+Insect 26 died with 1/124 energy at (67,82)
+Insect 86 died with 1/23 energy at (48,23)
+*************************************************
+Iteration: 53
+Insect 48 died with 1/104 energy at (31,83)
+*************************************************
+Iteration: 54
+*************************************************
+Iteration: 55
+Insect 84 died with 1/13 energy at (98,16)
+Insect 33 died with 1/144 energy at (74,32)
+*************************************************
+Iteration: 56
+Insect 23 died with 1/129 energy at (92,60)
+*************************************************
+Iteration: 57
+Insect 89 died with 1/36 energy at (97,99)
+*************************************************
+Iteration: 58
+Insect 44 died with 1/122 energy at (6,82)
+Insect 46 died with 1/131 energy at (92,95)
+*************************************************
+Iteration: 59
+Insect 8 died with 1/300 energy at (23,56)
+Insect 88 died with 1/30 energy at (95,96)
+Insect 45 died with 1/126 energy at (3,92)
+Insect 72 died with 1/98 energy at (70,75)
+*************************************************
+Iteration: 60
+Insect 70 died with 1/109 energy at (77,62)
+*************************************************
+Iteration: 61
+*************************************************
+Iteration: 62
+*************************************************
+Iteration: 63
+*************************************************
+Iteration: 64
+*************************************************
+Iteration: 65
+Insect 73 died with 1/94 energy at (75,71)
+*************************************************
+Iteration: 66
+*************************************************
+Iteration: 67
+*************************************************
+Iteration: 68
+*************************************************
+Iteration: 69
+Insect 79 died with 1/85 energy at (80,1)
+*************************************************
+Iteration: 70
+*************************************************
+Iteration: 71
+*************************************************
+Iteration: 72
+*************************************************
+Iteration: 73
+*************************************************
+Iteration: 74
+*************************************************
+Iteration: 75
+*************************************************
+Iteration: 76
+*************************************************
+Iteration: 77
+*************************************************
+Iteration: 78
+Insect 78 died with 1/95 energy at (81,3)
+*************************************************
+Iteration: 79
+*************************************************
+Iteration: 80
+*************************************************
+Iteration: 81
+New plants spawned: 0
+*************************************************
+Iteration: 82
+*************************************************
+Iteration: 83
+*************************************************
+Iteration: 84
+*************************************************
+Iteration: 85
+*************************************************
+Iteration: 86
+*************************************************
+Iteration: 87
+*************************************************
+Iteration: 88
+*************************************************
+Iteration: 89
+*************************************************
+Iteration: 90
+*************************************************
+Iteration: 91
+*************************************************
+Iteration: 92
+*************************************************
+Iteration: 93
+*************************************************
+Iteration: 94
+*************************************************
+Iteration: 95
+*************************************************
+Iteration: 96
+*************************************************
+Iteration: 97
+*************************************************
+Iteration: 98
+*************************************************
+Iteration: 99
+*************************************************
+Iteration: 100
+*************************************************
+Iteration: 101
+*************************************************
+Iteration: 102
+*************************************************
+Iteration: 103
+*************************************************
+Iteration: 104
+*************************************************
+Iteration: 105
+*************************************************
+Iteration: 106
+*************************************************
+Iteration: 107
+*************************************************
+Iteration: 108
+*************************************************
+Iteration: 109
+*************************************************
+Iteration: 110
+*************************************************
+Iteration: 111
+*************************************************
+Iteration: 112
+*************************************************
+Iteration: 113
+*************************************************
+Iteration: 114
+*************************************************
+Iteration: 115
+*************************************************
+Iteration: 116
+*************************************************
+Iteration: 117
+*************************************************
+Iteration: 118
+*************************************************
+Iteration: 119
+*************************************************
+Iteration: 120
+*************************************************
+Iteration: 121
+New plants spawned: 0
+*************************************************
+Iteration: 122
+*************************************************
+Iteration: 123
+*************************************************
+Iteration: 124
+*************************************************
+Iteration: 125
+*************************************************
+Iteration: 126
+*************************************************
+Iteration: 127
+*************************************************
+Iteration: 128
+*************************************************
+Iteration: 129
+*************************************************
+Iteration: 130
+*************************************************
+Iteration: 131
+*************************************************
+Iteration: 132
+*************************************************
+Iteration: 133
+*************************************************
+Iteration: 134
+*************************************************
+Iteration: 135
+*************************************************
+Iteration: 136
+*************************************************
+Iteration: 137
+*************************************************
+Iteration: 138
+*************************************************
+Iteration: 139
+*************************************************
+Iteration: 140
+*************************************************
+Iteration: 141
+*************************************************
+Iteration: 142
+*************************************************
+Iteration: 143
+*************************************************
+Iteration: 144
+*************************************************
+Iteration: 145
+*************************************************
+Iteration: 146
+*************************************************
+Iteration: 147
+*************************************************
+Iteration: 148
+*************************************************
+Iteration: 149
+*************************************************
+Iteration: 150
+*************************************************
+Iteration: 151
+*************************************************
+Iteration: 152
+*************************************************
+Iteration: 153
+*************************************************
+Iteration: 154
+*************************************************
+Iteration: 155
+*************************************************
+Iteration: 156
+*************************************************
+Iteration: 157
+*************************************************
+Iteration: 158
+*************************************************
+Iteration: 159
+*************************************************
+Iteration: 160
+*************************************************
+Iteration: 161
+New plants spawned: 0
+*************************************************
+Iteration: 162
+*************************************************
+Iteration: 163
+*************************************************
+Iteration: 164
+*************************************************
+Iteration: 165
+*************************************************
+Iteration: 166
+*************************************************
+Iteration: 167
+*************************************************
+Iteration: 168
+*************************************************
+Iteration: 169
+*************************************************
+Iteration: 170
+*************************************************
+Iteration: 171
+*************************************************
+Iteration: 172
+*************************************************
+Iteration: 173
+*************************************************
+Iteration: 174
+*************************************************
+Iteration: 175
+*************************************************
+Iteration: 176
+*************************************************
+Iteration: 177
+*************************************************
+Iteration: 178
+*************************************************
+Iteration: 179
+*************************************************
+Iteration: 180
+*************************************************
+Iteration: 181
+*************************************************
+Iteration: 182
+*************************************************
+Iteration: 183
+*************************************************
+Iteration: 184
+*************************************************
+Iteration: 185
+*************************************************
+Iteration: 186
+*************************************************
+Iteration: 187
+*************************************************
+Iteration: 188
+*************************************************
+Iteration: 189
+*************************************************
+Iteration: 190
+*************************************************
+Iteration: 191
+*************************************************
+Iteration: 192
+*************************************************
+Iteration: 193
+*************************************************
+Iteration: 194
+*************************************************
+Iteration: 195
+*************************************************
+Iteration: 196
+*************************************************
+Iteration: 197
+*************************************************
+Iteration: 198
+*************************************************
+Iteration: 199
+*************************************************
+Iteration: 200

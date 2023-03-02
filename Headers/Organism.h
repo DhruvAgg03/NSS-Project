@@ -2,6 +2,8 @@
 #define INSECT 1
 #define PLANT 0
 #define movementCost 1
+#define MALE 0
+#define FEMALE 1
 #include "../Headers/Traits.h"
 #include <bits/stdc++.h>
 using namespace std;
@@ -45,6 +47,7 @@ namespace namespace_organism
     unsigned short int aadhar_number; // Name of organism like John Wick
     int speciesID;  // Represent which species it belongs to (0-> plant, 1-> Insect for now)
     Traits traits;  // class which contains all the traits of the organism (DNA)
+    
 
   public:
     Organism(int x, int y, int vision_radius, int *speed_list,
@@ -87,19 +90,22 @@ namespace namespace_organism
   private:
     int organism_ID;
     int age{0};
-    
+    int sexualUrge;
+    bool gender;
 
   public:
     Insect(int x, int y, int vision_radius, int *speed_list,
           int length_of_speed_list, int max_energy, int current_energy,
           unsigned short int aadhar_number, int organism_ID1, int speciesID);
-    Insect(coordinates2D posn, Traits t,unsigned short int aadhar_number, int speciesID,Universe * universe);
+    Insect(coordinates2D posn, Traits t,unsigned short int aadhar_number, int speciesID,Universe * universe, bool g);
     ~Insect();
     int get_organism_ID();
     void update_age(int age){this->age = age;}
     int get_age(){return age;}
     void updateEnergy(power energy){this->current_energy = energy;}
+    int getSexualUrge() { return sexualUrge; }
   };
+  
   
   class Plant : public Organism {
 

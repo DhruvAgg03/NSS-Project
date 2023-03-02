@@ -16,4 +16,12 @@ Traits::Traits(power maxE, velocity v, int vision) {
   this->visionRadius = vision;
 }
 
+Traits::Traits(power maxE, velocity v, int vision, int maxSex, int desirabliity) {
+  this->maxEnergy = maxE;
+  this->speed = v;
+  this->visionRadius = vision;
+  this->maxSexualUrge = maxSex;
+  this->desirability = desirability;
+}
+
 Traits::Traits() { maxEnergy = 10; }

@@ -1,21 +1,4 @@
-Header proper format -> #include, using , #define etc
-environment -> void* to Organism*
-convention -> double comment for comment out code , single for documentation
-
-Clarify purpose(documentation)
-* historyEnvironment
-* ledgerInsects
-* writingToFile
-
-To do:
-* macro defining ofstream
-* plant population in check
-
-Suggestions:
-* Account for energy losses during cell division?
-* predicted overflow for aadhar_number?
-
-WorkLog:
+//WorkLog:
 Kums(27/1/23):
 * Added comments for all functions (and some code maintenance)
 * created new class Aphrodite (godsaidyes,split)
@@ -29,15 +12,35 @@ Kums(28/1/23):
 * added new static member Organism::latest_organism_ID
 Kums(29/1/23):
 * respawnplant() done
+HHN(24/2/23):
+* fixed update universe Bugs
+Kums(25/2/23):
+* changed Aphrodite::probfunc -> parameters defined in func -> to be made macros
+Dhruv(29/2/23):
+* added gender, sexualUrge as parameter to insect
+* added maxSexualUrge, desirability to traits
+Kums(2/3/23):
+* changed inherited traits function-> now returns within and variation is captured bhy mutation
+* added Aphrodite::mutationsynthesizer -> alters arg by max 1 with given probability
+* added Aphrodite::mating and Aphrodite::inheritedtraits
 
 
-//Don't forget
-* analyse file structure -> dependencies
-* plant constructor
-* continous variation
-* outfile from organism to insect and plant 
+//Changes to be made:
+* make to cmake
+* upper and lower bounds for traits-> check in initialization
+* effective #define and #include
 
-Bugs
+//Slighly less important changes:
+* add continous variation functionality
+* energy loss during splitting
+* add aadhar number overflow
+
+//Bugs:
+* segfault when too much population 
 * organismCount
-* makefile not Changing
-* not updating after some iterations
+
+//Clarify purpose(documentation):
+* historyEnvironment
+* ledgerInsects
+* writingToFile
+

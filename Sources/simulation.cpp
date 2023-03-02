@@ -6,13 +6,14 @@ extern std::ofstream outfile;
 
 void Universe::run()
 {
+  cout<<"Pc Ic\n";
   Aphrodite cupid{this};
   ofstream ofile;
   ofile.open("./Output/Output.txt");
   ofile << "Insects,Plants\n";
-  for (int j = 0; j < iterationCount; j++ && printCompleteInfo(j + 1))
+  for (int j = 0; j < iterationCount; j++)
   {
-
+    printCompleteInfo(j + 1);
     ofile << organismCount[1] << "," << organismCount[0] << '\n';
     auto InsectCopy = getInsects();
     for (int i = 0; i < InsectCopy.size(); i++)
@@ -30,7 +31,7 @@ void Universe::run()
         // {
         // bool isInsect = ((Organism *)nextObj)->get_speciesID() == INSECT;
 
-        outfile << "Insect Detected" << endl;
+        //outfile << "Insect Detected" << endl;
         if (updateUniverse(x, y, moves[l].x, moves[l].y, outfile) != SUCCESS)
           break;
         // }

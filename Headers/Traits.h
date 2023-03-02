@@ -15,12 +15,15 @@ private:
   power maxEnergy;
   velocity speed;
   int visionRadius;
+  int maxSexualUrge;
+  int desirability;
 
   Traits giveTraits(Traits t1, Traits t2);
 
 public:
   Traits(power maxE, velocity v, int vision);
   Traits();
+  Traits(power maxE,velocity v, int vision, int maxSex, int desirability); //For sexual reproduction
   int get_maxenergy() { return maxEnergy; }
   int get_speed() { return speed; }
   int get_visionradius() { return visionRadius; }

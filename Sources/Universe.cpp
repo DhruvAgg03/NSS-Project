@@ -1,22 +1,19 @@
 #include "../Headers/Universe.h"
 extern std::ofstream outfile;
-
+#define MaleRatio 0.5
+ 
+// Maxenergy 
 #define __PLANT_VARIETY \
   {                     \
-    {10}, {20},         \
-    {                   \
-      30                \
-    }                   \
+    {10}, {20},{30}     \
   }
 
-#define __INSECT_VARIETY      \
-  {                           \
-    {4, 3, 300}, {6, 3, 300}, \
-    {                         \
-      7, 3, 300               \
-    }                         \
+// vision radius, speed , max energy
+#define __INSECT_VARIETY                                           \
+  {                                                                \
+        {4, 3, 300,200,20}, {6, 3, 300,100,60}, {7, 3, 300,150,30} \
   }
-
+using namespace std;
 // using namespace namespace_Universe;
 bool compare(const step &a, const step &b) { return a.dist < b.dist; }
 // Compare function used for sorting moves vector comparing two structs
@@ -36,25 +33,25 @@ vector<coordinates2D> Universe::adjacent_posns(coordinates2D posn)
 
   vector<coordinates2D> possible_positions;
   coordinates2D west, east, north, south;
-  if (x != 0 && this->getObject(x - 1, y) == NULL)
+  if (x != 0 && !this->getObject(x - 1, y))
   {
     west.x = x - 1;
     west.y = y;
     possible_positions.push_back(west);
   }
-  if (x != N - 1 && this->getObject(x + 1, y) == NULL)
+  if (x != N - 1 && !this->getObject(x + 1, y))
   {
     east.x = x + 1;
     east.y = y;
     possible_positions.push_back(east);
   }
-  if (y != N - 1 && this->getObject(x, y - 1) == NULL)
+  if (y != N - 1 && !this->getObject(x, y - 1))
   {
     north.x = x;
     north.y = y - 1;
     possible_positions.push_back(north);
   }
-  if (y != 0 && this->getObject(x, y + 1) == NULL)
+  if (y != 0 && !this->getObject(x, y + 1))
   {
     south.x = x;
     south.y = y + 1;
@@ -154,10 +151,14 @@ void Universe::initializeEnvironment(int *organismCount, int len)
         int vision_radius = variety_Insect[variety].vision_radius;
         int speed = variety_Insect[variety].speed;
         int max_energy = variety_Insect[variety].max_energy;
-        Traits t{max_energy, vision_radius, speed};
+        int maxSexUrge = variety_Insect[variety].maxSexualUrge;
+        int desirability = variety_Insect[variety].desirability;
+        Traits t{max_energy, vision_radius, speed,maxSexUrge,desirability};
+        float temp1 = (float)rand()/RAND_MAX;;
+        int g = ( temp1 > MaleRatio ) ? FEMALE : MALE ;
 
         // New Insect constructor
-        Insect *temp = new Insect(posn, t, counter, 1, this);
+        Insect *temp = new Insect(posn, t, counter, 1, this,g);
 
         // Insect *temp = new Insect(
         //     std::get<0>(tempPoints[counter]), std::get<1>(tempPoints[counter]),
@@ -638,6 +639,7 @@ vector<step> Universe::movesToLocationNew(step current_position, int number_of_s
 bool Universe::printCompleteInfo(int iteration)
 {
   ofstream myfile;
+  outfile<<"*************************************************\nIteration: "<<iteration<<'\n';
   int pc = 0, ic = 0;
   if (iteration == 1)
   {
@@ -665,7 +667,7 @@ bool Universe::printCompleteInfo(int iteration)
       // myfile << iteration << "," << i << "," << j << ",-1,0,0,0,0,0\n";
     }
   }
-  cout << pc << " " << ic << '\n';
+  cout <<iteration<<" "<< pc << " " << ic << '\n';
   myfile.close();
   return true;
 }
