@@ -29,6 +29,9 @@ Kums(28/1/23):
 * added new static member Organism::latest_organism_ID
 Kums(29/1/23):
 * respawnplant() done
+Dhruv(29/1/23):
+* added gender, sexualUrge as parameter to insect
+* added maxSexualUrge, desirability to traits
 
 
 //Don't forget
