@@ -727,3 +727,17 @@ vector<coordinates2D> Universe::emptycells(int k)
   }
   return emptycells;
 }
+
+bool willReproduce(Insect* I1,Insect* I2)
+{
+    //Assuming both insects are of different gender
+    int dist = 0;
+    dist+= std::abs((I1->get_posn()).x - (I2->get_posn()).x);
+    dist+= std::abs((I2->get_posn()).y - (I2->get_posn()).y);
+    float r1 = ((float)(I1->get_current_energy()))/(I1->get_max_energy());
+    float r2 = ((float)(I2->get_current_energy()))/(I2->get_max_energy());
+    float sexProduct = (I1->getSexualUrge())*(I2->getSexualUrge());
+    float NotNormalised = (sexProduct*r1*r2)/dist;
+    float probab = NotNormalised/40000;
+    return probab > ((float)rand()/RAND_MAX);
+}

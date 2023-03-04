@@ -23,7 +23,6 @@ class Aphrodite
         
 
         //Sexual
-        bool willReproduce(Insect* I1, Insect* I2); //Returns true if insects are to mate
         Insect* mating(Insect* insect1,Insect* insect2); //Returns pointer to child
         Traits inheritedTraits(Insect* insect1,Insect* insect2); //Returns traits of child
         

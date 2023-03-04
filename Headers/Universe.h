@@ -5,8 +5,8 @@
 #define dimension 100            // Changing dimensions to 10k from 1k
 #define varieties_in_a_Species 3 // Three different Varieties For now there are three species varying
 #define maxVision 15
-#define initialPlantCount 0
-#define initialInsectCount 20
+#define initialPlantCount 30
+#define initialInsectCount 30
 #define insectIndex 1
 #define plantIndex 0
 #define maxEnergy 300

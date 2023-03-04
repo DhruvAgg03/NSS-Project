@@ -1,5 +1,5 @@
 main: Aphrodite.o Traits.o Organism.o Universe.o simulation.o main.o
-	g++ -o main Aphrodite.o Traits.o Organism.o Universe.o simulation.o main.o -lgcc 
+	g++ -o main Aphrodite.o Traits.o Organism.o Universe.o simulation.o main.o 
 Aphrodite.o: ./Sources/Aphrodite.cpp ./Headers
 	g++ -c -g  ./Sources/Aphrodite.cpp
 
