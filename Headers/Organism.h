@@ -102,6 +102,7 @@ namespace namespace_organism
     int get_organism_ID();
     void update_age(int age){this->age = age;}
     int get_age(){return age;}
+    bool get_gender(){return gender;}
     void updateEnergy(power energy){this->current_energy = energy;}
     int getSexualUrge() { return sexualUrge; }
   };
