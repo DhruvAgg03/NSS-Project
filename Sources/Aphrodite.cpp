@@ -8,6 +8,10 @@
 #define maxspeed 5
 #define minenergy 150
 #define maxenergy 350
+#define maxdesirability 70
+#define mindesirability 10
+#define maxsexualurge 250
+#define minsexualurge 50
 
 #define mutationprob 0.1
 
@@ -114,6 +118,8 @@ vector<Traits*> Aphrodite::inheritedTraits(Insect* insect) // Returns traits of 
 
 Insect* Aphrodite::mating(Insect* insect1,Insect* insect2)
 {
+    insect1->updateSexualUrge(0);
+    insect2->updateSexualUrge(0);
     coordinates2D posn1 = insect1->get_posn();
     coordinates2D posn2 = insect2->get_posn();
     vector<coordinates2D> adj_posns1 = universe->adjacent_posns(posn1);
@@ -127,6 +133,12 @@ Insect* Aphrodite::mating(Insect* insect1,Insect* insect2)
     outfile << "Insect " << insect1->get_aadhar_number() <<" and Insect " << insect2->get_aadhar_number() <<" are mating\n";
     coordinates2D posn = adj_posns[rand()%len];
     Traits v = inheritedTraits(insect1,insect2);
+    int childenergy = v.get_maxenergy();
+    int e1 = insect1->get_current_energy();
+    int e2 = insect2->get_current_energy();
+    int del = (e1*childenergy)/(e1+e2);
+    insect1->updateEnergy(e1-del);
+    insect2->updateEnergy(e2-childenergy+del);
     unsigned short a = Organism::get_latest_organism_ID()+1;
     int g = rand()%2;
     Insect* offspring = new Insect(posn,v,a,insectIndex,universe,g);
@@ -142,16 +154,24 @@ Traits Aphrodite::inheritedTraits(Insect* insect1,Insect* insect2)
     int v2 = insect2->get_traits().get_visionradius();
     int e1 = insect1->get_traits().get_maxenergy();
     int e2 = insect2->get_traits().get_maxenergy();
+    int su1 = insect1->get_traits().get_maxSexualUrge();
+    int su2 = insect2->get_traits().get_maxSexualUrge();
+    int d1 =  insect1->get_traits().get_desirability();
+    int d2 =  insect2->get_traits().get_desirability();
 
     //computes the average and rounds up/down if float with 50% probability
     int so = (s1+s2)/2 + (rand()%2)*((s1+s2)%2); 
     int vo = (v1+v2)/2 + (rand()%2)*((v1+v2)%2);
     int eo = (e1+e2)/2 + (rand()%2)*((e1+e2)%2);
+    int suo = (su1+su2)/2 + (rand()%2)*((su1+su2)%2);
+    int doo = (d1+d2)/2 + (rand()%2)*((d1+d2)%2);
 
     //To account for some mutation
     so=mutationsynthesizer(so,mutationprob);
     vo=mutationsynthesizer(vo,mutationprob);
     eo=mutationsynthesizer(eo,mutationprob);
+    suo=mutationsynthesizer(suo,mutationprob);
+    doo=mutationsynthesizer(doo,mutationprob);
 
     //To ensure that the traits are within the limits
     if(so<minspeed)so = minspeed;
@@ -159,12 +179,18 @@ Traits Aphrodite::inheritedTraits(Insect* insect1,Insect* insect2)
     if(vo<minvision)vo = minvision;
     else if(vo>maxvision)vo = maxvision;
     if(eo<minenergy)eo = minenergy;
-    else if(eo>maxenergy)eo = maxenergy; 
+    else if(eo>maxenergy)eo = maxenergy;
+    if(suo<minsexualurge)suo = minsexualurge;
+    else if(suo>maxsexualurge)suo = maxsexualurge;
+    if(doo<mindesirability)doo = mindesirability;
+    else if(doo>maxdesirability)doo = maxdesirability; 
 
     //Assigning the traits to the offspring
     t->set_speed(so);
     t->set_visionradius(vo);
     t->set_maxenergy(eo);
+    t->set_maxSexualUrge(suo);
+    t->set_desirability(doo);
     return *t;
 }
 

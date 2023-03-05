@@ -105,6 +105,7 @@ namespace namespace_organism
     bool get_gender(){return gender;}
     void updateEnergy(power energy){this->current_energy = energy;}
     int getSexualUrge() { return sexualUrge; }
+    void updateSexualUrge(int sexualUrge) { this->sexualUrge = sexualUrge; }
   };
   
   

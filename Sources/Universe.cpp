@@ -1,5 +1,6 @@
 #include "../Headers/Universe.h"
 extern std::ofstream outfile;
+extern std::ofstream simulationFile;
 #define MaleRatio 0.5
 #define MOVE 0
 #define BIRTH 1
@@ -129,9 +130,7 @@ void Universe::initializeEnvironment(int *organismCount, int len)
 
   // Assigning the elements of environment to the necessary instances
   int counter = 0; // Running over the temporary array
-  ofstream myfile;
-  myfile.open("Data/trail_2.csv", ios::trunc);
-  myfile<<"Iter_no,x,y,Spec_ID,Adhaar_number,action\n";
+  simulationFile<<"Iter_no,x,y,Spec_ID,Adhaar_number,action\n";
   for (int i = 0; i < N; i++)
   {
     for (int j = 0; j < organismCount[i]; j++)
@@ -165,7 +164,6 @@ void Universe::initializeEnvironment(int *organismCount, int len)
 
         // New Insect constructor
         Insect *temp = new Insect(posn, t, counter, 1, this,g);
-        myfile<<"0,"<<posn.x<<","<<posn.y<<","<<INSECT<<","<<counter<<","<<BIRTH<<"\n";
         // Insect *temp = new Insect(
         //     std::get<0>(tempPoints[counter]), std::get<1>(tempPoints[counter]),
         //     variety_Insect[variety].vision_radius, NULL,
@@ -182,7 +180,6 @@ void Universe::initializeEnvironment(int *organismCount, int len)
       counter++;
     }
   }
-  myfile.close();
   for (int i = counter; i < dimension * dimension; i++)
   {
     environment[std::get<0>(tempPoints[counter])]
@@ -216,7 +213,6 @@ UpdateUniverse_rt Universe::updateUniverse(int initX, int initY, int finalX, int
 
   if (org->get_current_energy() <= movementCost)
   {
-    killInsect(org);
     environment[initX][initY] = NULL;
     return DYING_ORGANISM;
   }
@@ -328,6 +324,7 @@ void Universe::writingToFile(ofstream &outfile)
   }
 }
 
+//function to check if protagonist and interest are close enough to be able to reach each other and have energy left to reproduce
 bool Universe::canMeetAndMate(Insect* protagonist,step protagonist_location, step interest_location)
 {
   if(((Organism *)environment[interest_location.x][interest_location.y])->get_speciesID() != INSECT)
@@ -347,10 +344,11 @@ bool Universe::canMeetAndMate(Insect* protagonist,step protagonist_location, ste
   return false;
 }
 
+//function which returns location of a free, reachable mate to protagonist
 step Universe::scanNearestMate(step current_position, int vision_radius, Insect* protagonist)
 {
   int ID_protagonist = protagonist->get_aadhar_number();
-  if(Organisms_in_love.find(ID_protagonist) != Organisms_in_love.end())
+  if(Organisms_in_love.find(protagonist) != Organisms_in_love.end())
   {
       step temp;
       temp.x = -1;
@@ -362,6 +360,7 @@ step Universe::scanNearestMate(step current_position, int vision_radius, Insect*
   vector<step> moves_array = getMoves();
   int nearest_dist_index = -1;
 
+  //covering all closest cells starting from location of protagonist
   for(int i=0;i<moves_array.size();i++)
   {
     if(vision_radius < moves_array[i].dist)
@@ -385,30 +384,25 @@ step Universe::scanNearestMate(step current_position, int vision_radius, Insect*
       Insect* interest = ((Insect *)environment[x][y]);
       int love_interest = ((Organism *)environment[x][y])->get_aadhar_number();
 
-      if(Organisms_in_love.find(love_interest) != Organisms_in_love.end())
+      //checking if the insect found is already locked in to mate with some other organism
+      if(Organisms_in_love.find(interest) != Organisms_in_love.end())
         continue;
       
+      //checking for opposite genders
       bool gender1 = protagonist->get_gender();
       bool gender2 = ((Insect *)environment[potential_mate_location.x][potential_mate_location.y])->get_gender();
       if(gender1 == gender2)
         continue;
-     
 
-      //*************************
-      // INSERT call to MATING function sending in positions of current insect and found potential match
-      // Mating function would then look at current energy, whether the two organisms can reach each other without dying, 
-      // after reaching have enough to reproduce, sexual attraction, etc
-      //
-      // Function call is of form - funcname(step current_position, step potential_mate)
-      //***********************
+
     
       if(willReproduce(protagonist, interest))
       {
         if(canMeetAndMate(protagonist, current_position, potential_mate_location))
         {
           //nearest_dist_index = i;
-          Organisms_in_love.insert({ID_protagonist,love_interest});
-          Organisms_in_love.insert({love_interest,ID_protagonist});
+          Organisms_in_love.insert({protagonist,interest});
+          Organisms_in_love.insert({interest,protagonist});
           return potential_mate_location;
         }
       }
@@ -522,20 +516,31 @@ vector<step> Universe::movesToLocationNew(step current_position, int number_of_s
         scanNearestFoodSourceNew(curr, vision_radius, ignore_food);
 
     step nearest_mate;
-    if(protagonist->get_current_energy() < (minimumMatingEnergyPercentage*protagonist->get_max_energy()))
+
+    //Protagonist already locked in from previous iteration
+    if(Organisms_in_love.find(protagonist) != Organisms_in_love.end())
+    {
+      nearest_mate.x = Organisms_in_love[protagonist]->get_x();
+      nearest_mate.y = Organisms_in_love[protagonist]->get_y();
+    }
+    //Protagonist definitely does not have enough energy to reproduce
+    else if(protagonist->get_current_energy() < (minimumMatingEnergyPercentage*(protagonist->get_max_energy())))
     {
       nearest_mate.x = -1;
       nearest_mate.y = -1;
       nearest_mate.dist = -1;
     }
+    //Protagonist may have enough energy to reproduce and is free
     else
       nearest_mate = scanNearestMate(curr,vision_radius,protagonist);
 
+    //hasn't reproduced this iteration yet
     if(lockedin_mate.x == -1 && (!already_reproduced))
     {
       lockedin_mate = nearest_mate;
     }
 
+    //Random move when no food in sight or mate locked in 
     if (nearest_food.x < 0 && lockedin_mate.x < 0)
     {
       int flag = 1;
@@ -613,21 +618,25 @@ vector<step> Universe::movesToLocationNew(step current_position, int number_of_s
     {
       int x_disp;
       int y_disp;
+      //Lockedin mate exists, will try to go there
       if(lockedin_mate.x >=0)
       {
         x_disp = lockedin_mate.x - x;
         y_disp = lockedin_mate.y - y;
       }
+      //Food exists nearby, will go there
       else
       {
         x_disp = nearest_food.x - x;
         y_disp = nearest_food.y - y;
       }
 
+      //One step away from final destination
       if (((abs(x_disp) == 0) && (abs(y_disp) == 1)) ||
           ((abs(x_disp) == 1) && (abs(y_disp) == 0)))
       {
         step next;
+        //Will stay in same spot for a move, and reproduce
         if(lockedin_mate.x >=0)
         {
           //Organism* interest = (Organism*)environment[lockedin_mate.x][lockedin_mate.y];
@@ -663,11 +672,10 @@ vector<step> Universe::movesToLocationNew(step current_position, int number_of_s
 
       Insect *ins;
       int x1, y1;
+      //will move one step closer in y direction
       if (x_disp == 0)
       {
         y1 = y_disp / abs(y_disp);
-        // if(y+y1 >= dimension || y+y1<0 || typeid(environment[x][y+y1]) ==
-        // typeid(ins) )
         if ((y + y1 >= dimension) || (y + y1 < 0) ||
             ((environment[x][y + y1] != NULL) &&
              (((Organism *)environment[x][y + y1])
@@ -694,6 +702,7 @@ vector<step> Universe::movesToLocationNew(step current_position, int number_of_s
           continue;
         }
       }
+      //will move one step closer in x direction
       if (y_disp == 0)
       {
         x1 = x_disp / abs(x_disp);
@@ -738,6 +747,7 @@ vector<step> Universe::movesToLocationNew(step current_position, int number_of_s
                  ->get_speciesID() == INSECT))))
         no_empty_spot = true;
 
+      //will move one step closer in a random direction (x or y)
       while (true)
       {
         int direction = rand() % 2;

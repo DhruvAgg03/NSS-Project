@@ -7,7 +7,12 @@
 #define BIRTH 1
 #define SPLIT 2
 #define DIE 3
+#define Asexual 0
+#define Sexual 1
+#define REPRODUCETYPE Sexual
 extern std::ofstream outfile;
+extern std::ofstream simulationFile;
+extern int iterNum;
 
 void Universe::run()
 {
@@ -15,12 +20,10 @@ void Universe::run()
   Aphrodite cupid{this};
   ofstream ofile;
   ofile.open("./Output/Output.txt");
-  ofstream myfile;
-  myfile.open("Data/trail_2.csv", ios::app);
   ofile << "Insects,Plants\n";
-  for (int j = 0; j < iterationCount; j++)
+  for (iterNum = 0; iterNum < iterationCount; iterNum++)
   {
-    printCompleteInfo(j + 1);
+    printCompleteInfo(iterNum + 1);
     ofile << organismCount[1] << "," << organismCount[0] << '\n';
     auto InsectCopy = getInsects();
     for (int i = 0; i < InsectCopy.size(); i++)
@@ -34,53 +37,39 @@ void Universe::run()
       for (int l = 0; l < moves.size(); l++)
       {
         auto nextObj = getObject(moves[l].x, moves[l].y);
-        // if (nextObj != NULL )
-        // {
-        // bool isInsect = ((Organism *)nextObj)->get_speciesID() == INSECT;
+        
+        if(REPRODUCETYPE==Sexual && Organisms_in_love.find(currInsect)!= Organisms_in_love.end())
+        {
+          Insect* interest = Organisms_in_love[currInsect];
+          int x_interest = interest->get_x();
+          int y_interest = interest->get_y();
+          if(((abs(x - x_interest) == 1) && (abs(y - y_interest) == 0))
+            || ((abs(x - x_interest) == 0) && (abs(y - y_interest) == 1)))
+          {
+            Organisms_in_love.erase(interest);
+            Organisms_in_love.erase(currInsect);
+            Insect* baby = cupid.mating(currInsect,interest);
+            if(baby)  { addInsect(baby); }
+          }
+        }
 
-        //outfile << "Insect Detected" << endl;
         moveResult = updateUniverse(x, y, moves[l].x, moves[l].y, outfile);
-        if ( moveResult!= SUCCESS)
-          break;
-        // }
+        if ( moveResult!= SUCCESS) break;
         x = moves[l].x;
         y = moves[l].y;
       }
-      myfile<<j+1<<","<<currInsect->get_x()<<","<<currInsect->get_y()<<","<<currInsect->get_speciesID()<<","<<currInsect->get_aadhar_number()<<","<<MOVE<<"\n";
-      if(moveResult==DYING_ORGANISM){ 
-        myfile<<j+1<<","<<currInsect->get_x()<<","<<currInsect->get_y()<<","<<currInsect->get_speciesID()<<","<<currInsect->get_aadhar_number()<<","<<DIE<<"\n";
+      simulationFile<<iterNum+1<<","<<currInsect->get_x()<<","<<currInsect->get_y()<<","<<currInsect->get_speciesID()<<","<<currInsect->get_aadhar_number()<<","<<MOVE<<"\n";
+      if(moveResult==DYING_ORGANISM)
+      { 
+        killInsect(currInsect);
       }
-      // HHN's Code:
-      // coordinates2D posn;
-      // posn.x = currInsect->get_x();
-      // posn.y = currInsect->get_y();
-      // vector<coordinates2D> poss_posns = adjacent_posns(posn);
-      // pair<bool, coordinates2D> reproduce_roll = currInsect->reproduce_oracle(poss_posns);
-      // if (reproduce_roll.first == true)
-      // {
-      //   pair<power, power> parent_child_energy = currInsect->getChildEnergy();
-      //   // TODO
-      //   // first-> parent, second->child
-      //   // Organism * child = new Organism()
-      //   // insert child into the vector of organisms
-      //    currInsect->updateEnergy(parent_child_energy.first);
-      // }
-
       // Asexual Reproduction
       else{
-        if (cupid.godSaidYes(currInsect))
+        if (REPRODUCETYPE==Asexual && cupid.godSaidYes(currInsect))
         {
-          int tempX = currInsect->get_x();
-          int tempY = currInsect->get_y();
-          int tempSpeciesID = currInsect->get_speciesID();
-          int tempAdhaar = currInsect->get_aadhar_number();
-        // HHN's Code:
           vector<Insect *> daughters = cupid.split(currInsect);
           if (daughters.size() == 2)
           {
-            myfile<<j+1<<","<<tempX<<","<<tempY<<","<<tempSpeciesID<<","<<tempAdhaar<<","<<SPLIT<<"\n";
-            myfile<<j+1<<","<<daughters[0]->get_x()<<","<<daughters[0]->get_y()<<","<<daughters[0]->get_speciesID()<<","<<daughters[0]->get_aadhar_number()<<","<<BIRTH<<"\n";
-            myfile<<j+1<<","<<daughters[1]->get_x()<<","<<daughters[1]->get_y()<<","<<daughters[1]->get_speciesID()<<","<<daughters[1]->get_aadhar_number()<<","<<BIRTH<<"\n";
             addInsect(daughters[0]);
             addInsect(daughters[1]);
           }
@@ -90,11 +79,11 @@ void Universe::run()
     std::random_shuffle(insects.begin(), insects.end());
 
     // Plant Spawning
-    if (j % plantSpawnInterval == 0)
+    if (iterNum % plantSpawnInterval == 0)
     {
       reSpawnPlant();
     }
   }
   ofile.close();
-  myfile.close();
+  simulationFile.close();
 }

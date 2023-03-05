@@ -27,8 +27,12 @@ public:
   int get_maxenergy() { return maxEnergy; }
   int get_speed() { return speed; }
   int get_visionradius() { return visionRadius; }
+  int get_maxSexualUrge() { return maxSexualUrge; }
+  int get_desirability() { return desirability; }
   void set_maxenergy(power maxE) { maxEnergy = maxE; }
   void set_speed(velocity v) { speed = v; }
   void set_visionradius(int vision) { visionRadius = vision; }
+  void set_maxSexualUrge(int maxSex) { maxSexualUrge = maxSex; }
+  void set_desirability(int desirability) { this->desirability = desirability; }
 };
 } // namespace namespace_traits

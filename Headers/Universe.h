@@ -5,8 +5,8 @@
 #define dimension 100            // Changing dimensions to 10k from 1k
 #define varieties_in_a_Species 3 // Three different Varieties For now there are three species varying
 #define maxVision 15
-#define initialPlantCount 100
-#define initialInsectCount 40
+#define initialPlantCount 200
+#define initialInsectCount 200
 #define insectIndex 1
 #define plantIndex 0
 #define maxEnergy 300
@@ -90,8 +90,8 @@ private:
     vector<coordinates2D> emptycells(int k);
     // returns positions of k empty cells in the environment (expected to return k , but can be <k due to randomness )
 
-    map<int,int> Organisms_in_love;
-    //Tells us whether two organisms are locked in to reproduce or not (entries using aadhar_number of both)
+    map<Insect* ,Insect*> Organisms_in_love;
+    //Tells us whether two organisms are locked in to reproduce or not (entries using pointer to insect object)
 
 public:
     vector<Insect *> insects;

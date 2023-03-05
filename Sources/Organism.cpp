@@ -5,6 +5,8 @@
 using namespace namespace_traits;
 using namespace namespace_organism;
 extern std::ofstream outfile;
+extern std::ofstream simulationFile;
+extern int iterNum;
 
 #define MOVE 0
 #define BIRTH 1
@@ -29,6 +31,7 @@ Organism::Organism(int x, int y, int vision_radius, int *speed_list,
   this->traits = Traits(max_energy, 3, vision_radius);
   vector<string> vs{"Plant ","Insect "};
   outfile<<vs[speciesID]<<" "<<aadhar_number<<" born with "<<current_energy<<"/"<<max_energy<<" energy at ("<<(this->position).x<<","<<(this->position).y<<")\n";
+  simulationFile<<iterNum+1<<","<<position.x<<","<<position.y<<","<<speciesID<<","<<aadhar_number<<","<<BIRTH<<"\n";
 };
 
 Organism::Organism(coordinates2D posn, Traits t,unsigned short int aadhar_number, 
@@ -44,12 +47,14 @@ Organism::Organism(coordinates2D posn, Traits t,unsigned short int aadhar_number
   this->latest_organism_ID = aadhar_number;
   vector<string> vs{"Plant ","Insect "};
   outfile<<vs[speciesID]<<aadhar_number<<" born with "<<current_energy<<"/"<<max_energy<<" energy at ("<<(this->position).x<<","<<(this->position).y<<")\n";
+  simulationFile<<iterNum+1<<","<<position.x<<","<<position.y<<","<<speciesID<<","<<aadhar_number<<","<<BIRTH<<"\n";
 }
 
 Organism::~Organism() {
   // update universe method
   vector<string> vs{"Plant ","Insect "};
   outfile<<vs[speciesID]<<aadhar_number<<" died with "<<current_energy<<"/"<<max_energy<<" energy at ("<<(this->position).x<<","<<(this->position).y<<")\n";
+  simulationFile<<iterNum+1<<","<<position.x<<","<<position.y<<","<<speciesID<<","<<aadhar_number<<","<<DIE<<"\n";
 }
 
 void Organism::addEnergy(int energy) {
