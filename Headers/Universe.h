@@ -79,7 +79,6 @@ private:
     void *environment[dimension][dimension];
     // Pointer to the object at that location, if no object then NULL (change to Organism*)
 
-
     int displayEnvironment[dimension * dimension] = {0}; // For a given iteration holds the displayable data, (For now species is number) For now will be a flattened Matrix of the environment
     // vector<int[dimension * dimension]> historyEnvironment; // Hold atleast the layout of the environment at any point in the Iteration
     
@@ -180,5 +179,7 @@ public:
 
     void reSpawnPlant();
     // respawns plants at random locations
+
+    bool willReproduce(Insect *I1,Insect *I2);
 };
 

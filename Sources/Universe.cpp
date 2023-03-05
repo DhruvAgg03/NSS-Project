@@ -881,7 +881,7 @@ vector<coordinates2D> Universe::emptycells(int k)
   return emptycells;
 }
 
-bool willReproduce(Insect* I1,Insect* I2)
+bool Universe::willReproduce(Insect* I1,Insect* I2)
 {
     if(I1->get_gender() == I2->get_gender())
       return false;

@@ -1,866 +1,916 @@
 Constructed!!
-Plant  0 born with 20/20 energy at (58,28)
-Plant  1 born with 10/10 energy at (34,15)
-Plant  2 born with 10/10 energy at (59,91)
-Plant  3 born with 20/20 energy at (31,20)
-Plant  4 born with 10/10 energy at (47,94)
-Plant  5 born with 30/30 energy at (63,64)
-Plant  6 born with 10/10 energy at (77,63)
-Plant  7 born with 10/10 energy at (75,34)
-Plant  8 born with 10/10 energy at (37,26)
-Plant  9 born with 10/10 energy at (56,43)
-Plant  10 born with 20/20 energy at (17,79)
-Plant  11 born with 30/30 energy at (1,86)
-Plant  12 born with 30/30 energy at (75,43)
-Plant  13 born with 10/10 energy at (58,81)
-Plant  14 born with 10/10 energy at (37,9)
-Plant  15 born with 30/30 energy at (3,60)
-Plant  16 born with 30/30 energy at (8,37)
-Plant  17 born with 30/30 energy at (62,64)
-Plant  18 born with 10/10 energy at (45,33)
-Plant  19 born with 30/30 energy at (37,70)
-Plant  20 born with 20/20 energy at (11,12)
-Plant  21 born with 20/20 energy at (76,60)
-Plant  22 born with 30/30 energy at (55,11)
-Plant  23 born with 20/20 energy at (40,84)
-Plant  24 born with 20/20 energy at (68,72)
-Plant  25 born with 20/20 energy at (40,40)
-Plant  26 born with 30/30 energy at (62,79)
-Plant  27 born with 10/10 energy at (0,75)
-Plant  28 born with 10/10 energy at (96,33)
-Plant  29 born with 20/20 energy at (17,73)
-Plant  30 born with 30/30 energy at (62,73)
-Plant  31 born with 10/10 energy at (42,82)
-Plant  32 born with 30/30 energy at (66,28)
-Plant  33 born with 10/10 energy at (45,87)
-Plant  34 born with 10/10 energy at (43,66)
-Plant  35 born with 20/20 energy at (5,89)
-Plant  36 born with 10/10 energy at (38,30)
-Plant  37 born with 10/10 energy at (41,53)
-Plant  38 born with 20/20 energy at (18,54)
-Plant  39 born with 30/30 energy at (44,79)
-Plant  40 born with 30/30 energy at (3,28)
-Plant  41 born with 20/20 energy at (95,42)
-Plant  42 born with 20/20 energy at (38,33)
-Plant  43 born with 10/10 energy at (6,56)
-Plant  44 born with 30/30 energy at (97,18)
-Plant  45 born with 30/30 energy at (46,0)
-Plant  46 born with 20/20 energy at (65,88)
-Plant  47 born with 30/30 energy at (27,0)
-Plant  48 born with 30/30 energy at (15,75)
-Plant  49 born with 20/20 energy at (61,69)
-Plant  50 born with 20/20 energy at (31,75)
-Plant  51 born with 30/30 energy at (31,62)
-Plant  52 born with 20/20 energy at (37,77)
-Plant  53 born with 30/30 energy at (83,5)
-Plant  54 born with 30/30 energy at (91,39)
-Plant  55 born with 10/10 energy at (69,26)
-Plant  56 born with 30/30 energy at (61,1)
-Plant  57 born with 20/20 energy at (79,55)
-Plant  58 born with 10/10 energy at (48,14)
-Plant  59 born with 20/20 energy at (98,47)
-Plant  60 born with 30/30 energy at (95,97)
-Plant  61 born with 30/30 energy at (40,76)
-Plant  62 born with 20/20 energy at (15,12)
-Plant  63 born with 10/10 energy at (58,20)
-Plant  64 born with 30/30 energy at (22,35)
-Plant  65 born with 10/10 energy at (78,1)
-Plant  66 born with 10/10 energy at (37,29)
-Plant  67 born with 20/20 energy at (24,97)
-Plant  68 born with 30/30 energy at (1,5)
-Plant  69 born with 30/30 energy at (98,87)
-Plant  70 born with 20/20 energy at (27,57)
-Plant  71 born with 10/10 energy at (38,94)
-Plant  72 born with 20/20 energy at (28,10)
-Plant  73 born with 30/30 energy at (67,67)
-Plant  74 born with 10/10 energy at (84,73)
-Plant  75 born with 20/20 energy at (71,33)
-Plant  76 born with 30/30 energy at (54,55)
-Plant  77 born with 20/20 energy at (90,86)
-Plant  78 born with 20/20 energy at (13,50)
-Plant  79 born with 10/10 energy at (76,57)
-Plant  80 born with 20/20 energy at (10,56)
-Plant  81 born with 20/20 energy at (52,68)
-Plant  82 born with 10/10 energy at (24,44)
-Plant  83 born with 10/10 energy at (62,11)
-Plant  84 born with 10/10 energy at (93,68)
-Plant  85 born with 20/20 energy at (74,66)
-Plant  86 born with 20/20 energy at (56,22)
-Plant  87 born with 30/30 energy at (77,94)
-Plant  88 born with 10/10 energy at (90,39)
-Plant  89 born with 30/30 energy at (50,7)
-Plant  90 born with 30/30 energy at (28,21)
-Plant  91 born with 10/10 energy at (99,11)
-Plant  92 born with 20/20 energy at (71,61)
-Plant  93 born with 20/20 energy at (99,94)
-Plant  94 born with 20/20 energy at (67,7)
-Plant  95 born with 10/10 energy at (14,11)
-Plant  96 born with 10/10 energy at (70,34)
-Plant  97 born with 10/10 energy at (63,59)
-Plant  98 born with 30/30 energy at (85,71)
-Plant  99 born with 20/20 energy at (21,66)
-Insect 100 born with 300/300 energy at (0,20)
-Insect 101 born with 300/300 energy at (49,80)
-Insect 102 born with 300/300 energy at (48,99)
-Insect 103 born with 300/300 energy at (4,2)
-Insect 104 born with 300/300 energy at (2,37)
-Insect 105 born with 300/300 energy at (31,73)
-Insect 106 born with 300/300 energy at (13,92)
-Insect 107 born with 300/300 energy at (20,85)
-Insect 108 born with 300/300 energy at (26,14)
-Insect 109 born with 300/300 energy at (22,30)
-Insect 110 born with 300/300 energy at (53,43)
-Insect 111 born with 300/300 energy at (21,72)
-Insect 112 born with 300/300 energy at (76,30)
-Insect 113 born with 300/300 energy at (31,64)
-Insect 114 born with 300/300 energy at (13,98)
-Insect 115 born with 300/300 energy at (26,44)
-Insect 116 born with 300/300 energy at (93,52)
-Insect 117 born with 300/300 energy at (29,0)
-Insect 118 born with 300/300 energy at (92,76)
-Insect 119 born with 300/300 energy at (33,95)
-Insect 120 born with 300/300 energy at (22,71)
-Insect 121 born with 300/300 energy at (79,86)
-Insect 122 born with 300/300 energy at (61,70)
-Insect 123 born with 300/300 energy at (45,99)
-Insect 124 born with 300/300 energy at (79,1)
-Insect 125 born with 300/300 energy at (5,67)
-Insect 126 born with 300/300 energy at (28,36)
-Insect 127 born with 300/300 energy at (92,79)
-Insect 128 born with 300/300 energy at (47,10)
-Insect 129 born with 300/300 energy at (71,54)
-Insect 130 born with 300/300 energy at (62,9)
-Insect 131 born with 300/300 energy at (67,14)
-Insect 132 born with 300/300 energy at (99,61)
-Insect 133 born with 300/300 energy at (45,64)
-Insect 134 born with 300/300 energy at (95,73)
-Insect 135 born with 300/300 energy at (40,42)
-Insect 136 born with 300/300 energy at (96,61)
-Insect 137 born with 300/300 energy at (95,7)
-Insect 138 born with 300/300 energy at (76,12)
-Insect 139 born with 300/300 energy at (28,86)
+Plant  0 born with 30/30 energy at (54,46)
+Plant  1 born with 30/30 energy at (11,88)
+Plant  2 born with 30/30 energy at (90,70)
+Plant  3 born with 20/20 energy at (20,52)
+Plant  4 born with 20/20 energy at (65,38)
+Plant  5 born with 30/30 energy at (37,74)
+Plant  6 born with 30/30 energy at (16,14)
+Plant  7 born with 10/10 energy at (58,49)
+Plant  8 born with 30/30 energy at (80,91)
+Plant  9 born with 10/10 energy at (84,72)
+Plant  10 born with 30/30 energy at (32,76)
+Plant  11 born with 20/20 energy at (55,23)
+Plant  12 born with 20/20 energy at (52,32)
+Plant  13 born with 20/20 energy at (79,74)
+Plant  14 born with 10/10 energy at (99,25)
+Plant  15 born with 10/10 energy at (44,71)
+Plant  16 born with 10/10 energy at (9,57)
+Plant  17 born with 10/10 energy at (54,94)
+Plant  18 born with 30/30 energy at (71,71)
+Plant  19 born with 30/30 energy at (86,69)
+Plant  20 born with 10/10 energy at (81,17)
+Plant  21 born with 20/20 energy at (21,55)
+Plant  22 born with 30/30 energy at (44,10)
+Plant  23 born with 30/30 energy at (30,22)
+Plant  24 born with 30/30 energy at (92,30)
+Plant  25 born with 20/20 energy at (28,11)
+Plant  26 born with 30/30 energy at (59,52)
+Plant  27 born with 30/30 energy at (36,94)
+Plant  28 born with 30/30 energy at (26,38)
+Plant  29 born with 10/10 energy at (81,74)
+Plant  30 born with 10/10 energy at (71,52)
+Plant  31 born with 10/10 energy at (28,60)
+Plant  32 born with 20/20 energy at (57,25)
+Plant  33 born with 20/20 energy at (69,81)
+Plant  34 born with 10/10 energy at (44,36)
+Plant  35 born with 10/10 energy at (40,80)
+Plant  36 born with 10/10 energy at (92,63)
+Plant  37 born with 10/10 energy at (40,99)
+Plant  38 born with 20/20 energy at (10,30)
+Plant  39 born with 20/20 energy at (1,11)
+Plant  40 born with 30/30 energy at (49,97)
+Plant  41 born with 10/10 energy at (9,52)
+Plant  42 born with 20/20 energy at (56,95)
+Plant  43 born with 20/20 energy at (52,12)
+Plant  44 born with 20/20 energy at (49,40)
+Plant  45 born with 30/30 energy at (51,65)
+Plant  46 born with 10/10 energy at (34,14)
+Plant  47 born with 30/30 energy at (94,61)
+Plant  48 born with 10/10 energy at (62,1)
+Plant  49 born with 10/10 energy at (39,35)
+Plant  50 born with 20/20 energy at (22,96)
+Plant  51 born with 20/20 energy at (17,34)
+Plant  52 born with 10/10 energy at (12,67)
+Plant  53 born with 20/20 energy at (33,86)
+Plant  54 born with 30/30 energy at (9,99)
+Plant  55 born with 10/10 energy at (78,74)
+Plant  56 born with 30/30 energy at (78,98)
+Plant  57 born with 30/30 energy at (68,87)
+Plant  58 born with 20/20 energy at (53,11)
+Plant  59 born with 10/10 energy at (90,59)
+Plant  60 born with 20/20 energy at (25,81)
+Plant  61 born with 30/30 energy at (20,62)
+Plant  62 born with 20/20 energy at (87,54)
+Plant  63 born with 20/20 energy at (34,93)
+Plant  64 born with 10/10 energy at (1,67)
+Plant  65 born with 30/30 energy at (56,0)
+Plant  66 born with 20/20 energy at (11,97)
+Plant  67 born with 10/10 energy at (81,22)
+Plant  68 born with 20/20 energy at (65,28)
+Plant  69 born with 10/10 energy at (69,66)
+Plant  70 born with 30/30 energy at (78,11)
+Plant  71 born with 10/10 energy at (69,68)
+Plant  72 born with 30/30 energy at (23,19)
+Plant  73 born with 10/10 energy at (93,62)
+Plant  74 born with 30/30 energy at (75,94)
+Plant  75 born with 10/10 energy at (38,66)
+Plant  76 born with 20/20 energy at (28,47)
+Plant  77 born with 30/30 energy at (44,4)
+Plant  78 born with 10/10 energy at (29,36)
+Plant  79 born with 20/20 energy at (48,28)
+Plant  80 born with 20/20 energy at (54,25)
+Plant  81 born with 10/10 energy at (36,74)
+Plant  82 born with 30/30 energy at (84,36)
+Plant  83 born with 20/20 energy at (80,78)
+Plant  84 born with 20/20 energy at (88,20)
+Plant  85 born with 10/10 energy at (19,63)
+Plant  86 born with 10/10 energy at (78,8)
+Plant  87 born with 30/30 energy at (36,33)
+Plant  88 born with 10/10 energy at (8,65)
+Plant  89 born with 30/30 energy at (68,56)
+Plant  90 born with 30/30 energy at (80,73)
+Plant  91 born with 10/10 energy at (88,7)
+Plant  92 born with 10/10 energy at (66,68)
+Plant  93 born with 30/30 energy at (96,90)
+Plant  94 born with 20/20 energy at (67,55)
+Plant  95 born with 30/30 energy at (51,26)
+Plant  96 born with 10/10 energy at (45,63)
+Plant  97 born with 30/30 energy at (78,64)
+Plant  98 born with 20/20 energy at (7,34)
+Plant  99 born with 10/10 energy at (94,2)
+Insect 100 born with 300/300 energy at (42,46)
+Insect 101 born with 300/300 energy at (98,48)
+Insect 102 born with 300/300 energy at (29,0)
+Insect 103 born with 300/300 energy at (47,9)
+Insect 104 born with 300/300 energy at (63,78)
+Insect 105 born with 300/300 energy at (54,78)
+Insect 106 born with 300/300 energy at (59,57)
+Insect 107 born with 300/300 energy at (33,37)
+Insect 108 born with 300/300 energy at (89,85)
+Insect 109 born with 300/300 energy at (97,8)
+Insect 110 born with 300/300 energy at (35,99)
+Insect 111 born with 300/300 energy at (59,6)
+Insect 112 born with 300/300 energy at (80,50)
+Insect 113 born with 300/300 energy at (38,57)
+Insect 114 born with 300/300 energy at (11,0)
+Insect 115 born with 300/300 energy at (59,4)
+Insect 116 born with 300/300 energy at (12,99)
+Insect 117 born with 300/300 energy at (18,37)
+Insect 118 born with 300/300 energy at (71,27)
+Insect 119 born with 300/300 energy at (66,81)
+Insect 120 born with 300/300 energy at (81,52)
+Insect 121 born with 300/300 energy at (13,29)
+Insect 122 born with 300/300 energy at (1,5)
+Insect 123 born with 300/300 energy at (44,54)
+Insect 124 born with 300/300 energy at (53,10)
+Insect 125 born with 300/300 energy at (60,4)
+Insect 126 born with 300/300 energy at (42,28)
+Insect 127 born with 300/300 energy at (75,10)
+Insect 128 born with 300/300 energy at (51,34)
+Insect 129 born with 300/300 energy at (37,83)
+Insect 130 born with 300/300 energy at (85,43)
+Insect 131 born with 300/300 energy at (22,5)
+Insect 132 born with 300/300 energy at (50,91)
+Insect 133 born with 300/300 energy at (92,86)
+Insect 134 born with 300/300 energy at (15,0)
+Insect 135 born with 300/300 energy at (45,50)
+Insect 136 born with 300/300 energy at (56,52)
+Insect 137 born with 300/300 energy at (22,56)
+Insect 138 born with 300/300 energy at (79,1)
+Insect 139 born with 300/300 energy at (48,35)
 *************************************************
 Iteration: 1
-Plant 50 died with 20/20 energy at (31,75)
-Plant 9 died with 10/10 energy at (56,43)
-Plant 51 died with 30/30 energy at (31,62)
-Plant 82 died with 10/10 energy at (24,44)
-Plant 47 died with 30/30 energy at (27,0)
-Plant 49 died with 20/20 energy at (61,69)
-Plant 65 died with 10/10 energy at (78,1)
-Plant 83 died with 10/10 energy at (62,11)
-Plant 34 died with 10/10 energy at (43,66)
-Plant 25 died with 20/20 energy at (40,40)
+Plant 22 died with 30/30 energy at (44,10)
+Plant 26 died with 30/30 energy at (59,52)
+Plant 66 died with 20/20 energy at (11,97)
+Plant 33 died with 20/20 energy at (69,81)
+Plant 38 died with 20/20 energy at (10,30)
+Plant 58 died with 20/20 energy at (53,11)
+Plant 43 died with 20/20 energy at (52,12)
+Plant 48 died with 10/10 energy at (62,1)
+Plant 12 died with 20/20 energy at (52,32)
+Plant 35 died with 10/10 energy at (40,80)
+Plant 21 died with 20/20 energy at (21,55)
 New plants spawned: 20
-Plant  140 born with 20/20 energy at (49,22)
-Plant  141 born with 10/10 energy at (17,71)
-Plant  142 born with 20/20 energy at (87,37)
-Plant  143 born with 10/10 energy at (33,86)
-Plant  144 born with 30/30 energy at (51,64)
-Plant  145 born with 20/20 energy at (48,86)
-Plant  146 born with 20/20 energy at (56,50)
-Plant  147 born with 10/10 energy at (75,7)
-Plant  148 born with 20/20 energy at (68,35)
-Plant  149 born with 20/20 energy at (66,46)
-Plant  150 born with 10/10 energy at (88,38)
-Plant  151 born with 10/10 energy at (9,73)
-Plant  152 born with 20/20 energy at (45,75)
-Plant  153 born with 10/10 energy at (6,18)
-Plant  154 born with 10/10 energy at (83,86)
-Plant  155 born with 20/20 energy at (92,26)
-Plant  156 born with 20/20 energy at (30,62)
-Plant  157 born with 10/10 energy at (45,32)
-Plant  158 born with 20/20 energy at (64,57)
-Plant  159 born with 20/20 energy at (16,22)
+Plant  140 born with 20/20 energy at (57,29)
+Plant  141 born with 10/10 energy at (68,21)
+Plant  142 born with 20/20 energy at (91,58)
+Plant  143 born with 10/10 energy at (71,38)
+Plant  144 born with 30/30 energy at (57,18)
+Plant  145 born with 20/20 energy at (64,21)
+Plant  146 born with 20/20 energy at (26,21)
+Plant  147 born with 30/30 energy at (93,60)
+Plant  148 born with 30/30 energy at (44,45)
+Plant  149 born with 30/30 energy at (12,56)
+Plant  150 born with 20/20 energy at (87,6)
+Plant  151 born with 10/10 energy at (57,0)
+Plant  152 born with 30/30 energy at (1,4)
+Plant  153 born with 20/20 energy at (74,64)
+Plant  154 born with 10/10 energy at (37,5)
+Plant  155 born with 30/30 energy at (93,21)
+Plant  156 born with 30/30 energy at (34,18)
+Plant  157 born with 30/30 energy at (9,67)
+Plant  158 born with 20/20 energy at (11,99)
+Plant  159 born with 10/10 energy at (14,91)
 *************************************************
 Iteration: 2
-Plant 154 died with 10/10 energy at (83,86)
-Plant 58 died with 10/10 energy at (48,14)
-Plant 30 died with 30/30 energy at (62,73)
-Plant 156 died with 20/20 energy at (30,62)
+Plant 54 died with 30/30 energy at (9,99)
+Plant 158 died with 20/20 energy at (11,99)
+Insect 116 is splitting
+Insect 160 born with 137/137 energy at (9,99)
+Insect 161 born with 162/162 energy at (10,99)
+Insect 116 died with 298/300 energy at (9,99)
+Plant 7 died with 10/10 energy at (58,49)
+Plant 34 died with 10/10 energy at (44,36)
+Insect 103 is splitting
+Insect 162 born with 148/148 energy at (42,12)
+Insect 163 born with 141/141 energy at (41,12)
+Insect 103 died with 288/300 energy at (42,12)
+Plant 78 died with 10/10 energy at (29,36)
+Plant 148 died with 30/30 energy at (44,45)
+Insect 131 is splitting
+Insect 164 born with 142/142 energy at (21,4)
+Insect 165 born with 157/157 energy at (22,4)
+Insect 131 died with 298/300 energy at (21,4)
 *************************************************
 Iteration: 3
-Plant 7 died with 10/10 energy at (75,34)
-Plant 29 died with 20/20 energy at (17,73)
-Plant 141 died with 10/10 energy at (17,71)
-Plant 143 died with 10/10 energy at (33,86)
-Plant 91 died with 10/10 energy at (99,11)
+Plant 98 died with 20/20 energy at (7,34)
+Plant 5 died with 30/30 energy at (37,74)
+Plant 81 died with 10/10 energy at (36,74)
+Plant 28 died with 30/30 energy at (26,38)
 *************************************************
 Iteration: 4
-Plant 48 died with 30/30 energy at (15,75)
-Plant 75 died with 20/20 energy at (71,33)
-Plant 147 died with 10/10 energy at (75,7)
-Plant 4 died with 10/10 energy at (47,94)
-Insect 131 is splitting
-Insect 160 born with 135/135 energy at (68,13)
-Insect 161 born with 140/140 energy at (69,13)
-Insect 131 died with 274/300 energy at (68,13)
 *************************************************
 Iteration: 5
-Plant 96 died with 10/10 energy at (70,34)
-Plant 148 died with 20/20 energy at (68,35)
-Plant 64 died with 30/30 energy at (22,35)
-Insect 125 is splitting
-Insect 162 born with 132/132 energy at (4,65)
-Insect 163 born with 148/148 energy at (4,64)
-Insect 125 died with 279/300 energy at (4,65)
-Plant 53 died with 30/30 energy at (83,5)
+Insect 162 is splitting
+Insect 166 born with 69/69 energy at (46,7)
+Insect 167 born with 69/69 energy at (46,8)
+Insect 162 died with 137/148 energy at (46,7)
+Plant 93 died with 30/30 energy at (96,90)
+Insect 107 is splitting
+Insect 168 born with 131/131 energy at (25,41)
+Insect 169 born with 156/156 energy at (25,42)
+Insect 107 died with 286/300 energy at (25,41)
+Plant 40 died with 30/30 energy at (49,97)
+Plant 3 died with 20/20 energy at (20,52)
 *************************************************
 Iteration: 6
-Plant 152 died with 20/20 energy at (45,75)
-Insect 160 is splitting
-Insect 164 born with 59/59 energy at (67,12)
-Insect 165 born with 69/69 energy at (67,11)
-Insect 160 died with 127/135 energy at (67,12)
-Plant 151 died with 10/10 energy at (9,73)
-Plant 153 died with 10/10 energy at (6,18)
-Insect 100 is splitting
-Insect 166 born with 148/148 energy at (6,21)
-Insect 167 born with 146/146 energy at (6,22)
-Insect 100 died with 293/300 energy at (6,21)
+Plant 37 died with 10/10 energy at (40,99)
+Plant 39 died with 20/20 energy at (1,11)
+Insect 129 is splitting
+Insect 170 born with 141/141 energy at (38,73)
+Insect 171 born with 145/145 energy at (39,73)
+Insect 129 died with 285/300 energy at (38,73)
+Insect 133 is splitting
+Insect 172 born with 146/146 energy at (97,90)
+Insect 173 born with 154/154 energy at (98,90)
+Insect 133 died with 299/300 energy at (97,90)
 *************************************************
 Iteration: 7
-Insect 120 is splitting
-Insect 168 born with 127/127 energy at (8,72)
-Insect 169 born with 158/158 energy at (8,71)
-Insect 120 died with 284/300 energy at (8,72)
-Plant 26 died with 30/30 energy at (62,79)
-Plant 68 died with 30/30 energy at (1,5)
-Insect 161 is splitting
-Insect 170 born with 59/59 energy at (67,18)
-Insect 171 born with 71/71 energy at (66,18)
-Insect 161 died with 129/140 energy at (67,18)
-Insect 117 is splitting
-Insect 172 born with 133/133 energy at (25,3)
-Insect 173 born with 127/127 energy at (25,2)
-Insect 117 died with 259/300 energy at (25,3)
+Insect 121 is splitting
+Insect 174 born with 145/145 energy at (7,36)
+Insect 175 born with 130/130 energy at (6,36)
+Insect 121 died with 274/300 energy at (7,36)
+Insect 124 is splitting
+Insect 176 born with 134/134 energy at (50,14)
+Insect 177 born with 133/133 energy at (50,15)
+Insect 124 died with 266/300 energy at (50,14)
+Plant 77 died with 30/30 energy at (44,4)
+Insect 113 is splitting
+Insect 178 born with 131/131 energy at (35,48)
+Insect 179 born with 136/136 energy at (36,48)
+Insect 113 died with 266/300 energy at (35,48)
+Plant 79 died with 20/20 energy at (48,28)
 *************************************************
 Iteration: 8
-Plant 15 died with 30/30 energy at (3,60)
-Plant 145 died with 20/20 energy at (48,86)
-Plant 10 died with 20/20 energy at (17,79)
-Plant 39 died with 30/30 energy at (44,79)
-Insect 133 is splitting
-Insect 174 born with 138/138 energy at (44,79)
-Insect 175 born with 163/163 energy at (44,78)
-Insect 133 died with 300/300 energy at (44,79)
+Plant 151 died with 10/10 energy at (57,0)
+Plant 65 died with 30/30 energy at (56,0)
+Plant 44 died with 20/20 energy at (49,40)
+Insect 100 is splitting
+Insect 180 born with 136/136 energy at (45,44)
+Insect 181 born with 138/138 energy at (44,44)
+Insect 100 died with 273/300 energy at (45,44)
 *************************************************
 Iteration: 9
-Plant 42 died with 20/20 energy at (38,33)
-Plant 33 died with 10/10 energy at (45,87)
-Insect 128 is splitting
-Insect 176 born with 127/127 energy at (50,16)
-Insect 177 born with 144/144 energy at (50,15)
-Insect 128 died with 270/300 energy at (50,16)
-Plant 16 died with 30/30 energy at (8,37)
+Plant 17 died with 10/10 energy at (54,94)
+Plant 46 died with 10/10 energy at (34,14)
+Insect 125 is splitting
+Insect 182 born with 145/145 energy at (62,0)
+Insect 183 born with 143/143 energy at (62,-1)
+Insect 125 died with 287/300 energy at (62,0)
+Insect 136 is splitting
+Insect 184 born with 137/137 energy at (63,48)
+Insect 185 born with 132/132 energy at (64,48)
+Insect 136 died with 268/300 energy at (63,48)
+Plant 68 died with 20/20 energy at (65,28)
 *************************************************
 Iteration: 10
-Insect 114 is splitting
-Insect 178 born with 142/142 energy at (19,97)
-Insect 179 born with 126/126 energy at (20,97)
-Insect 114 died with 267/300 energy at (19,97)
-Plant 36 died with 10/10 energy at (38,30)
-Plant 66 died with 10/10 energy at (37,29)
-Insect 111 is splitting
-Insect 180 born with 142/142 energy at (21,70)
-Insect 181 born with 119/119 energy at (21,71)
-Insect 111 died with 260/300 energy at (21,70)
+Plant 42 died with 20/20 energy at (56,95)
+Plant 76 died with 20/20 energy at (28,47)
+Insect 137 is splitting
+Insect 186 born with 150/150 energy at (28,47)
+Insect 187 born with 151/151 energy at (27,47)
+Insect 137 died with 300/300 energy at (28,47)
+Plant 140 died with 20/20 energy at (57,29)
 *************************************************
 Iteration: 11
-Plant 99 died with 20/20 energy at (21,66)
-Insect 134 is splitting
-Insect 182 born with 140/140 energy at (99,78)
-Insect 183 born with 134/134 energy at (99,79)
-Insect 134 died with 273/300 energy at (99,78)
-Plant 72 died with 20/20 energy at (28,10)
-Plant 31 died with 10/10 energy at (42,82)
+Insect 112 is splitting
+Insect 188 born with 137/137 energy at (80,52)
+Insect 189 born with 120/120 energy at (81,52)
+Insect 112 died with 256/300 energy at (80,52)
+Insect 110 is splitting
+Insect 190 born with 154/154 energy at (43,99)
+Insect 191 born with 129/129 energy at (43,98)
+Insect 110 died with 282/300 energy at (43,99)
+Plant 32 died with 20/20 energy at (57,25)
 *************************************************
 Iteration: 12
-Insect 124 is splitting
-Insect 184 born with 130/130 energy at (93,3)
-Insect 185 born with 127/127 energy at (93,2)
-Insect 124 died with 256/300 energy at (93,3)
-Insect 136 is splitting
-Insect 186 born with 133/133 energy at (86,55)
-Insect 187 born with 126/126 energy at (86,54)
-Insect 136 died with 258/300 energy at (86,55)
-Plant 23 died with 20/20 energy at (40,84)
+Insect 117 is splitting
+Insect 192 born with 130/130 energy at (25,34)
+Insect 193 born with 119/119 energy at (26,34)
+Insect 117 died with 248/300 energy at (25,34)
+Plant 75 died with 10/10 energy at (38,66)
+Insect 176 is splitting
+Insect 194 born with 53/53 energy at (51,12)
+Insect 195 born with 61/61 energy at (52,12)
+Insect 176 died with 113/134 energy at (51,12)
+Insect 109 is splitting
+Insect 196 born with 132/132 energy at (99,7)
+Insect 197 born with 126/126 energy at (98,7)
+Insect 109 died with 257/300 energy at (99,7)
+Plant 80 died with 20/20 energy at (54,25)
 *************************************************
 Iteration: 13
-Insect 113 is splitting
-Insect 188 born with 136/136 energy at (31,61)
-Insect 189 born with 129/129 energy at (30,61)
-Insect 113 died with 264/300 energy at (31,61)
-Plant 84 died with 10/10 energy at (93,68)
-Insect 135 is splitting
-Insect 190 born with 138/138 energy at (37,32)
-Insect 191 born with 156/156 energy at (37,33)
-Insect 135 died with 293/300 energy at (37,32)
+Insect 120 is splitting
+Insect 198 born with 108/108 energy at (85,45)
+Insect 199 born with 126/126 energy at (84,45)
+Insect 120 died with 233/300 energy at (85,45)
+Plant 11 died with 20/20 energy at (55,23)
+Insect 127 is splitting
+Insect 200 born with 124/124 energy at (72,9)
+Insect 201 born with 147/147 energy at (72,10)
+Insect 127 died with 270/300 energy at (72,9)
 *************************************************
 Iteration: 14
-Plant 94 died with 20/20 energy at (67,7)
-Plant 63 died with 10/10 energy at (58,20)
-Plant 149 died with 20/20 energy at (66,46)
-Plant 20 died with 20/20 energy at (11,12)
-Plant 95 died with 10/10 energy at (14,11)
-Insect 104 is splitting
-Insect 192 born with 131/131 energy at (10,35)
-Insect 193 born with 154/154 energy at (10,34)
-Insect 104 died with 284/300 energy at (10,35)
+Insect 105 is splitting
+Insect 202 born with 103/103 energy at (47,79)
+Insect 203 born with 120/120 energy at (47,80)
+Insect 105 died with 222/300 energy at (47,79)
+Insect 172 is splitting
+Insect 204 born with 55/55 energy at (95,90)
+Insect 205 born with 64/64 energy at (95,89)
+Insect 172 died with 118/146 energy at (95,90)
+Insect 168 is splitting
+Insect 206 born with 48/48 energy at (19,37)
+Insect 207 born with 44/44 energy at (18,37)
+Insect 168 died with 91/131 energy at (19,37)
 *************************************************
 Iteration: 15
-Plant 86 died with 20/20 energy at (56,22)
-Plant 62 died with 20/20 energy at (15,12)
-Insect 126 is splitting
-Insect 194 born with 125/125 energy at (23,37)
-Insect 195 born with 114/114 energy at (24,37)
-Insect 126 died with 238/300 energy at (23,37)
-Plant 43 died with 10/10 energy at (6,56)
-Insect 129 is splitting
-Insect 196 born with 132/132 energy at (69,53)
-Insect 197 born with 128/128 energy at (69,52)
-Insect 129 died with 259/300 energy at (69,53)
+Plant 154 died with 10/10 energy at (37,5)
+Insect 134 is splitting
+Insect 208 born with 111/111 energy at (16,8)
+Insect 209 born with 113/113 energy at (16,9)
+Insect 134 died with 223/300 energy at (16,8)
+Plant 0 died with 30/30 energy at (54,46)
 *************************************************
 Iteration: 16
-Insect 107 is splitting
-Insect 198 born with 130/130 energy at (12,82)
-Insect 199 born with 110/110 energy at (12,81)
-Insect 107 died with 239/300 energy at (12,82)
-Plant 44 died with 30/30 energy at (97,18)
-Insect 119 is splitting
-Insect 200 born with 125/125 energy at (26,83)
-Insect 201 born with 133/133 energy at (27,83)
-Insect 119 died with 257/300 energy at (26,83)
-Insect 103 is splitting
-Insect 202 born with 129/129 energy at (7,9)
-Insect 203 born with 124/124 energy at (6,9)
-Insect 103 died with 252/300 energy at (7,9)
+Insect 128 is splitting
+Insect 210 born with 138/138 energy at (56,23)
+Insect 211 born with 138/138 energy at (57,23)
+Insect 128 died with 275/300 energy at (56,23)
+Plant 51 died with 20/20 energy at (17,34)
+Insect 122 is splitting
+Insect 212 born with 148/148 energy at (1,14)
+Insect 213 born with 126/126 energy at (0,14)
+Insect 122 died with 273/300 energy at (1,14)
+Plant 6 died with 30/30 energy at (16,14)
 *************************************************
 Iteration: 17
-Insect 137 is splitting
-Insect 204 born with 119/119 energy at (99,21)
-Insect 205 born with 148/148 energy at (98,21)
-Insect 137 died with 266/300 energy at (99,21)
-Plant 24 died with 20/20 energy at (68,72)
-Insect 180 is splitting
-Insect 206 born with 60/60 energy at (27,67)
-Insect 207 born with 58/58 energy at (27,66)
-Insect 180 died with 117/142 energy at (27,67)
-Plant 77 died with 20/20 energy at (90,86)
-Plant 80 died with 20/20 energy at (10,56)
+Insect 115 is splitting
+Insect 214 born with 136/136 energy at (54,6)
+Insect 215 born with 129/129 energy at (55,6)
+Insect 115 died with 264/300 energy at (54,6)
+Insect 184 is splitting
+Insect 216 born with 61/61 energy at (63,46)
+Insect 217 born with 51/51 energy at (62,46)
+Insect 184 died with 111/137 energy at (63,46)
+Insect 209 is splitting
+Insect 218 born with 56/56 energy at (12,15)
+Insect 219 born with 51/51 energy at (11,15)
+Insect 209 died with 106/113 energy at (12,15)
 *************************************************
 Iteration: 18
-Insect 139 is splitting
-Insect 208 born with 108/108 energy at (31,95)
-Insect 209 born with 99/99 energy at (32,95)
-Insect 139 died with 206/300 energy at (31,95)
-Plant 67 died with 20/20 energy at (24,97)
-Plant 71 died with 10/10 energy at (38,94)
+Insect 123 is splitting
+Insect 220 born with 120/120 energy at (51,56)
+Insect 221 born with 124/124 energy at (51,57)
+Insect 123 died with 243/300 energy at (51,56)
+Insect 179 is splitting
+Insect 222 born with 49/49 energy at (40,44)
+Insect 223 born with 46/46 energy at (39,44)
+Insect 179 died with 94/136 energy at (40,44)
+Plant 144 died with 30/30 energy at (57,18)
 *************************************************
 Iteration: 19
-Insect 175 is splitting
-Insect 210 born with 70/70 energy at (47,74)
-Insect 211 born with 63/63 energy at (46,74)
-Insect 175 died with 132/163 energy at (47,74)
-Insect 178 is splitting
-Insect 212 born with 66/66 energy at (25,97)
-Insect 213 born with 71/71 energy at (24,97)
-Insect 178 died with 136/142 energy at (25,97)
-Insect 101 is splitting
-Insect 214 born with 124/124 energy at (48,76)
-Insect 215 born with 112/112 energy at (47,76)
-Insect 101 died with 235/300 energy at (48,76)
+Insect 186 is splitting
+Insect 224 born with 62/62 energy at (28,40)
+Insect 225 born with 64/64 energy at (28,39)
+Insect 186 died with 125/150 energy at (28,40)
+Insect 169 is splitting
+Insect 226 born with 52/52 energy at (35,38)
+Insect 227 born with 51/51 energy at (34,38)
+Insect 169 died with 102/156 energy at (35,38)
 *************************************************
 Iteration: 20
-Insect 162 is splitting
-Insect 216 born with 34/34 energy at (12,74)
-Insect 217 born with 36/36 energy at (13,74)
-Insect 162 died with 69/132 energy at (12,74)
-Plant 57 died with 20/20 energy at (79,55)
-Plant 56 died with 30/30 energy at (61,1)
-Insect 138 is splitting
-Insect 218 born with 109/109 energy at (72,4)
-Insect 219 born with 126/126 energy at (72,3)
-Insect 138 died with 234/300 energy at (72,4)
+Insect 132 is splitting
+Insect 228 born with 131/131 energy at (55,93)
+Insect 229 born with 131/131 energy at (55,94)
+Insect 132 died with 261/300 energy at (55,93)
+Plant 94 died with 20/20 energy at (67,55)
+Plant 89 died with 30/30 energy at (68,56)
+Plant 25 died with 20/20 energy at (28,11)
+Insect 188 is splitting
+Insect 230 born with 60/60 energy at (81,52)
+Insect 231 born with 53/53 energy at (81,51)
+Insect 188 died with 112/137 energy at (81,52)
 *************************************************
 Iteration: 21
-Plant 27 died with 10/10 energy at (0,75)
-Insect 130 is splitting
-Insect 220 born with 128/128 energy at (76,16)
-Insect 221 born with 108/108 energy at (76,15)
-Insect 130 died with 235/300 energy at (76,16)
-Plant 79 died with 10/10 energy at (76,57)
-Plant 21 died with 20/20 energy at (76,60)
+Plant 20 died with 10/10 energy at (81,17)
+Plant 15 died with 10/10 energy at (44,71)
+Plant 18 died with 30/30 energy at (71,71)
 *************************************************
 Iteration: 22
-Insect 132 is splitting
-Insect 222 born with 99/99 energy at (96,63)
-Insect 223 born with 115/115 energy at (97,63)
-Insect 132 died with 213/300 energy at (96,63)
-Insect 121 is splitting
-Insect 224 born with 99/99 energy at (92,82)
-Insect 225 born with 117/117 energy at (93,82)
-Insect 121 died with 215/300 energy at (92,82)
-Plant 6 died with 10/10 energy at (77,63)
+Insect 130 is splitting
+Insect 232 born with 81/81 energy at (97,37)
+Insect 233 born with 102/102 energy at (97,36)
+Insect 130 died with 182/300 energy at (97,37)
+Plant 71 died with 10/10 energy at (69,68)
+Plant 69 died with 10/10 energy at (69,66)
+Insect 166 died with 1/69 energy at (48,7)
 *************************************************
 Iteration: 23
-Plant 61 died with 30/30 energy at (40,76)
-Insect 202 is splitting
-Insect 226 born with 62/62 energy at (1,9)
-Insect 227 born with 52/52 energy at (1,8)
-Insect 202 died with 113/129 energy at (1,9)
-Plant 85 died with 20/20 energy at (74,66)
-Insect 122 is splitting
-Insect 228 born with 111/111 energy at (73,78)
-Insect 229 born with 130/130 energy at (73,79)
-Insect 122 died with 240/300 energy at (73,78)
-Plant 92 died with 20/20 energy at (71,61)
+Plant 87 died with 30/30 energy at (36,33)
+Insect 190 is splitting
+Insect 234 born with 71/71 energy at (42,96)
+Insect 235 born with 68/68 energy at (42,97)
+Insect 190 died with 138/154 energy at (42,96)
+Plant 92 died with 10/10 energy at (66,68)
+Insect 126 is splitting
+Insect 236 born with 106/106 energy at (39,28)
+Insect 237 born with 122/122 energy at (38,28)
+Insect 126 died with 227/300 energy at (39,28)
 *************************************************
 Iteration: 24
-Plant 28 died with 10/10 energy at (96,33)
-Insect 105 is splitting
-Insect 230 born with 112/112 energy at (22,82)
-Insect 231 born with 111/111 energy at (23,82)
-Insect 105 died with 222/300 energy at (22,82)
-Plant 52 died with 20/20 energy at (37,77)
-Insect 170 died with 1/59 energy at (67,20)
-Plant 74 died with 10/10 energy at (84,73)
-Plant 98 died with 30/30 energy at (85,71)
+Plant 152 died with 30/30 energy at (1,4)
+Insect 167 died with 1/69 energy at (36,14)
+Plant 99 died with 10/10 energy at (94,2)
+Insect 194 died with 1/53 energy at (49,20)
+Plant 70 died with 30/30 energy at (78,11)
+Insect 171 is splitting
+Insect 238 born with 42/42 energy at (36,69)
+Insect 239 born with 49/49 energy at (35,69)
+Insect 171 died with 90/145 energy at (36,69)
 *************************************************
 Iteration: 25
-Insect 115 is splitting
-Insect 232 born with 95/95 energy at (25,37)
-Insect 233 born with 112/112 energy at (25,38)
-Insect 115 died with 206/300 energy at (25,37)
+Insect 139 is splitting
+Insect 240 born with 111/111 energy at (43,41)
+Insect 241 born with 122/122 energy at (44,41)
+Insect 139 died with 232/300 energy at (43,41)
+Plant 86 died with 10/10 energy at (78,8)
+Insect 201 is splitting
+Insect 242 born with 68/68 energy at (78,7)
+Insect 243 born with 77/77 energy at (77,7)
+Insect 201 died with 144/147 energy at (78,7)
+Plant 96 died with 10/10 energy at (45,63)
+Plant 49 died with 10/10 energy at (39,35)
 *************************************************
 Iteration: 26
-Plant 18 died with 10/10 energy at (45,33)
-Plant 157 died with 10/10 energy at (45,32)
-Plant 81 died with 20/20 energy at (52,68)
-Plant 8 died with 10/10 energy at (37,26)
-Insect 165 died with 1/69 energy at (71,19)
-Insect 184 is splitting
-Insect 234 born with 36/36 energy at (73,1)
-Insect 235 born with 35/35 energy at (73,2)
-Insect 184 died with 70/130 energy at (73,1)
-Plant 70 died with 20/20 energy at (27,57)
+Insect 195 died with 1/61 energy at (47,3)
+Insect 204 is splitting
+Insect 244 born with 10/10 energy at (96,93)
+Insect 245 born with 14/14 energy at (95,93)
+Insect 204 died with 23/55 energy at (96,93)
+Insect 138 is splitting
+Insect 246 born with 109/109 energy at (75,6)
+Insect 247 born with 91/91 energy at (75,7)
+Insect 138 died with 199/300 energy at (75,6)
+Plant 62 died with 20/20 energy at (87,54)
 *************************************************
 Iteration: 27
-Insect 171 died with 1/71 energy at (63,13)
-Insect 209 is splitting
-Insect 236 born with 33/33 energy at (36,94)
-Insect 237 born with 34/34 energy at (36,95)
-Insect 209 died with 66/99 energy at (36,94)
-Insect 185 is splitting
-Insect 238 born with 33/33 energy at (87,6)
-Insect 239 born with 33/33 energy at (87,5)
-Insect 185 died with 65/127 energy at (87,6)
+Insect 208 is splitting
+Insect 248 born with 29/29 energy at (9,3)
+Insect 249 born with 31/31 energy at (8,3)
+Insect 208 died with 59/111 energy at (9,3)
+Insect 206 died with 1/48 energy at (14,35)
+Insect 102 is splitting
+Insect 250 born with 114/114 energy at (27,0)
+Insect 251 born with 109/109 energy at (27,-1)
+Insect 102 died with 222/300 energy at (27,0)
 *************************************************
 Iteration: 28
 Insect 108 is splitting
-Insect 240 born with 81/81 energy at (8,21)
-Insect 241 born with 79/79 energy at (8,22)
-Insect 108 died with 159/300 energy at (8,21)
-Plant 1 died with 10/10 energy at (34,15)
-Insect 167 is splitting
-Insect 242 born with 55/55 energy at (12,14)
-Insect 243 born with 47/47 energy at (12,13)
-Insect 167 died with 101/146 energy at (12,14)
-Insect 200 is splitting
-Insect 244 born with 47/47 energy at (24,82)
-Insect 245 born with 44/44 energy at (25,82)
-Insect 200 died with 90/125 energy at (24,82)
-Plant 97 died with 10/10 energy at (63,59)
-Insect 190 is splitting
-Insect 246 born with 52/52 energy at (44,31)
-Insect 247 born with 65/65 energy at (44,32)
-Insect 190 died with 116/138 energy at (44,31)
-Plant 69 died with 30/30 energy at (98,87)
-Plant 54 died with 30/30 energy at (91,39)
-Plant 88 died with 10/10 energy at (90,39)
+Insect 252 born with 96/96 energy at (86,80)
+Insect 253 born with 97/97 energy at (87,80)
+Insect 108 died with 192/300 energy at (86,80)
+Insect 207 died with 1/44 energy at (4,34)
 *************************************************
 Iteration: 29
-Plant 158 died with 20/20 energy at (64,57)
-Insect 182 is splitting
-Insect 248 born with 48/48 energy at (90,75)
-Insect 249 born with 61/61 energy at (90,74)
-Insect 182 died with 108/140 energy at (90,75)
-Insect 216 died with 1/34 energy at (9,72)
-Insect 217 died with 1/36 energy at (14,74)
+Insect 210 is splitting
+Insect 254 born with 48/48 energy at (50,14)
+Insect 255 born with 56/56 energy at (50,13)
+Insect 210 died with 103/138 energy at (50,14)
+Insect 233 is splitting
+Insect 256 born with 44/44 energy at (93,38)
+Insect 257 born with 39/39 energy at (92,38)
+Insect 233 died with 82/102 energy at (93,38)
+Plant 145 died with 20/20 energy at (64,21)
+Plant 30 died with 10/10 energy at (71,52)
+Insect 175 is splitting
+Insect 258 born with 33/33 energy at (0,26)
+Insect 259 born with 28/28 energy at (1,26)
+Insect 175 died with 60/130 energy at (0,26)
+Plant 142 died with 20/20 energy at (91,58)
 *************************************************
 Iteration: 30
-Insect 177 is splitting
-Insect 250 born with 36/36 energy at (61,12)
-Insect 251 born with 43/43 energy at (62,12)
-Insect 177 died with 78/144 energy at (61,12)
-Insect 186 is splitting
-Insect 252 born with 47/47 energy at (73,65)
-Insect 253 born with 57/57 energy at (72,65)
-Insect 186 died with 103/133 energy at (73,65)
-Plant 144 died with 30/30 energy at (51,64)
-Insect 210 is splitting
-Insect 254 born with 37/37 energy at (51,64)
-Insect 255 born with 34/34 energy at (51,65)
-Insect 210 died with 70/70 energy at (51,64)
+Insect 104 is splitting
+Insect 260 born with 111/111 energy at (65,70)
+Insect 261 born with 106/106 energy at (66,70)
+Insect 104 died with 216/300 energy at (65,70)
+Insect 224 is splitting
+Insect 262 born with 11/11 energy at (31,48)
+Insect 263 born with 15/15 energy at (30,48)
+Insect 224 died with 25/62 energy at (31,48)
+Plant 59 died with 10/10 energy at (90,59)
+Insect 161 is splitting
+Insect 264 born with 48/48 energy at (14,99)
+Insect 265 born with 61/61 energy at (14,100)
+Insect 161 died with 108/162 energy at (14,99)
+Plant 45 died with 30/30 energy at (51,65)
+Insect 219 died with 1/51 energy at (14,6)
 *************************************************
 Iteration: 31
-Insect 123 is splitting
-Insect 256 born with 122/122 energy at (47,94)
-Insect 257 born with 114/114 energy at (48,94)
-Insect 123 died with 235/300 energy at (47,94)
-Insect 206 died with 1/60 energy at (28,67)
-Plant 41 died with 20/20 energy at (95,42)
+Plant 147 died with 30/30 energy at (93,60)
+Plant 73 died with 10/10 energy at (93,62)
+Insect 217 died with 1/51 energy at (67,45)
+Plant 27 died with 30/30 energy at (36,94)
+Insect 244 died with 1/10 energy at (98,90)
 *************************************************
 Iteration: 32
-Insect 219 is splitting
-Insect 258 born with 43/43 energy at (69,4)
-Insect 259 born with 52/52 energy at (70,4)
-Insect 219 died with 94/126 energy at (69,4)
+Insect 165 is splitting
+Insect 266 born with 30/30 energy at (26,1)
+Insect 267 born with 37/37 energy at (25,1)
+Insect 165 died with 66/157 energy at (26,1)
+Plant 36 died with 10/10 energy at (92,63)
+Insect 223 died with 1/46 energy at (39,55)
+Insect 216 died with 1/61 energy at (74,45)
+Plant 63 died with 20/20 energy at (34,93)
+Insect 118 is splitting
+Insect 268 born with 116/116 energy at (55,36)
+Insect 269 born with 102/102 energy at (56,36)
+Insect 118 died with 217/300 energy at (55,36)
 *************************************************
 Iteration: 33
-Insect 118 is splitting
-Insect 260 born with 80/80 energy at (84,61)
-Insect 261 born with 86/86 energy at (83,61)
-Insect 118 died with 165/300 energy at (84,61)
-Plant 73 died with 30/30 energy at (67,67)
+Insect 227 died with 1/51 energy at (24,36)
+Insect 205 died with 1/64 energy at (87,94)
+Insect 119 is splitting
+Insect 270 born with 79/79 energy at (65,81)
+Insect 271 born with 76/76 energy at (65,82)
+Insect 119 died with 154/300 energy at (65,81)
+Insect 226 died with 1/52 energy at (33,45)
+Plant 47 died with 30/30 energy at (94,61)
 *************************************************
 Iteration: 34
-Plant 159 died with 20/20 energy at (16,22)
-Insect 127 is splitting
-Insect 262 born with 88/88 energy at (79,88)
-Insect 263 born with 77/77 energy at (79,89)
-Insect 127 died with 164/300 energy at (79,88)
-Insect 201 is splitting
-Insect 264 born with 41/41 energy at (30,84)
-Insect 265 born with 39/39 energy at (30,85)
-Insect 201 died with 79/133 energy at (30,84)
+Plant 156 died with 30/30 energy at (34,18)
+Insect 163 is splitting
+Insect 272 born with 29/29 energy at (26,13)
+Insect 273 born with 35/35 energy at (26,14)
+Insect 163 died with 63/141 energy at (26,13)
+Insect 111 is splitting
+Insect 274 born with 67/67 energy at (80,16)
+Insect 275 born with 85/85 energy at (81,16)
+Insect 111 died with 151/300 energy at (80,16)
+Plant 83 died with 20/20 energy at (80,78)
+Insect 262 died with 1/11 energy at (28,51)
+Insect 263 died with 1/15 energy at (29,55)
+Insect 245 died with 1/14 energy at (98,93)
+Insect 230 is splitting
+Insect 276 born with 9/9 energy at (78,49)
+Insect 277 born with 12/12 energy at (77,49)
+Insect 230 died with 20/60 energy at (78,49)
+Insect 183 is splitting
+Insect 278 born with 72/72 energy at (62,-1)
+Insect 279 born with 72/72 energy at (62,0)
+Insect 183 died with 143/143 energy at (62,-1)
 *************************************************
 Iteration: 35
-Insect 238 died with 1/33 energy at (83,4)
-Plant 5 died with 30/30 energy at (63,64)
-Plant 17 died with 30/30 energy at (62,64)
-Insect 197 is splitting
-Insect 266 born with 51/51 energy at (65,47)
-Insect 267 born with 61/61 energy at (66,47)
-Insect 197 died with 111/128 energy at (65,47)
-Plant 59 died with 20/20 energy at (98,47)
+Insect 200 is splitting
+Insect 280 born with 29/29 energy at (72,19)
+Insect 281 born with 30/30 energy at (73,19)
+Insect 200 died with 58/124 energy at (72,19)
+Plant 13 died with 20/20 energy at (79,74)
+Plant 55 died with 10/10 energy at (78,74)
+Insect 231 died with 1/53 energy at (77,45)
 *************************************************
 Iteration: 36
-Insect 192 is splitting
-Insect 268 born with 32/32 energy at (9,33)
-Insect 269 born with 31/31 energy at (10,33)
-Insect 192 died with 62/131 energy at (9,33)
-Insect 237 died with 1/34 energy at (40,92)
-Insect 236 died with 1/33 energy at (39,95)
-Insect 239 died with 1/33 energy at (83,5)
-Plant 3 died with 20/20 energy at (31,20)
-Insect 116 is splitting
-Insect 270 born with 99/99 energy at (92,57)
-Insect 271 born with 102/102 energy at (91,57)
-Insect 116 died with 200/300 energy at (92,57)
+Insect 189 is splitting
+Insect 282 born with 19/19 energy at (95,51)
+Insect 283 born with 21/21 energy at (95,50)
+Insect 189 died with 39/120 energy at (95,51)
+Insect 249 died with 1/31 energy at (8,1)
+Plant 90 died with 30/30 energy at (80,73)
+Plant 72 died with 30/30 energy at (23,19)
+Insect 114 is splitting
+Insect 284 born with 106/106 energy at (4,4)
+Insect 285 born with 98/98 energy at (3,4)
+Insect 114 died with 203/300 energy at (4,4)
+Insect 218 died with 1/56 energy at (16,16)
+Plant 67 died with 10/10 energy at (81,22)
+Insect 248 died with 1/29 energy at (11,5)
 *************************************************
 Iteration: 37
-Plant 90 died with 30/30 energy at (28,21)
-Plant 78 died with 20/20 energy at (13,50)
-Insect 212 died with 1/66 energy at (30,93)
-Insect 234 died with 1/36 energy at (74,1)
+Insect 238 died with 1/42 energy at (35,71)
+Plant 29 died with 10/10 energy at (81,74)
+Insect 239 died with 1/49 energy at (35,71)
+Insect 277 died with 1/12 energy at (77,48)
+Insect 222 died with 1/49 energy at (33,45)
+Insect 276 died with 1/9 energy at (76,51)
 *************************************************
 Iteration: 38
-Insect 181 died with 1/119 energy at (27,77)
-Insect 207 died with 1/58 energy at (26,52)
+Insect 177 died with 1/133 energy at (46,35)
+Insect 257 died with 1/39 energy at (83,39)
 *************************************************
 Iteration: 39
-Plant 45 died with 30/30 energy at (46,0)
-Insect 112 is splitting
-Insect 272 born with 60/60 energy at (64,46)
-Insect 273 born with 64/64 energy at (64,47)
-Insect 112 died with 123/300 energy at (64,46)
-Insect 102 is splitting
-Insect 274 born with 107/107 energy at (48,94)
-Insect 275 born with 102/102 energy at (47,94)
-Insect 102 died with 208/300 energy at (48,94)
-Insect 241 is splitting
-Insect 276 born with 22/22 energy at (3,26)
-Insect 277 born with 21/21 energy at (4,26)
-Insect 241 died with 42/79 energy at (3,26)
-Plant 19 died with 30/30 energy at (37,70)
+Insect 225 died with 1/64 energy at (29,29)
+Insect 187 is splitting
+Insect 286 born with 25/25 energy at (23,44)
+Insect 287 born with 28/28 energy at (23,43)
+Insect 187 died with 52/151 energy at (23,44)
+Insect 250 is splitting
+Insect 288 born with 52/52 energy at (28,0)
+Insect 289 born with 46/46 energy at (28,-1)
+Insect 250 died with 97/114 energy at (28,0)
+Plant 9 died with 10/10 energy at (84,72)
+Insect 258 died with 1/33 energy at (0,28)
+Insect 178 died with 1/131 energy at (19,42)
 *************************************************
 Iteration: 40
-Plant 40 died with 30/30 energy at (3,28)
-Plant 35 died with 20/20 energy at (5,89)
-Insect 194 is splitting
-Insect 278 born with 24/24 energy at (22,37)
-Insect 279 born with 25/25 energy at (21,37)
-Insect 194 died with 48/125 energy at (22,37)
+Insect 259 died with 1/28 energy at (6,32)
+Insect 101 is splitting
+Insect 290 born with 59/59 energy at (93,41)
+Insect 291 born with 60/60 energy at (94,41)
+Insect 101 died with 118/300 energy at (93,41)
+Insect 251 is splitting
+Insect 292 born with 49/49 energy at (27,-1)
+Insect 293 born with 61/61 energy at (26,-1)
+Insect 251 died with 109/109 energy at (27,-1)
 *************************************************
 Iteration: 41
-Insect 256 is splitting
-Insect 280 born with 46/46 energy at (38,99)
-Insect 281 born with 53/53 energy at (39,99)
-Insect 256 died with 98/122 energy at (38,99)
-Insect 254 died with 1/37 energy at (50,61)
-Plant 13 died with 10/10 energy at (58,81)
-Insect 245 died with 1/44 energy at (26,86)
-Insect 255 died with 1/34 energy at (47,68)
+Plant 141 died with 10/10 energy at (68,21)
+Insect 196 is splitting
+Insect 294 born with 34/34 energy at (96,5)
+Insect 295 born with 38/38 energy at (96,6)
+Insect 196 died with 71/132 energy at (96,5)
+Insect 283 died with 1/21 energy at (89,50)
+Insect 252 is splitting
+Insect 296 born with 41/41 energy at (84,73)
+Insect 297 born with 45/45 energy at (85,73)
+Insect 252 died with 85/96 energy at (84,73)
+Insect 106 is splitting
+Insect 298 born with 85/85 energy at (68,51)
+Insect 299 born with 74/74 energy at (68,50)
+Insect 106 died with 158/300 energy at (68,51)
+Insect 256 died with 1/44 energy at (95,39)
+Insect 197 is splitting
+Insect 300 born with 21/21 energy at (95,10)
+Insect 301 born with 26/26 energy at (95,9)
+Insect 197 died with 46/126 energy at (95,10)
+Insect 202 died with 1/103 energy at (54,72)
 New plants spawned: 20
-Plant  282 born with 20/20 energy at (74,73)
-Plant  283 born with 20/20 energy at (66,99)
-Plant  284 born with 20/20 energy at (65,20)
-Plant  285 born with 10/10 energy at (43,61)
-Plant  286 born with 10/10 energy at (28,71)
-Plant  287 born with 30/30 energy at (36,51)
-Plant  288 born with 20/20 energy at (40,25)
-Plant  289 born with 10/10 energy at (59,2)
-Plant  290 born with 30/30 energy at (97,51)
-Plant  291 born with 20/20 energy at (9,98)
-Plant  292 born with 10/10 energy at (33,47)
-Plant  293 born with 30/30 energy at (47,95)
-Plant  294 born with 30/30 energy at (32,82)
-Plant  295 born with 20/20 energy at (43,97)
-Plant  296 born with 10/10 energy at (9,10)
-Plant  297 born with 30/30 energy at (11,89)
-Plant  298 born with 30/30 energy at (12,18)
-Plant  299 born with 10/10 energy at (49,30)
-Plant  300 born with 10/10 energy at (80,94)
-Plant  301 born with 10/10 energy at (89,22)
+Plant  302 born with 30/30 energy at (25,30)
+Plant  303 born with 30/30 energy at (48,60)
+Plant  304 born with 20/20 energy at (35,79)
+Plant  305 born with 20/20 energy at (75,37)
+Plant  306 born with 10/10 energy at (46,31)
+Plant  307 born with 10/10 energy at (90,76)
+Plant  308 born with 30/30 energy at (14,63)
+Plant  309 born with 10/10 energy at (70,88)
+Plant  310 born with 20/20 energy at (14,55)
+Plant  311 born with 10/10 energy at (36,97)
+Plant  312 born with 20/20 energy at (42,39)
+Plant  313 born with 30/30 energy at (92,37)
+Plant  314 born with 30/30 energy at (85,95)
+Plant  315 born with 30/30 energy at (65,61)
+Plant  316 born with 20/20 energy at (64,56)
+Plant  317 born with 20/20 energy at (0,71)
+Plant  318 born with 20/20 energy at (54,16)
+Plant  319 born with 10/10 energy at (16,19)
+Plant  320 born with 20/20 energy at (89,10)
+Plant  321 born with 20/20 energy at (61,24)
 *************************************************
 Iteration: 42
-Insect 106 is splitting
-Insect 302 born with 53/53 energy at (13,95)
-Insect 303 born with 61/61 energy at (12,95)
-Insect 106 died with 113/300 energy at (13,95)
-Plant 284 died with 20/20 energy at (65,20)
-Plant 301 died with 10/10 energy at (89,22)
-Insect 235 died with 1/35 energy at (72,3)
-Plant 290 died with 30/30 energy at (97,51)
-Plant 296 died with 10/10 energy at (9,10)
-Plant 298 died with 30/30 energy at (12,18)
-Plant 293 died with 30/30 energy at (47,95)
-Plant 297 died with 30/30 energy at (11,89)
-Insect 226 died with 1/62 energy at (13,8)
-Insect 110 is splitting
-Insect 304 born with 43/43 energy at (52,38)
-Insect 305 born with 47/47 energy at (52,37)
-Insect 110 died with 89/300 energy at (52,38)
+Plant 320 died with 20/20 energy at (89,10)
+Insect 266 died with 1/30 energy at (30,2)
+Insect 273 died with 1/35 energy at (34,20)
+Insect 278 is splitting
+Insect 322 born with 33/33 energy at (62,-1)
+Insect 323 born with 40/40 energy at (61,-1)
+Insect 278 died with 72/72 energy at (62,-1)
+Plant 313 died with 30/30 energy at (92,37)
+Insect 254 died with 1/48 energy at (53,16)
+Insect 282 died with 1/19 energy at (97,53)
+Plant 315 died with 30/30 energy at (65,61)
 *************************************************
 Iteration: 43
-Insect 243 died with 1/47 energy at (17,28)
-Plant 155 died with 20/20 energy at (92,26)
-Plant 294 died with 30/30 energy at (32,82)
-Plant 22 died with 30/30 energy at (55,11)
-Insect 199 died with 1/110 energy at (9,77)
+Insect 253 is splitting
+Insect 324 born with 26/26 energy at (88,81)
+Insect 325 born with 30/30 energy at (88,82)
+Insect 253 died with 55/97 energy at (88,81)
+Plant 19 died with 30/30 energy at (86,69)
+Insect 211 is splitting
+Insect 326 born with 21/21 energy at (59,23)
+Insect 327 born with 24/24 energy at (59,24)
+Insect 211 died with 44/138 energy at (59,23)
+Insect 182 is splitting
+Insect 328 born with 29/29 energy at (54,5)
+Insect 329 born with 30/30 energy at (55,5)
+Insect 182 died with 58/145 energy at (54,5)
+Insect 235 died with 1/68 energy at (41,97)
+Plant 150 died with 20/20 energy at (87,6)
 *************************************************
 Iteration: 44
-Insect 229 is splitting
-Insect 306 born with 24/24 energy at (85,86)
-Insect 307 born with 32/32 energy at (85,87)
-Insect 229 died with 55/130 energy at (85,86)
-Insect 276 died with 1/22 energy at (8,32)
-Insect 248 died with 1/48 energy at (78,76)
-Insect 277 died with 1/21 energy at (5,23)
-Insect 173 died with 1/127 energy at (23,6)
+Plant 321 died with 20/20 energy at (61,24)
+Plant 312 died with 20/20 energy at (42,39)
+Insect 272 died with 1/29 energy at (26,12)
+Insect 185 died with 1/132 energy at (46,47)
+Insect 164 died with 1/142 energy at (32,8)
+Plant 91 died with 10/10 energy at (88,7)
+Insect 181 died with 1/138 energy at (50,37)
 *************************************************
 Iteration: 45
-Insect 244 died with 1/47 energy at (25,75)
-Insect 166 died with 1/148 energy at (8,18)
-Insect 224 died with 1/99 energy at (96,92)
-Plant 291 died with 20/20 energy at (9,98)
-Plant 292 died with 10/10 energy at (33,47)
-Insect 221 is splitting
-Insect 308 born with 24/24 energy at (66,19)
-Insect 309 born with 25/25 energy at (65,19)
-Insect 221 died with 48/108 energy at (66,19)
-Insect 252 died with 1/47 energy at (68,66)
+Insect 255 died with 1/56 energy at (52,8)
+Insect 198 died with 1/108 energy at (76,55)
+Insect 174 died with 1/145 energy at (6,33)
+Insect 135 is splitting
+Insect 330 born with 67/67 energy at (47,53)
+Insect 331 born with 63/63 energy at (47,54)
+Insect 135 died with 129/300 energy at (47,53)
+Insect 299 is splitting
+Insect 332 born with 27/27 energy at (69,47)
+Insect 333 born with 32/32 energy at (70,47)
+Insect 299 died with 58/74 energy at (69,47)
+Insect 212 is splitting
+Insect 334 born with 30/30 energy at (2,16)
+Insect 335 born with 34/34 energy at (2,15)
+Insect 212 died with 63/148 energy at (2,16)
 *************************************************
 Iteration: 46
-Insect 250 died with 1/36 energy at (66,10)
-Insect 242 died with 1/55 energy at (7,7)
-Insect 268 died with 1/32 energy at (10,29)
-Insect 208 died with 1/108 energy at (25,98)
-Insect 269 died with 1/31 energy at (2,35)
+Insect 264 died with 1/48 energy at (13,91)
+Insect 246 is splitting
+Insect 336 born with 20/20 energy at (76,8)
+Insect 337 born with 21/21 energy at (77,8)
+Insect 246 died with 40/109 energy at (76,8)
+Plant 306 died with 10/10 energy at (46,31)
 *************************************************
 Iteration: 47
-Insect 225 is splitting
-Insect 310 born with 37/37 energy at (94,86)
-Insect 311 born with 40/40 energy at (94,85)
-Insect 225 died with 76/117 energy at (94,86)
-Insect 213 died with 1/71 energy at (24,91)
-Insect 246 died with 1/52 energy at (34,30)
-Plant 14 died with 10/10 energy at (37,9)
-Insect 187 died with 1/126 energy at (97,54)
-Insect 227 died with 1/52 energy at (11,11)
-Insect 188 is splitting
-Insect 312 born with 15/15 energy at (26,59)
-Insect 313 born with 21/21 energy at (26,58)
-Insect 188 died with 35/136 energy at (26,59)
-Insect 247 died with 1/65 energy at (38,46)
+Insect 193 died with 1/119 energy at (35,51)
+Insect 280 died with 1/29 energy at (75,24)
+Insect 170 died with 1/141 energy at (42,61)
+Insect 247 died with 1/91 energy at (77,21)
+Insect 301 died with 1/26 energy at (96,7)
+Insect 286 died with 1/25 energy at (22,39)
 *************************************************
 Iteration: 48
-Plant 146 died with 20/20 energy at (56,50)
-Insect 278 died with 1/24 energy at (15,33)
-Plant 46 died with 20/20 energy at (65,88)
-Plant 295 died with 20/20 energy at (43,97)
-Insect 279 died with 1/25 energy at (23,35)
-Plant 12 died with 30/30 energy at (75,43)
-Insect 258 died with 1/43 energy at (67,4)
+Plant 316 died with 20/20 energy at (64,56)
 *************************************************
 Iteration: 49
-Insect 259 is splitting
-Insect 314 born with 2/2 energy at (66,8)
-Insect 315 born with 5/5 energy at (67,8)
-Insect 259 died with 6/52 energy at (66,8)
-Insect 222 died with 1/99 energy at (95,64)
-Insect 240 died with 1/81 energy at (12,17)
-Insect 189 died with 1/129 energy at (47,52)
-Insect 195 died with 1/114 energy at (23,43)
-Plant 300 died with 10/10 energy at (80,94)
-Plant 87 died with 30/30 energy at (77,94)
+Insect 191 died with 1/129 energy at (47,94)
+Insect 326 died with 1/21 energy at (69,24)
+Plant 307 died with 10/10 energy at (90,76)
+Insect 300 died with 1/21 energy at (94,7)
+Insect 203 died with 1/120 energy at (49,71)
+Insect 287 died with 1/28 energy at (26,41)
+Insect 294 died with 1/34 energy at (92,4)
 *************************************************
 Iteration: 50
-Insect 264 died with 1/41 energy at (34,90)
-Insect 218 died with 1/109 energy at (80,6)
-Insect 314 died with 1/2 energy at (65,8)
-Insect 249 died with 1/61 energy at (93,83)
+Insect 234 died with 1/71 energy at (49,98)
+Insect 267 died with 1/37 energy at (32,2)
+Insect 214 died with 1/136 energy at (53,8)
+Insect 232 died with 1/81 energy at (93,51)
+Plant 84 died with 20/20 energy at (88,20)
 *************************************************
 Iteration: 51
-Insect 215 died with 1/112 energy at (36,82)
-Plant 0 died with 20/20 energy at (58,28)
-Insect 306 died with 1/24 energy at (87,89)
-Insect 163 died with 1/148 energy at (13,56)
-Insect 214 died with 1/124 energy at (46,79)
+Insect 270 died with 1/79 energy at (69,71)
+Insect 324 died with 1/26 energy at (85,81)
+Insect 327 died with 1/24 energy at (57,25)
+Insect 281 died with 1/30 energy at (72,25)
 *************************************************
 Iteration: 52
-Insect 304 died with 1/43 energy at (53,33)
-Insect 168 died with 1/127 energy at (0,50)
-Insect 253 died with 1/57 energy at (75,61)
-Insect 211 died with 1/63 energy at (40,76)
-Insect 204 died with 1/119 energy at (87,19)
-Insect 312 died with 1/15 energy at (25,60)
+Insect 325 died with 1/30 energy at (89,84)
+Insect 240 died with 1/111 energy at (44,50)
+Insect 328 died with 1/29 energy at (53,4)
+Insect 336 died with 1/20 energy at (77,6)
+Insect 243 died with 1/77 energy at (84,8)
+Plant 155 died with 30/30 energy at (93,21)
+Insect 215 died with 1/129 energy at (67,18)
+Insect 329 died with 1/30 energy at (51,4)
+Insect 337 died with 1/21 energy at (78,9)
 *************************************************
 Iteration: 53
-Plant 11 died with 30/30 energy at (1,86)
-Insect 251 died with 1/43 energy at (63,11)
-Insect 164 died with 1/59 energy at (37,8)
-Insect 305 died with 1/47 energy at (62,45)
-Insect 183 died with 1/134 energy at (84,75)
-Insect 315 died with 1/5 energy at (69,6)
-Insect 228 died with 1/111 energy at (67,88)
+Insect 332 died with 1/27 energy at (71,47)
+Insect 261 died with 1/106 energy at (55,74)
+Plant 82 died with 30/30 energy at (84,36)
+Insect 334 died with 1/30 energy at (4,11)
+Insect 221 died with 1/124 energy at (54,49)
+Insect 293 is splitting
+Insect 338 born with 29/29 energy at (26,-1)
+Insect 339 born with 33/33 energy at (27,-1)
+Insect 293 died with 61/61 energy at (26,-1)
 *************************************************
 Iteration: 54
-Insect 174 died with 1/138 energy at (67,78)
-Insect 263 died with 1/77 energy at (86,84)
+Insect 180 died with 1/136 energy at (41,43)
+Plant 2 died with 30/30 energy at (90,70)
+Insect 192 died with 1/130 energy at (37,23)
+Insect 333 died with 1/32 energy at (67,43)
+Insect 288 died with 1/52 energy at (17,6)
 *************************************************
 Iteration: 55
-Insect 232 died with 1/95 energy at (23,37)
-Insect 308 died with 1/24 energy at (69,15)
+Insect 274 died with 1/67 energy at (87,13)
+Insect 279 died with 1/72 energy at (66,7)
 *************************************************
 Iteration: 56
-Insect 198 died with 1/130 energy at (7,88)
-Insect 267 died with 1/61 energy at (66,45)
-Plant 2 died with 10/10 energy at (59,91)
-Insect 196 died with 1/132 energy at (93,36)
+Insect 173 died with 1/154 energy at (92,91)
+Plant 95 died with 30/30 energy at (51,26)
 *************************************************
 Iteration: 57
-Insect 262 is splitting
-Insect 316 born with 14/14 energy at (61,94)
-Insect 317 born with 19/19 energy at (61,93)
-Insect 262 died with 32/88 energy at (61,94)
-Insect 176 died with 1/127 energy at (55,17)
-Insect 313 died with 1/21 energy at (26,58)
-Insect 265 died with 1/39 energy at (31,82)
-Plant 288 died with 20/20 energy at (40,25)
-Insect 272 died with 1/60 energy at (68,47)
-Insect 280 died with 1/46 energy at (39,87)
-Plant 282 died with 20/20 energy at (74,73)
+Insect 229 is splitting
+Insect 340 born with 9/9 energy at (63,94)
+Insect 341 born with 11/11 energy at (62,94)
+Insect 229 died with 19/131 energy at (63,94)
+Insect 275 died with 1/85 energy at (71,20)
+Insect 242 is splitting
+Insect 342 born with 25/25 energy at (96,23)
+Insect 343 born with 33/33 energy at (95,23)
+Insect 242 died with 57/68 energy at (96,23)
+Insect 335 died with 1/34 energy at (4,22)
+Insect 284 is splitting
+Insect 344 born with 25/25 energy at (1,13)
+Insect 345 born with 24/24 energy at (1,14)
+Insect 284 died with 48/106 energy at (1,13)
 *************************************************
 Iteration: 58
-Insect 307 died with 1/32 energy at (78,96)
-Plant 32 died with 30/30 energy at (66,28)
-Insect 261 died with 1/86 energy at (75,66)
-Insect 223 died with 1/115 energy at (94,68)
-Insect 274 is splitting
-Insect 318 born with 35/35 energy at (47,93)
-Insect 319 born with 43/43 energy at (47,94)
-Insect 274 died with 77/107 energy at (47,93)
+Plant 14 died with 10/10 energy at (99,25)
 *************************************************
 Iteration: 59
-Insect 281 died with 1/53 energy at (32,92)
-Insect 203 died with 1/124 energy at (18,8)
-Insect 169 died with 1/158 energy at (17,47)
+Insect 241 died with 1/122 energy at (46,40)
+Insect 228 is splitting
+Insect 346 born with 8/8 energy at (65,82)
+Insect 347 born with 11/11 energy at (64,82)
+Insect 228 died with 18/131 energy at (65,82)
+Insect 339 is splitting
+Insect 348 born with 14/14 energy at (27,-1)
+Insect 349 born with 20/20 energy at (27,-2)
+Insect 339 died with 33/33 energy at (27,-1)
 *************************************************
 Iteration: 60
-Insect 233 died with 1/112 energy at (22,30)
+Insect 213 died with 1/126 energy at (5,30)
+Insect 291 died with 1/60 energy at (97,43)
+Insect 297 died with 1/45 energy at (79,70)
 *************************************************
 Iteration: 61
-Insect 303 died with 1/61 energy at (13,98)
-Insect 273 died with 1/64 energy at (57,45)
-Insect 230 died with 1/112 energy at (17,74)
-Insect 310 died with 1/37 energy at (98,82)
-Insect 205 is splitting
-Insect 320 born with 32/32 energy at (91,54)
-Insect 321 born with 35/35 energy at (90,54)
-Insect 205 died with 66/148 energy at (91,54)
+Insect 341 died with 1/11 energy at (68,92)
 *************************************************
 Iteration: 62
-Insect 317 died with 1/19 energy at (62,94)
-Insect 172 died with 1/133 energy at (29,31)
-Insect 316 died with 1/14 energy at (61,91)
+Insect 331 died with 1/63 energy at (50,51)
+Insect 290 died with 1/59 energy at (84,39)
+Insect 346 died with 1/8 energy at (68,80)
+Insect 236 died with 1/106 energy at (30,8)
+Insect 340 died with 1/9 energy at (64,93)
 *************************************************
 Iteration: 63
-Insect 311 died with 1/40 energy at (98,78)
+Insect 271 died with 1/76 energy at (56,90)
+Insect 285 is splitting
+Insect 350 born with 19/19 energy at (4,2)
+Insect 351 born with 21/21 energy at (4,3)
+Insect 285 died with 39/98 energy at (4,2)
+Insect 347 died with 1/11 energy at (61,81)
 *************************************************
 Iteration: 64
-Insect 260 died with 1/80 energy at (73,71)
+Insect 330 died with 1/67 energy at (39,59)
+Insect 345 died with 1/24 energy at (5,15)
 *************************************************
 Iteration: 65
-Insect 266 died with 1/51 energy at (75,41)
-Insect 231 died with 1/111 energy at (37,86)
-Insect 302 died with 1/53 energy at (14,95)
-Plant 140 died with 20/20 energy at (49,22)
+Insect 199 died with 1/126 energy at (98,60)
 *************************************************
 Iteration: 66
-Insect 193 died with 1/154 energy at (19,32)
-Insect 309 died with 1/25 energy at (58,26)
+Insect 344 died with 1/25 energy at (4,16)
+Insect 298 died with 1/85 energy at (66,61)
+Insect 343 died with 1/33 energy at (89,27)
+Insect 296 died with 1/41 energy at (84,67)
+Insect 295 died with 1/38 energy at (94,5)
 *************************************************
 Iteration: 67
-Insect 109 is splitting
-Insect 322 born with 17/17 energy at (23,38)
-Insect 323 born with 22/22 energy at (24,38)
-Insect 109 died with 38/300 energy at (23,38)
+Insect 220 died with 1/120 energy at (51,64)
+Insect 160 died with 1/137 energy at (8,96)
+Insect 269 died with 1/102 energy at (41,40)
 *************************************************
 Iteration: 68
+Insect 237 died with 1/122 energy at (37,60)
 *************************************************
 Iteration: 69
-Insect 318 died with 1/35 energy at (55,87)
-Insect 271 died with 1/102 energy at (97,54)
+Insect 342 died with 1/25 energy at (93,23)
 *************************************************
 Iteration: 70
+Insect 350 died with 1/19 energy at (2,2)
+Insect 351 died with 1/21 energy at (0,3)
+Insect 260 died with 1/111 energy at (52,49)
 *************************************************
 Iteration: 71
-Insect 220 died with 1/128 energy at (84,29)
 *************************************************
 Iteration: 72
-Insect 319 died with 1/43 energy at (34,97)
-Insect 322 died with 1/17 energy at (26,41)
-Insect 320 died with 1/32 energy at (95,53)
 *************************************************
 Iteration: 73
 *************************************************
 Iteration: 74
-Insect 321 died with 1/35 energy at (92,56)
-Insect 275 died with 1/102 energy at (54,86)
+Insect 292 is splitting
+Insect 352 born with 22/22 energy at (27,-1)
+Insect 353 born with 28/28 energy at (26,-1)
+Insect 292 died with 49/49 energy at (27,-1)
 *************************************************
 Iteration: 75
-Insect 323 died with 1/22 energy at (25,42)
+Insect 338 is splitting
+Insect 354 born with 13/13 energy at (26,-1)
+Insect 355 born with 17/17 energy at (26,-2)
+Insect 338 died with 29/29 energy at (26,-1)
+Insect 323 is splitting
+Insect 356 born with 21/21 energy at (61,-1)
+Insect 357 born with 20/20 energy at (62,-1)
+Insect 323 died with 40/40 energy at (61,-1)
 *************************************************
 Iteration: 76
 *************************************************
 Iteration: 77
-Insect 179 died with 1/126 energy at (2,86)
-Insect 270 died with 1/99 energy at (97,62)
 *************************************************
 Iteration: 78
-Insect 191 died with 1/156 energy at (54,21)
 *************************************************
 Iteration: 79
 *************************************************
@@ -868,37 +918,45 @@ Iteration: 80
 *************************************************
 Iteration: 81
 New plants spawned: 20
-Plant  324 born with 30/30 energy at (3,45)
-Plant  325 born with 10/10 energy at (62,41)
-Plant  326 born with 30/30 energy at (9,45)
-Plant  327 born with 20/20 energy at (77,28)
-Plant  328 born with 10/10 energy at (0,64)
-Plant  329 born with 10/10 energy at (7,79)
-Plant  330 born with 30/30 energy at (32,84)
-Plant  331 born with 30/30 energy at (71,46)
-Plant  332 born with 10/10 energy at (48,40)
-Plant  333 born with 30/30 energy at (53,9)
-Plant  334 born with 30/30 energy at (81,30)
-Plant  335 born with 30/30 energy at (69,66)
-Plant  336 born with 20/20 energy at (98,5)
-Plant  337 born with 30/30 energy at (70,21)
-Plant  338 born with 30/30 energy at (99,81)
-Plant  339 born with 30/30 energy at (18,94)
-Plant  340 born with 10/10 energy at (17,37)
-Plant  341 born with 20/20 energy at (72,93)
-Plant  342 born with 20/20 energy at (24,41)
-Plant  343 born with 10/10 energy at (48,35)
+Plant  358 born with 20/20 energy at (62,18)
+Plant  359 born with 10/10 energy at (62,81)
+Plant  360 born with 30/30 energy at (95,75)
+Plant  361 born with 10/10 energy at (73,21)
+Plant  362 born with 30/30 energy at (80,56)
+Plant  363 born with 20/20 energy at (92,15)
+Plant  364 born with 20/20 energy at (75,99)
+Plant  365 born with 10/10 energy at (82,29)
+Plant  366 born with 10/10 energy at (55,44)
+Plant  367 born with 30/30 energy at (71,79)
+Plant  368 born with 10/10 energy at (15,40)
+Plant  369 born with 10/10 energy at (46,6)
+Plant  370 born with 30/30 energy at (93,4)
+Plant  371 born with 30/30 energy at (74,37)
+Plant  372 born with 30/30 energy at (85,89)
+Plant  373 born with 10/10 energy at (0,35)
+Plant  374 born with 20/20 energy at (70,83)
+Plant  375 born with 10/10 energy at (46,52)
+Plant  376 born with 30/30 energy at (8,55)
+Plant  377 born with 30/30 energy at (23,70)
 *************************************************
 Iteration: 82
+Insect 265 is splitting
+Insect 378 born with 31/31 energy at (14,100)
+Insect 379 born with 31/31 energy at (15,100)
+Insect 265 died with 61/61 energy at (14,100)
 *************************************************
 Iteration: 83
-Insect 257 died with 1/114 energy at (42,95)
 *************************************************
 Iteration: 84
 *************************************************
 Iteration: 85
 *************************************************
 Iteration: 86
+Insect 268 died with 1/116 energy at (39,17)
+Insect 353 is splitting
+Insect 380 born with 12/12 energy at (26,-1)
+Insect 381 born with 17/17 energy at (26,-2)
+Insect 353 died with 28/28 energy at (26,-1)
 *************************************************
 Iteration: 87
 *************************************************
@@ -907,6 +965,10 @@ Iteration: 88
 Iteration: 89
 *************************************************
 Iteration: 90
+Insect 349 is splitting
+Insect 382 born with 11/11 energy at (27,-2)
+Insect 383 born with 10/10 energy at (26,-2)
+Insect 349 died with 20/20 energy at (27,-2)
 *************************************************
 Iteration: 91
 *************************************************
@@ -931,12 +993,20 @@ Iteration: 100
 Iteration: 101
 *************************************************
 Iteration: 102
+Insect 289 is splitting
+Insect 384 born with 24/24 energy at (28,-1)
+Insect 385 born with 23/23 energy at (29,-1)
+Insect 289 died with 46/46 energy at (28,-1)
 *************************************************
 Iteration: 103
 *************************************************
 Iteration: 104
 *************************************************
 Iteration: 105
+Insect 381 is splitting
+Insect 386 born with 8/8 energy at (26,-2)
+Insect 387 born with 10/10 energy at (26,-3)
+Insect 381 died with 17/17 energy at (26,-2)
 *************************************************
 Iteration: 106
 *************************************************
@@ -969,35 +1039,47 @@ Iteration: 119
 Iteration: 120
 *************************************************
 Iteration: 121
+Insect 348 is splitting
+Insect 388 born with 6/6 energy at (27,-1)
+Insect 389 born with 9/9 energy at (27,-2)
+Insect 348 died with 14/14 energy at (27,-1)
 New plants spawned: 20
-Plant  344 born with 10/10 energy at (13,13)
-Plant  345 born with 30/30 energy at (49,54)
-Plant  346 born with 20/20 energy at (42,79)
-Plant  347 born with 20/20 energy at (40,22)
-Plant  348 born with 30/30 energy at (78,29)
-Plant  349 born with 20/20 energy at (17,33)
-Plant  350 born with 30/30 energy at (91,13)
-Plant  351 born with 10/10 energy at (11,48)
-Plant  352 born with 10/10 energy at (4,3)
-Plant  353 born with 20/20 energy at (59,37)
-Plant  354 born with 20/20 energy at (90,27)
-Plant  355 born with 10/10 energy at (33,30)
-Plant  356 born with 30/30 energy at (78,37)
-Plant  357 born with 30/30 energy at (98,9)
-Plant  358 born with 20/20 energy at (55,43)
-Plant  359 born with 10/10 energy at (51,31)
-Plant  360 born with 30/30 energy at (14,20)
-Plant  361 born with 20/20 energy at (29,20)
-Plant  362 born with 30/30 energy at (0,72)
-Plant  363 born with 10/10 energy at (86,7)
+Plant  390 born with 20/20 energy at (69,94)
+Plant  391 born with 30/30 energy at (84,19)
+Plant  392 born with 30/30 energy at (30,96)
+Plant  393 born with 30/30 energy at (99,58)
+Plant  394 born with 20/20 energy at (92,65)
+Plant  395 born with 10/10 energy at (21,16)
+Plant  396 born with 10/10 energy at (1,8)
+Plant  397 born with 20/20 energy at (11,30)
+Plant  398 born with 30/30 energy at (13,85)
+Plant  399 born with 10/10 energy at (61,28)
+Plant  400 born with 10/10 energy at (69,73)
+Plant  401 born with 20/20 energy at (20,79)
+Plant  402 born with 10/10 energy at (3,2)
+Plant  403 born with 30/30 energy at (79,41)
+Plant  404 born with 20/20 energy at (99,58)
+Plant  405 born with 30/30 energy at (97,70)
+Plant  406 born with 20/20 energy at (84,15)
+Plant  407 born with 20/20 energy at (15,37)
+Plant  408 born with 10/10 energy at (93,27)
+Plant  409 born with 20/20 energy at (23,4)
 *************************************************
 Iteration: 122
+Insect 378 is splitting
+Insect 410 born with 13/13 energy at (14,100)
+Insect 411 born with 19/19 energy at (15,100)
+Insect 378 died with 31/31 energy at (14,100)
 *************************************************
 Iteration: 123
 *************************************************
 Iteration: 124
 *************************************************
 Iteration: 125
+Insect 322 is splitting
+Insect 412 born with 18/18 energy at (62,-1)
+Insect 413 born with 16/16 energy at (62,0)
+Insect 322 died with 33/33 energy at (62,-1)
 *************************************************
 Iteration: 126
 *************************************************
@@ -1010,6 +1092,7 @@ Iteration: 129
 Iteration: 130
 *************************************************
 Iteration: 131
+Insect 413 died with 1/16 energy at (60,1)
 *************************************************
 Iteration: 132
 *************************************************
@@ -1042,8 +1125,16 @@ Iteration: 145
 Iteration: 146
 *************************************************
 Iteration: 147
+Insect 379 is splitting
+Insect 414 born with 14/14 energy at (15,100)
+Insect 415 born with 18/18 energy at (14,100)
+Insect 379 died with 31/31 energy at (15,100)
 *************************************************
 Iteration: 148
+Insect 355 is splitting
+Insect 416 born with 7/7 energy at (26,-2)
+Insect 417 born with 11/11 energy at (26,-3)
+Insect 355 died with 17/17 energy at (26,-2)
 *************************************************
 Iteration: 149
 *************************************************
@@ -1058,6 +1149,10 @@ Iteration: 153
 Iteration: 154
 *************************************************
 Iteration: 155
+Insect 389 is splitting
+Insect 418 born with 4/4 energy at (27,-2)
+Insect 419 born with 6/6 energy at (27,-3)
+Insect 389 died with 9/9 energy at (27,-2)
 *************************************************
 Iteration: 156
 *************************************************
@@ -1071,30 +1166,38 @@ Iteration: 160
 *************************************************
 Iteration: 161
 New plants spawned: 20
-Plant  364 born with 30/30 energy at (10,5)
-Plant  365 born with 30/30 energy at (81,27)
-Plant  366 born with 20/20 energy at (2,63)
-Plant  367 born with 10/10 energy at (72,9)
-Plant  368 born with 10/10 energy at (82,55)
-Plant  369 born with 10/10 energy at (20,28)
-Plant  370 born with 30/30 energy at (17,34)
-Plant  371 born with 20/20 energy at (77,20)
-Plant  372 born with 30/30 energy at (54,87)
-Plant  373 born with 30/30 energy at (41,30)
-Plant  374 born with 20/20 energy at (14,99)
-Plant  375 born with 30/30 energy at (64,53)
-Plant  376 born with 20/20 energy at (55,38)
-Plant  377 born with 20/20 energy at (43,38)
-Plant  378 born with 10/10 energy at (4,15)
-Plant  379 born with 10/10 energy at (50,59)
-Plant  380 born with 30/30 energy at (41,41)
-Plant  381 born with 10/10 energy at (64,75)
-Plant  382 born with 30/30 energy at (75,65)
-Plant  383 born with 20/20 energy at (47,34)
+Plant  420 born with 20/20 energy at (23,38)
+Plant  421 born with 10/10 energy at (72,80)
+Plant  422 born with 10/10 energy at (3,59)
+Plant  423 born with 30/30 energy at (36,79)
+Plant  424 born with 10/10 energy at (36,93)
+Plant  425 born with 10/10 energy at (84,27)
+Plant  426 born with 20/20 energy at (66,46)
+Plant  427 born with 30/30 energy at (61,35)
+Plant  428 born with 10/10 energy at (0,5)
+Plant  429 born with 10/10 energy at (24,44)
+Plant  430 born with 10/10 energy at (67,29)
+Plant  431 born with 10/10 energy at (65,91)
+Plant  432 born with 30/30 energy at (8,82)
+Plant  433 born with 20/20 energy at (86,62)
+Plant  434 born with 10/10 energy at (41,60)
+Plant  435 born with 10/10 energy at (31,61)
+Plant  436 born with 10/10 energy at (4,28)
+Plant  437 born with 30/30 energy at (89,19)
+Plant  438 born with 20/20 energy at (60,31)
+Plant  439 born with 10/10 energy at (90,74)
 *************************************************
 Iteration: 162
+Insect 384 is splitting
+Insect 440 born with 12/12 energy at (28,-1)
+Insect 441 born with 13/13 energy at (28,0)
+Insect 384 died with 24/24 energy at (28,-1)
 *************************************************
 Iteration: 163
+Insect 357 is splitting
+Insect 442 born with 10/10 energy at (62,-1)
+Insect 443 born with 11/11 energy at (61,-1)
+Insect 357 died with 20/20 energy at (62,-1)
 *************************************************
 Iteration: 164
 *************************************************
@@ -1105,6 +1208,11 @@ Iteration: 166
 Iteration: 167
 *************************************************
 Iteration: 168
+Insect 352 is splitting
+Insect 444 born with 12/12 energy at (27,-1)
+Insect 445 born with 11/11 energy at (27,-2)
+Insect 352 died with 22/22 energy at (27,-1)
+Insect 441 died with 1/13 energy at (27,3)
 *************************************************
 Iteration: 169
 *************************************************
@@ -1113,6 +1221,10 @@ Iteration: 170
 Iteration: 171
 *************************************************
 Iteration: 172
+Insect 383 is splitting
+Insect 446 born with 5/5 energy at (26,-2)
+Insect 447 born with 6/6 energy at (26,-3)
+Insect 383 died with 10/10 energy at (26,-2)
 *************************************************
 Iteration: 173
 *************************************************
@@ -1125,14 +1237,27 @@ Iteration: 176
 Iteration: 177
 *************************************************
 Iteration: 178
+Insect 414 is splitting
+Insect 448 born with 7/7 energy at (15,100)
+Insect 449 born with 8/8 energy at (15,99)
+Insect 414 died with 14/14 energy at (15,100)
 *************************************************
 Iteration: 179
 *************************************************
 Iteration: 180
+Insect 449 died with 1/8 energy at (14,99)
 *************************************************
 Iteration: 181
 *************************************************
 Iteration: 182
+Insect 415 is splitting
+Insect 450 born with 9/9 energy at (14,100)
+Insect 451 born with 10/10 energy at (13,100)
+Insect 415 died with 18/18 energy at (14,100)
+Insect 385 is splitting
+Insect 452 born with 11/11 energy at (29,-1)
+Insect 453 born with 13/13 energy at (29,0)
+Insect 385 died with 23/23 energy at (29,-1)
 *************************************************
 Iteration: 183
 *************************************************
@@ -1141,14 +1266,31 @@ Iteration: 184
 Iteration: 185
 *************************************************
 Iteration: 186
+Insect 356 is splitting
+Insect 454 born with 9/9 energy at (61,-1)
+Insect 455 born with 13/13 energy at (60,-1)
+Insect 356 died with 21/21 energy at (61,-1)
 *************************************************
 Iteration: 187
+Insect 412 is splitting
+Insect 456 born with 8/8 energy at (62,-1)
+Insect 457 born with 11/11 energy at (63,-1)
+Insect 412 died with 18/18 energy at (62,-1)
+Insect 417 is splitting
+Insect 458 born with 5/5 energy at (26,-3)
+Insect 459 born with 7/7 energy at (26,-2)
+Insect 417 died with 11/11 energy at (26,-3)
 *************************************************
 Iteration: 188
+Insect 453 died with 1/13 energy at (26,1)
 *************************************************
 Iteration: 189
 *************************************************
 Iteration: 190
+Insect 411 is splitting
+Insect 460 born with 8/8 energy at (15,100)
+Insect 461 born with 12/12 energy at (14,100)
+Insect 411 died with 19/19 energy at (15,100)
 *************************************************
 Iteration: 191
 *************************************************
@@ -1157,6 +1299,10 @@ Iteration: 192
 Iteration: 193
 *************************************************
 Iteration: 194
+Insect 388 is splitting
+Insect 462 born with 2/2 energy at (27,-1)
+Insect 463 born with 5/5 energy at (26,-1)
+Insect 388 died with 6/6 energy at (27,-1)
 *************************************************
 Iteration: 195
 *************************************************
