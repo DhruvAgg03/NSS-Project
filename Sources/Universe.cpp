@@ -522,7 +522,7 @@ vector<step> Universe::movesToLocationNew(step current_position, int number_of_s
         scanNearestFoodSourceNew(curr, vision_radius, ignore_food);
 
     step nearest_mate;
-    if(protagonist->get_current_energy < (minimumMatingEnergyPercentage*protagonist->get_max_energy()))
+    if(protagonist->get_current_energy() < (minimumMatingEnergyPercentage*protagonist->get_max_energy()))
     {
       nearest_mate.x = -1;
       nearest_mate.y = -1;
