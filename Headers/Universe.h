@@ -12,6 +12,7 @@
 #define maxEnergy 300
 #define plantSpawnFreq 5
 #define plantSpawnNumber ((initialPlantCount)/(plantSpawnFreq))
+#define minimumMatingEnergyPercentage 0.5
 
 using namespace std;
 using namespace namespace_organism;
@@ -90,6 +91,9 @@ private:
     vector<coordinates2D> emptycells(int k);
     // returns positions of k empty cells in the environment (expected to return k , but can be <k due to randomness )
 
+    map<int,int> Organisms_in_love;
+    //Tells us whether two organisms are locked in to reproduce or not (entries using aadhar_number of both)
+
 public:
     vector<Insect *> insects;
 
@@ -157,6 +161,10 @@ public:
 
     step scanNearestFoodSourceNew(step current_position, int vision_radius, set<pair<int, int>> &ignore_food); // returns the nearest food source from the current position. If none, returns -1,-1. (Can add in another parameter saying levelOfOrganism in case of multiple levels of predators and prey)
     // Kalva's code for nearest food source
+
+    step scanNearestMate(step current_position,int vision_radius, Insect* protagonist); //returns the coordinate of the first mate within vision radius which WILL mate with this organism (if returns true, organisms definitely mate)
+
+    bool canMeetAndMate(Insect* protagonist, step protagonist_location, step interest_location); //checks whether two organisms have enough energy to reach each other and mate
 
     vector<step> movesToLocationNew(step current_position, int number_of_steps, int vision_radius);            // returns the next few moves given current position and destination (shortest path, no diagonal movements)
     // Returns the sequence of steps to reach the destination(food source) as of now
