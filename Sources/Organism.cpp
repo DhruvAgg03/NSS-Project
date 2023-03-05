@@ -6,6 +6,11 @@ using namespace namespace_traits;
 using namespace namespace_organism;
 extern std::ofstream outfile;
 
+#define MOVE 0
+#define BIRTH 1
+#define SPLIT 2
+#define DIE 3
+
 unsigned short int Organism::latest_organism_ID{1};
 
 Organism::Organism(int x, int y, int vision_radius, int *speed_list,
@@ -97,5 +102,12 @@ Plant::Plant(int x, int y, int vision_radius, int *speed_list,
                speciesID){};
 
 Plant::Plant(coordinates2D posn, int energy, unsigned short ano)
-  :Organism(posn.x,posn.y,0,NULL,0,energy,energy,ano,0){};
+  :Organism(posn.x,posn.y,0,NULL,0,energy,energy,ano,0){
+
+    ofstream myfile;
+    myfile.open("Data/trail_2.csv", ios::app);
+    myfile<<"-1,"<<posn.x<<","<<posn.y<<","<<PLANT<<","<<aadhar_number<<","<<BIRTH<<"\n";
+    myfile.close();
+    
+};
 

@@ -1,7 +1,10 @@
 #include "../Headers/Universe.h"
 extern std::ofstream outfile;
 #define MaleRatio 0.5
- 
+#define MOVE 0
+#define BIRTH 1
+#define SPLIT 2
+#define DIE 3
 // Maxenergy 
 #define __PLANT_VARIETY \
   {                     \
@@ -126,6 +129,9 @@ void Universe::initializeEnvironment(int *organismCount, int len)
 
   // Assigning the elements of environment to the necessary instances
   int counter = 0; // Running over the temporary array
+  ofstream myfile;
+  myfile.open("Data/trail_2.csv", ios::trunc);
+  myfile<<"Iter_no,x,y,Spec_ID,Adhaar_number,action\n";
   for (int i = 0; i < N; i++)
   {
     for (int j = 0; j < organismCount[i]; j++)
@@ -159,7 +165,7 @@ void Universe::initializeEnvironment(int *organismCount, int len)
 
         // New Insect constructor
         Insect *temp = new Insect(posn, t, counter, 1, this,g);
-
+        myfile<<"0,"<<posn.x<<","<<posn.y<<","<<INSECT<<","<<counter<<","<<BIRTH<<"\n";
         // Insect *temp = new Insect(
         //     std::get<0>(tempPoints[counter]), std::get<1>(tempPoints[counter]),
         //     variety_Insect[variety].vision_radius, NULL,
@@ -176,6 +182,7 @@ void Universe::initializeEnvironment(int *organismCount, int len)
       counter++;
     }
   }
+  myfile.close();
   for (int i = counter; i < dimension * dimension; i++)
   {
     environment[std::get<0>(tempPoints[counter])]
