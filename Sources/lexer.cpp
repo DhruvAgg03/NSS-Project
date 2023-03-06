@@ -1,6 +1,6 @@
 #include "../Headers/Lexer.h"
 
-#define DEBUG
+// #define DEBUG
 
 #ifdef DEBUG
 #define __PRINT_ERR(s) std::cout << "ERROR : " << s << '\n';
@@ -23,25 +23,18 @@ class Lexer {
         READLINE_FAILURE
     };
 
-    typedef struct Value_Ty {
-
-    } value;
-
     char c = 0;
     std::string token = "";
     std::fstream* configFile;
 
-    std::map<std::string, value> valuesMap;
 
-    static inline bool is_token_terminator(char c) {
-        return (c == '=' || c == ';' || c == EOF);
-    }
+    static inline bool is_token_terminator(char c) { return (c == '=' || c == ';' || c == EOF); }
 
-    static inline bool is_space(char c) {
-        return (c == ' ' || c == '\n' || c == '\t');
-    }
+    static inline bool is_space(char c) { return (c == ' ' || c == '\n' || c == '\t' || c == '\0'); }
 
 public:
+    std::map<std::string, std::string> valuesMap;
+
     Lexer(std::fstream* configFile): configFile(configFile) {}
 
     Token_Ty  get_tok() {
@@ -65,7 +58,7 @@ public:
         return LONG_TOK_FAILURE;
     }
 
-    ReadLine_Ty readLine() {
+    ReadLine_Ty readFile() {
         Token_Ty get_tok_ret = get_tok();
         std::string varString, valueString;
         while (get_tok_ret != EOF_FAILURE) {
@@ -74,13 +67,37 @@ public:
                     return READLINE_FAILURE;
             }
             varString = token;
+            c = configFile->get(); // consume the +
             get_tok_ret = get_tok();
             if (get_tok_ret != VALUE_SUCCESS) {
-                return READLINE_FAILURE;
+                __PRINT_ERR("Expected token to be Value")
+                    return READLINE_FAILURE;
             }
             valueString = token;
+            valuesMap[varString] = valueString;
+            if (c != ';') {
+                __PRINT_ERR("Expected ';'");
+                return READLINE_FAILURE;
+            }
+            c = configFile->get(); // consume the ;
+            valuesMap[varString] = valueString;
+            get_tok_ret = get_tok();
         }
-
+        return READLINE_SUCCESS;
     }
 
 };
+
+#ifdef DEBUG
+int main() {
+    std::fstream configFile;
+    const char* fileName = "/home/hhn/cs/PC03-NSS/.env";
+    configFile.open(fileName);
+    Lexer lexy(&configFile);
+    lexy.readFile();
+    std::cout << lexy.valuesMap["a"] << std::endl;
+    std::cout << lexy.valuesMap["p"] << std::endl;
+    std::cout << lexy.valuesMap["r"] << std::endl;
+    return 0;
+}
+#endif
