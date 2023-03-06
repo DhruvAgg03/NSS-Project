@@ -19,4 +19,4 @@ main.o: ./Sources/main.cpp
 	g++ -c -g  ./Sources/main.cpp
 
 clean: 
-	rm *.i *.o *.out *.exe main
+	rm *.o,*.exe

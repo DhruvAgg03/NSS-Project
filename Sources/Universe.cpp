@@ -6,16 +6,17 @@ extern std::ofstream simulationFile;
 #define BIRTH 1
 #define SPLIT 2
 #define DIE 3
+#define sexualUrgeIncrease 1
 // Maxenergy 
 #define __PLANT_VARIETY \
   {                     \
     {10}, {20},{30}     \
   }
 
-// vision radius, speed , max energy
+// vision radius, speed , max energy, maxSexualUrge, desirability
 #define __INSECT_VARIETY                                           \
   {                                                                \
-        {4, 3, 300,200,20}, {6, 3, 300,100,60}, {7, 3, 300,150,30} \
+        {8, 3, 300,200,20}, {8, 3, 300,100,60}, {9, 3, 300,150,30} \
   }
 using namespace std;
 // using namespace namespace_Universe;
@@ -869,7 +870,7 @@ void Universe::reSpawnPlant()
   for (auto ele : newcells)
   {
     Plant *newplant = new Plant(ele, plantvariety[rand() % varieties_in_a_Species].max_energy,
-                                static_cast<unsigned short>(Organism::get_latest_organism_ID() + 1));
+                                static_cast<unsigned>(Organism::get_latest_organism_ID() + 1));
     // energy of new plant is taken from hardcoded varities
     addPlant(newplant);
   }
@@ -903,6 +904,7 @@ bool Universe::willReproduce(Insect* I1,Insect* I2)
     float r2 = ((float)(I2->get_current_energy()))/(I2->get_max_energy());
     float sexProduct = (I1->getSexualUrge())*(I2->getSexualUrge());
     float NotNormalised = (sexProduct*r1*r2)/dist;
-    float probab = NotNormalised/40000;
+    float probab = NotNormalised/4000;
     return probab > ((float)rand()/RAND_MAX);
+    //return true;
 }

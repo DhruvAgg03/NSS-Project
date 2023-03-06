@@ -10,6 +10,7 @@
 #define Asexual 0
 #define Sexual 1
 #define REPRODUCETYPE Sexual
+#define increaseSexualUrge 1
 extern std::ofstream outfile;
 extern std::ofstream simulationFile;
 extern int iterNum;
@@ -30,6 +31,7 @@ void Universe::run()
     {
       auto currInsect = InsectCopy[i];
       currInsect->update_age(currInsect->get_age() + 1);
+      currInsect->updateSexualUrge(currInsect->getSexualUrge()+increaseSexualUrge);
       int x = currInsect->get_x();
       int y = currInsect->get_y();
       auto moves = movesToLocationNew({x, y, 0}, currInsect->giveSpeed(), currInsect->get_vision_radius());

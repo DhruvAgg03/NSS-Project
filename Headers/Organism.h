@@ -40,11 +40,11 @@ namespace namespace_organism
     struct coordinates2D position;
     struct speed_structure organism_speed;
 
-    static unsigned short latest_organism_ID;
+    static unsigned int latest_organism_ID;
     int vision_radius;
     int max_energy;
     int current_energy;
-    unsigned short int aadhar_number; // Name of organism like John Wick
+    unsigned int aadhar_number; // Name of organism like John Wick
     int speciesID;  // Represent which species it belongs to (0-> plant, 1-> Insect for now)
     Traits traits;  // class which contains all the traits of the organism (DNA)
     
@@ -52,8 +52,8 @@ namespace namespace_organism
   public:
     Organism(int x, int y, int vision_radius, int *speed_list,
             int length_of_speed_list, int max_energy, int current_energy,
-            unsigned short int aadhar_number, int speciesID);
-    Organism(coordinates2D posn, Traits t,unsigned short int aadhar_number, 
+            unsigned int aadhar_number, int speciesID);
+    Organism(coordinates2D posn, Traits t,unsigned int aadhar_number, 
               int speciesID,Universe * universe); //overloaded constructor with Traits object
     ~Organism();
     int get_x() { return position.x; };
@@ -66,13 +66,13 @@ namespace namespace_organism
     };
     int get_max_energy() { return traits.get_maxenergy(); }
     int get_current_energy() { return current_energy; }
-    unsigned short int get_aadhar_number() { return aadhar_number; }
+    unsigned int get_aadhar_number() { return aadhar_number; }
     int get_speciesID() { return speciesID; }
     void addEnergy(int energy);
     void changeX(int newX) { position.x = newX; }
     void changeY(int newY) { position.y = newY; }
     void update(int newX, int newY);
-    static unsigned short get_latest_organism_ID(){return latest_organism_ID;}
+    static unsigned get_latest_organism_ID(){return latest_organism_ID;}
     void die() 
     {
       delete this; 
@@ -96,8 +96,8 @@ namespace namespace_organism
   public:
     Insect(int x, int y, int vision_radius, int *speed_list,
           int length_of_speed_list, int max_energy, int current_energy,
-          unsigned short int aadhar_number, int organism_ID1, int speciesID);
-    Insect(coordinates2D posn, Traits t,unsigned short int aadhar_number, int speciesID,Universe * universe, bool g);
+          unsigned int aadhar_number, int organism_ID1, int speciesID);
+    Insect(coordinates2D posn, Traits t,unsigned int aadhar_number, int speciesID,Universe * universe, bool g);
     ~Insect();
     int get_organism_ID();
     void update_age(int age){this->age = age;}
@@ -114,8 +114,8 @@ namespace namespace_organism
   public:
     Plant(int x, int y, int vision_radius, int *speed_list,
           int length_of_speed_list, int max_energy, int current_energy,
-          unsigned short int aadhar_number, int speciesID);
-    Plant(coordinates2D posn, int energy, unsigned short ano);
+          unsigned int aadhar_number, int speciesID);
+    Plant(coordinates2D posn, int energy, unsigned ano);
 
   };
 } // namespace namespace_organism

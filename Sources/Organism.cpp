@@ -13,11 +13,11 @@ extern int iterNum;
 #define SPLIT 2
 #define DIE 3
 
-unsigned short int Organism::latest_organism_ID{1};
+unsigned int Organism::latest_organism_ID{1};
 
 Organism::Organism(int x, int y, int vision_radius, int *speed_list,
                    int length_of_speed_list, int max_energy, int current_energy,
-                   unsigned short int aadhar_number, int speciesID) {
+                   unsigned int aadhar_number, int speciesID) {
   this->position = {x, y};
   this->vision_radius = vision_radius;
   this->organism_speed = {speed_list, length_of_speed_list, 0};
@@ -34,7 +34,7 @@ Organism::Organism(int x, int y, int vision_radius, int *speed_list,
   simulationFile<<iterNum+1<<","<<position.x<<","<<position.y<<","<<speciesID<<","<<aadhar_number<<","<<BIRTH<<"\n";
 };
 
-Organism::Organism(coordinates2D posn, Traits t,unsigned short int aadhar_number, 
+Organism::Organism(coordinates2D posn, Traits t,unsigned int aadhar_number, 
                   int speciesID, Universe * universe)
   : position{posn}, traits{t}, aadhar_number{aadhar_number}, speciesID{speciesID} , universe{universe}
 {
@@ -77,7 +77,7 @@ void Organism::update(int newX, int newY) {
 
 Insect::Insect(int x, int y, int vision_radius, int *speed_list,
                int length_of_speed_list, int max_energy, int current_energy,
-               unsigned short int aadhar_number, int organism_ID1,
+               unsigned int aadhar_number, int organism_ID1,
                int speciesID)
     : Organism(x, y, vision_radius, speed_list, length_of_speed_list,
                max_energy, current_energy, aadhar_number, speciesID) {
@@ -85,7 +85,7 @@ Insect::Insect(int x, int y, int vision_radius, int *speed_list,
 };
 
 //Current Constructor Used
-Insect::Insect(coordinates2D posn, Traits t,unsigned short int aadhar_number, int speciesID, Universe * universe,bool g)
+Insect::Insect(coordinates2D posn, Traits t,unsigned int aadhar_number, int speciesID, Universe * universe,bool g)
 : Organism(posn, t, aadhar_number, speciesID, universe)
 {
   this->sexualUrge = 0;
@@ -102,11 +102,11 @@ int Insect::get_organism_ID() { return organism_ID; }
 
 Plant::Plant(int x, int y, int vision_radius, int *speed_list,
              int length_of_speed_list, int max_energy, int current_energy,
-             unsigned short int aadhar_number, int speciesID)
+             unsigned int aadhar_number, int speciesID)
     : Organism(x, y, 0, NULL, 0, max_energy, current_energy, aadhar_number,
                speciesID){};
 
-Plant::Plant(coordinates2D posn, int energy, unsigned short ano)
+Plant::Plant(coordinates2D posn, int energy, unsigned ano)
   :Organism(posn.x,posn.y,0,NULL,0,energy,energy,ano,0){
 
     ofstream myfile;
