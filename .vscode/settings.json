@@ -8,6 +8,14 @@
         "iosfwd": "cpp",
         "ranges": "cpp",
         "iostream": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "array": "cpp",
+        "memory": "cpp",
+        "future": "cpp",
+        "istream": "cpp",
+        "functional": "cpp",
+        "utility": "cpp",
+        "variant": "cpp",
+        "*.inc": "cpp"
     }
 }
