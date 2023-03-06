@@ -67,7 +67,7 @@ public:
                     return READLINE_FAILURE;
             }
             varString = token;
-            c = configFile->get(); // consume the +
+            c = configFile->get(); // consume the =
             get_tok_ret = get_tok();
             if (get_tok_ret != VALUE_SUCCESS) {
                 __PRINT_ERR("Expected token to be Value")
