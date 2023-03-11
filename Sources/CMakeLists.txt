@@ -1,6 +1,6 @@
 project(NSS)
 
-add_library(lib Aph rodite.cpp lexer.cpp Organism.cpp parser.cpp simulation.cpp Traits.cpp Universe.cpp)
+add_library(lib Aphrodite.cpp lexer.cpp Organism.cpp parser.cpp simulation.cpp Traits.cpp Universe.cpp)
 
 add_executable(NSS main.cpp)
 
