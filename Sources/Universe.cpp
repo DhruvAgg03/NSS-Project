@@ -569,7 +569,7 @@ vector<step> Universe::movesToLocationNew(step current_position, int number_of_s
             (((Organism *)environment[x][y - 1])
                  ->get_speciesID() == INSECT))))
         no_empty_spot = true;
-
+      if(no_empty_spot) break;
       while (flag == 1)
       {
         int x_disp = rand() % 2;
@@ -682,16 +682,23 @@ vector<step> Universe::movesToLocationNew(step current_position, int number_of_s
       if (x_disp == 0)
       {
         y1 = y_disp / abs(y_disp);
-        if ((y + y1 >= 0) && (y + y1 < dimension))
+        if ((y + y1 >= dimension) || (y + y1 < 0) ||
+            ((environment[x][y + y1] != NULL) &&
+             (((Organism *)environment[x][y + y1])
+                  ->get_speciesID() == INSECT)))
         {
-          step next;
-          next.x = x + x_disp;
-          next.y = y + y_disp;
-          next.dist = sqrt(next.x * next.x + next.y * next.y);
-          next_moves.push_back(next);
-          continue;
+          if ((y + y1 >= 0) && (y + y1 < dimension))
+          {
+            break;
+            step next;
+            next.x = x + x_disp;
+            next.y = y + y_disp;
+            next.dist = sqrt(next.x * next.x + next.y * next.y);
+            next_moves.push_back(next);
+            continue;
+          }
         }
-        else if(((environment[x][y + y1] != NULL) &&(((Organism *)environment[x][y + y1])->get_speciesID() == INSECT)))
+        else
         {
           step next;
           next.x = x + x_disp;
@@ -706,16 +713,23 @@ vector<step> Universe::movesToLocationNew(step current_position, int number_of_s
       if (y_disp == 0)
       {
         x1 = x_disp / abs(x_disp);
-        if ((x + x1 >= 0) && (x + x1 < dimension))
+        if ((x + x1 >= dimension) || (x + x1 < 0) ||
+            ((environment[x + x1][y] != NULL) &&
+             (((Organism *)environment[x + x1][y])
+                  ->get_speciesID() == INSECT)))
         {
-          step next;
-          next.x = x + x_disp;
-          next.y = y + y_disp;
-          next.dist = sqrt(next.x * next.x + next.y * next.y);
-          next_moves.push_back(next);
-          continue;
+          if ((x + x1 >= 0) && (x + x1 < dimension))
+          {
+            break;
+            step next;
+            next.x = x + x_disp;
+            next.y = y + y_disp;
+            next.dist = sqrt(next.x * next.x + next.y * next.y);
+            next_moves.push_back(next);
+            continue;
+          }
         }
-        else if(((environment[x + x1][y] != NULL) &&(((Organism *)environment[x + x1][y])->get_speciesID() == INSECT)))
+        else
         {
           step next;
           next.x = x + x_disp;
@@ -731,16 +745,16 @@ vector<step> Universe::movesToLocationNew(step current_position, int number_of_s
       y1 = y_disp / abs(y_disp);
 
       bool no_empty_spot = false;
-      if ((x + x1 >= dimension) || (x + x1 < 0))
+      if (((x + x1 >= dimension) || (x + x1 < 0) ||
+           ((environment[x + x1][y] != NULL) &&
+            (((Organism *)environment[x + x1][y])
+                 ->get_speciesID() == INSECT))) &&
+          ((y + y1 >= dimension) || (y + y1 < 0) ||
+           ((environment[x][y + y1] != NULL) &&
+            (((Organism *)environment[x][y + y1])
+                 ->get_speciesID() == INSECT))))
         no_empty_spot = true;
-      else if(((environment[x + x1][y] != NULL) && (((Organism *)environment[x + x1][y])->get_speciesID() == INSECT)))
-        no_empty_spot = true;
-      else if((y + y1 >= dimension) || (y + y1 < 0))
-        no_empty_spot = true;
-      else if(((environment[x][y + y1] != NULL) &&(((Organism *)environment[x][y + y1])->get_speciesID() == INSECT)))
-        no_empty_spot = true;
-        
-
+      if(no_empty_spot) break;
       //will move one step closer in a random direction (x or y)
       while (true)
       {
@@ -784,11 +798,11 @@ vector<step> Universe::movesToLocationNew(step current_position, int number_of_s
       }
     }
   }
-
+/*
   for (int i = next_moves.size() - 1; i > safe_last; i--)
   {
     next_moves.pop_back();
-  }
+  }*/
   next_moves.erase(next_moves.begin());
   return next_moves;
 }
