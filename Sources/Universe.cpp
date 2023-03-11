@@ -569,7 +569,7 @@ vector<step> Universe::movesToLocationNew(step current_position, int number_of_s
             (((Organism *)environment[x][y - 1])
                  ->get_speciesID() == INSECT))))
         no_empty_spot = true;
-
+      if(no_empty_spot) break;
       while (flag == 1)
       {
         int x_disp = rand() % 2;
@@ -689,6 +689,7 @@ vector<step> Universe::movesToLocationNew(step current_position, int number_of_s
         {
           if ((y + y1 >= 0) && (y + y1 < dimension))
           {
+            break;
             step next;
             next.x = x + x_disp;
             next.y = y + y_disp;
@@ -719,6 +720,7 @@ vector<step> Universe::movesToLocationNew(step current_position, int number_of_s
         {
           if ((x + x1 >= 0) && (x + x1 < dimension))
           {
+            break;
             step next;
             next.x = x + x_disp;
             next.y = y + y_disp;
@@ -752,7 +754,7 @@ vector<step> Universe::movesToLocationNew(step current_position, int number_of_s
             (((Organism *)environment[x][y + y1])
                  ->get_speciesID() == INSECT))))
         no_empty_spot = true;
-
+      if(no_empty_spot) break;
       //will move one step closer in a random direction (x or y)
       while (true)
       {
@@ -796,11 +798,11 @@ vector<step> Universe::movesToLocationNew(step current_position, int number_of_s
       }
     }
   }
-
+/*
   for (int i = next_moves.size() - 1; i > safe_last; i--)
   {
     next_moves.pop_back();
-  }
+  }*/
   next_moves.erase(next_moves.begin());
   return next_moves;
 }
