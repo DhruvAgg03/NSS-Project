@@ -1,16 +1,24 @@
 #include "../Headers/Universe.h"
+#include "../Headers/Parser.h"
+#include "../Headers/Lexer.h"
+
 #include <iostream>
 using namespace std;
 using std::cout;
 
 extern std::ofstream outfile;
 extern std::ofstream simulationFile;
-extern int iterNum;
+
 int iterNum;
-ofstream simulationFile;
+fstream configFile;
 ofstream outfile;
+
 int main()
 {
+  Lexer lexy(&configFile);
+  lexy.readFile();
+  
+
   srand(time(0));
   outfile.open("./Output/universelog.txt", ios::out);
   simulationFile.open("Data/trail_2.csv", ios::out);
