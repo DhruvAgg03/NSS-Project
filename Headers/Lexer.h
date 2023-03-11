@@ -11,6 +11,7 @@
 
 class Lexer
 {
+public:
     enum Token_Ty
     {
         VARIABLE_SUCCESS,
@@ -34,7 +35,6 @@ class Lexer
 
     static inline bool is_space(char c) { return (c == ' ' || c == '\n' || c == '\t' || c == '\0'); }
 
-public:
     std::map<std::string, std::string> valuesMap;
 
     Lexer(std::fstream *configFile) : configFile(configFile) {}

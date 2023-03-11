@@ -7,7 +7,7 @@ using namespace std;
 using std::cout;
 
 extern std::ofstream outfile;
-extern std::ofstream simulationFile;
+std::ofstream simulationFile;
 
 int iterNum;
 fstream configFile;
@@ -17,7 +17,7 @@ int main()
 {
   Lexer lexy(&configFile);
   lexy.readFile();
-  
+
 
   srand(time(0));
   outfile.open("./Output/universelog.txt", ios::out);
