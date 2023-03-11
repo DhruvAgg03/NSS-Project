@@ -214,7 +214,7 @@ UpdateUniverse_rt Universe::updateUniverse(int initX, int initY, int finalX, int
 
   if (org->get_current_energy() <= movementCost)
   {
-    insects.erase(find(insects.begin(),insects.end(),environment[initX][initY]));
+    insects.erase(insects.find(environment[initX][initY]));
     environment[initX][initY] = NULL;
     return DYING_ORGANISM;
   }
