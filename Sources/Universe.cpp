@@ -228,8 +228,11 @@ UpdateUniverse_rt Universe::updateUniverse(int initX, int initY, int finalX, int
     org->addEnergy(finalPosn->get_current_energy());
     finalPosn->die();
   }
-  environment[finalX][finalY] = org;
-  environment[initX][initY] = NULL;
+  if(finalX!=initX || finalY!=initY)
+  {
+    environment[finalX][finalY] = org;
+    environment[initX][initY] = NULL;
+  }
   return SUCCESS;
 }
 
@@ -653,6 +656,7 @@ vector<step> Universe::movesToLocationNew(step current_position, int number_of_s
           lockedin_mate.x = -1;
           lockedin_mate.y = -1;
           lockedin_mate.dist = -1;
+          break;
         }
         else
         {
