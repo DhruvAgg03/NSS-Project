@@ -3,6 +3,8 @@
 #include "../Headers/Lexer.h"
 
 #include <iostream>
+
+// #define CONFIG_FILE_NAME "/home/hhn/cs/PC03-NSS/.env"
 using namespace std;
 using std::cout;
 
@@ -13,12 +15,22 @@ int iterNum;
 fstream configFile;
 ofstream outfile;
 
+void set_values(Parser *parsy)
+{
+  auto &valuesMap = (parsy->variableMap);
+  if(valuesMap["iterNum"] != "")
+    iterNum = stoi(valuesMap["iterNum"]);
+}
+
 int main()
 {
+  configFile.open(CONFIG_FILE_NAME);
   Lexer lexy(&configFile);
   lexy.readFile();
+  Parser parsy(lexy.valuesMap);
 
-
+  set_values(&parsy);
+  cout << iterNum << endl;
   srand(time(0));
   outfile.open("./Output/universelog.txt", ios::out);
   simulationFile.open("Data/trail_2.csv", ios::out);
