@@ -31,7 +31,6 @@ Organism::Organism(int x, int y, int vision_radius, int *speed_list,
   this->traits = Traits(max_energy, 3, vision_radius);
   vector<string> vs{"Plant ","Insect "};
   outfile<<vs[speciesID]<<" "<<aadhar_number<<" born with "<<current_energy<<"/"<<max_energy<<" energy at ("<<(this->position).x<<","<<(this->position).y<<")\n";
-  simulationFile<<iterNum+1<<","<<position.x<<","<<position.y<<","<<speciesID<<","<<aadhar_number<<","<<BIRTH<<"\n";
 };
 
 Organism::Organism(coordinates2D posn, Traits t,unsigned int aadhar_number, 
@@ -47,14 +46,13 @@ Organism::Organism(coordinates2D posn, Traits t,unsigned int aadhar_number,
   this->latest_organism_ID = aadhar_number;
   vector<string> vs{"Plant ","Insect "};
   outfile<<vs[speciesID]<<aadhar_number<<" born with "<<current_energy<<"/"<<max_energy<<" energy at ("<<(this->position).x<<","<<(this->position).y<<")\n";
-  simulationFile<<iterNum+1<<","<<position.x<<","<<position.y<<","<<speciesID<<","<<aadhar_number<<","<<BIRTH<<"\n";
 }
 
 Organism::~Organism() {
   // update universe method
   vector<string> vs{"Plant ","Insect "};
   outfile<<vs[speciesID]<<aadhar_number<<" died with "<<current_energy<<"/"<<max_energy<<" energy at ("<<(this->position).x<<","<<(this->position).y<<")\n";
-  simulationFile<<iterNum+1<<","<<position.x<<","<<position.y<<","<<speciesID<<","<<aadhar_number<<","<<DIE<<"\n";
+  simulationFile<<iterNum+1<<","<<position.x<<","<<position.y<<","<<speciesID<<","<<aadhar_number<<","<<DIE<<",0,0,0\n";
 }
 
 void Organism::addEnergy(int energy) {
@@ -92,6 +90,8 @@ Insect::Insect(coordinates2D posn, Traits t,unsigned int aadhar_number, int spec
   this->gender = g;
   this->organism_ID = aadhar_number;
   this->color = col;
+  simulationFile<<iterNum+1<<","<<position.x<<","<<position.y<<","<<speciesID<<","<<aadhar_number<<","<<BIRTH<<","<<get<0>(color)<<","<<get<1>(color)<<","<<get<2>(color)<<"\n";
+
 }
 
 Insect::~Insect() {
@@ -105,11 +105,14 @@ Plant::Plant(int x, int y, int vision_radius, int *speed_list,
              int length_of_speed_list, int max_energy, int current_energy,
              unsigned int aadhar_number, int speciesID)
     : Organism(x, y, 0, NULL, 0, max_energy, current_energy, aadhar_number,
-               speciesID){};
+               speciesID){
+                simulationFile<<iterNum+1<<","<<position.x<<","<<position.y<<","<<speciesID<<","<<aadhar_number<<","<<BIRTH<<",0,0,0\n";
+               };
 
 Plant::Plant(coordinates2D posn, int energy, unsigned ano)
   :Organism(posn.x,posn.y,0,NULL,0,energy,energy,ano,0){
 
+    simulationFile<<iterNum+1<<","<<position.x<<","<<position.y<<","<<speciesID<<","<<aadhar_number<<","<<BIRTH<<",0,0,0\n";
     ofstream myfile;
     myfile.open("Data/trail_2.csv", ios::app);
     myfile<<"-1,"<<posn.x<<","<<posn.y<<","<<PLANT<<","<<aadhar_number<<","<<BIRTH<<"\n";

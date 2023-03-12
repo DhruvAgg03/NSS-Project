@@ -138,7 +138,7 @@ void Universe::initializeEnvironment(int *organismCount, int len)
 
   // Assigning the elements of environment to the necessary instances
   int counter = 0; // Running over the temporary array
-  simulationFile<<"Iter_no,x,y,Spec_ID,Adhaar_number,action\n";
+  simulationFile<<"Iter_no,x,y,Spec_ID,Adhaar_number,action,r,g,b\n";
   for (int i = 0; i < N; i++)
   {
     for (int j = 0; j < organismCount[i]; j++)
@@ -234,7 +234,7 @@ UpdateUniverse_rt Universe::updateUniverse(int initX, int initY, int finalX, int
 
   org->update(finalX, finalY);
 
-  if (finalPosn != NULL)
+  if (finalPosn!=NULL && finalPosn->get_speciesID()==PLANT)
   {
     org->addEnergy(finalPosn->get_current_energy());
     finalPosn->die();

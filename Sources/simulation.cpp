@@ -56,6 +56,7 @@ void Universe::run()
             {
               addInsect(baby);
               moveResult = MATED;
+              break;
             }
           }
         }
@@ -66,20 +67,22 @@ void Universe::run()
         x = moves[l].x;
         y = moves[l].y;
       }
-      simulationFile << iterNum + 1 << "," << currInsect->get_x() << "," << currInsect->get_y() << "," << currInsect->get_speciesID() << "," << currInsect->get_aadhar_number() << "," << MOVE << "\n";
+      simulationFile << iterNum + 1 << "," << currInsect->get_x() << "," << currInsect->get_y() << "," << currInsect->get_speciesID() << "," << currInsect->get_aadhar_number() << "," << MOVE <<","<< get<0>(currInsect->get_color())<<","<<get<1>(currInsect->get_color())<<","<<get<2>(currInsect->get_color())<<"\n";
       if (moveResult == DYING_ORGANISM)
       {
         killInsect(currInsect);
       }
       else if(moveResult==MATED)
       {
-          simulationFile << iterNum + 1 << "," << currInsect->get_x() << "," << currInsect->get_y() << "," << currInsect->get_speciesID() << "," << currInsect->get_aadhar_number() << "," << MATED << "\n";
+          simulationFile << iterNum + 1 << "," << currInsect->get_x() << "," << currInsect->get_y() << "," << currInsect->get_speciesID() << "," << currInsect->get_aadhar_number() << "," << MATED <<","<< get<0>(currInsect->get_color())<<","<<get<1>(currInsect->get_color())<<","<<get<2>(currInsect->get_color())<< "\n";
+          //cout<<"mated\n";
       }
       // Asexual Reproduction
       else
       {
         if (REPRODUCETYPE == Asexual && cupid.godSaidYes(currInsect))
         {
+
           vector<Insect *> daughters = cupid.split(currInsect);
           if (daughters.size() == 2)
           {
@@ -89,7 +92,7 @@ void Universe::run()
         }
       }
     }
-    std::random_shuffle(insects.begin(), insects.end());
+    //std::random_shuffle(insects.begin(), insects.end());
 
     // Plant Spawning
     int plantSpawnInterval = ((iterationCount)/(plantSpawnFreq));

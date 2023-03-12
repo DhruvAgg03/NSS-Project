@@ -15,6 +15,9 @@
 
 #define mutationprob 0.1
 
+extern std::ofstream simulationFile;
+
+
 using namespace std;
 extern std::ofstream outfile;
 
@@ -45,6 +48,7 @@ vector<Insect*> Aphrodite::split(Insect* insect)
     if(len == 0)
         return {};
     outfile << "Insect " << insect->get_aadhar_number() <<" is splitting\n";
+    simulationFile << iterNum + 1 << "," << insect->get_x() << "," << insect->get_y() << "," << insect->get_speciesID() << "," << insect->get_aadhar_number() << "," <<2 << ",0,0,0\n";
     coordinates2D posn2 = adj_posns[rand()%len];
     vector<Traits*> v = inheritedTraits(insect);
     Traits* t1 = v[0];
@@ -128,6 +132,7 @@ Insect* Aphrodite::mating(Insect* insect1,Insect* insect2)
     tuple<int,int,int> col1 = insect1->get_color();
     tuple<int,int,int> col2 = insect2->get_color();
     tuple<int,int,int> col = { (get<0>(col1)+get<0>(col2))/2 , (get<1>(col1)+get<1>(col2))/2 , (get<2>(col1)+get<2>(col2))/2 };
+    cout<<"Color "<<get<0>(col)<<" "<<get<1>(col)<<" "<<get<2>(col)<<endl;
 
     vector<coordinates2D> adj_posns1 = universe->adjacent_posns(posn1);
     vector<coordinates2D> adj_posns2 = universe->adjacent_posns(posn2);

@@ -10,7 +10,7 @@ using namespace std;
 using std::cout;
 
 extern std::ofstream outfile;
-std::ofstream simulationFile;
+extern std::ofstream simulationFile;
 
 int iterNum;
 int iterationCount;
@@ -21,6 +21,7 @@ int varieties_in_a_Species;
 vector<vector<int>> variety;
 fstream configFile;
 ofstream outfile;
+ofstream simulationFile;
 
 void set_values(Parser *parsy)
 {
