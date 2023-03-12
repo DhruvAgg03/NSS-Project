@@ -1,12 +1,10 @@
 #pragma once
 #include <bits/stdc++.h>
 #include "Organism.h"
+#include "uservalues.h"
 #define N 2                      // Changed it to 2
 #define dimension 100            // Changing dimensions to 10k from 1k
-#define varieties_in_a_Species 3 // Three different Varieties For now there are three species varying
 #define maxVision 15
-#define initialPlantCount 400
-#define initialInsectCount 500
 #define insectIndex 1
 #define plantIndex 0
 #define maxEnergy 300
@@ -66,10 +64,10 @@ private:
     int organismCount[N]; 
     // Plant(Producer) then Insect(First Trophic Level) Not required since merely passed as an argument but maybe can store it as an attribute for later use
     
-    biodata_Plant variety_Plant[varieties_in_a_Species]; 
+    biodata_Plant variety_Plant[4]; 
     // three unique types of plants-> as in all instances fall in one of these three categories 
     
-    biodata_Insect variety_Insect[varieties_in_a_Species]; 
+    biodata_Insect variety_Insect[4]; 
     // three unique combinations for {vision_radius, speed, max_energy and sexual urge} -> all instances of organisms fall in one of these three categories
     
     vector<tuple<int, int>> InsectPosition; //record of all insect positions
@@ -103,8 +101,8 @@ public:
     // Returns the adjacent positions of the given position (all 4)
 
     Universe(int maxR, int *organismCount, 
-            biodata_Plant variety_Plant[varieties_in_a_Species], 
-            biodata_Insect variety_Insect[varieties_in_a_Species]);
+            biodata_Plant variety_Plant[4], 
+            biodata_Insect variety_Insect[4], vector<vector<int>>);
     // maxR specifies the maximum vision radius
     // organismCount -> Number of induviduals in each species ([0] for food sources, [1] for first trophic level, [2] for second trophic level...(for now just till first trophic level))
     // plantVarieties list of maxenergies of the different plant sources,

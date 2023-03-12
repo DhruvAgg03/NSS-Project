@@ -85,12 +85,13 @@ Insect::Insect(int x, int y, int vision_radius, int *speed_list,
 };
 
 //Current Constructor Used
-Insect::Insect(coordinates2D posn, Traits t,unsigned int aadhar_number, int speciesID, Universe * universe,bool g)
+Insect::Insect(coordinates2D posn, Traits t,unsigned int aadhar_number, int speciesID, Universe * universe,bool g , tuple<int,int,int> col)
 : Organism(posn, t, aadhar_number, speciesID, universe)
 {
   this->sexualUrge = 0;
   this->gender = g;
   this->organism_ID = aadhar_number;
+  this->color = col;
 }
 
 Insect::~Insect() {

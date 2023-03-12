@@ -1,6 +1,7 @@
 #pragma once
 #define power int
 #define velocity int
+#include "uservalues.h"
 
 class Aphrodite;
 

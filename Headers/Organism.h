@@ -6,6 +6,7 @@
 #define FEMALE 1
 #include "../Headers/Traits.h"
 #include <bits/stdc++.h>
+#include "uservalues.h"
 using namespace std;
 using namespace namespace_traits;
 class Aphrodite;
@@ -92,12 +93,13 @@ namespace namespace_organism
     int age{0};
     int sexualUrge;
     bool gender;
+    tuple<int,int,int> color;
 
   public:
     Insect(int x, int y, int vision_radius, int *speed_list,
           int length_of_speed_list, int max_energy, int current_energy,
           unsigned int aadhar_number, int organism_ID1, int speciesID);
-    Insect(coordinates2D posn, Traits t,unsigned int aadhar_number, int speciesID,Universe * universe, bool g);
+    Insect(coordinates2D posn, Traits t,unsigned int aadhar_number, int speciesID,Universe * universe, bool g ,tuple<int,int,int> c);
     ~Insect();
     int get_organism_ID();
     void update_age(int age){this->age = age;}
@@ -106,6 +108,7 @@ namespace namespace_organism
     void updateEnergy(power energy){this->current_energy = energy;}
     int getSexualUrge() { return sexualUrge; }
     void updateSexualUrge(int sexualUrge) { this->sexualUrge = sexualUrge; }
+    tuple<int,int,int> get_color(){return color;}
   };
   
   

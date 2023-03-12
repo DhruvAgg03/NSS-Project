@@ -7,10 +7,12 @@ extern std::ofstream simulationFile;
 #define SPLIT 2
 #define DIE 3
 #define sexualUrgeIncrease 1
+#define DESIRABILITY 60
+#define MASSEXURGE 200
 // Maxenergy 
 #define __PLANT_VARIETY \
   {                     \
-    {10}, {20},{30}     \
+    {10}, {20},{30},{40}     \
   }
 
 // vision radius, speed , max energy, maxSexualUrge, desirability
@@ -65,15 +67,19 @@ vector<coordinates2D> Universe::adjacent_posns(coordinates2D posn)
   return possible_positions;
 }
 
-Universe::Universe(int maxR, int *organismCount, biodata_Plant variety_Plant[varieties_in_a_Species], biodata_Insect variety_Insect[varieties_in_a_Species])
+Universe::Universe(int maxR, int *organismCount, biodata_Plant variety_Plant[4], biodata_Insect variety_Insect[4],vector<vector<int>> variety)
 {
   biodata_Plant vp[varieties_in_a_Species] = __PLANT_VARIETY;
-  biodata_Insect vi[varieties_in_a_Species] = __INSECT_VARIETY;
+  //biodata_Insect vi[varieties_in_a_Species] = __INSECT_VARIETY;
   for (int i = 0; i < varieties_in_a_Species; i++)
   {
     variety_Plant[i] = vp[i];
-    variety_Insect[i] = vi[i];
-
+    //variety_Insect[i] = vi[i];
+      variety_Insect[i].vision_radius = variety[i][0];
+      variety_Insect[i].speed = variety[i][1];
+      variety_Insect[i].max_energy = variety[i][2];
+      variety_Insect[i].desirability = DESIRABILITY;
+      variety_Insect[i].maxSexualUrge = MASSEXURGE;
     // temp array holding the variety of plants because we are too lazy to
     // change everything
   }
@@ -122,6 +128,7 @@ void Universe::initializeVarieties(biodata_Plant *plantVarieties,
 
 void Universe::initializeEnvironment(int *organismCount, int len)
 {
+  vector<tuple<int,int,int>> colorList {{128,0,0},{128,128,0},{0,255,255},{255,0,255}};
   // Generating an array of all the coordinates
   std::vector<std::tuple<int, int>> tempPoints; // temporary Points
   for (int i = 0; i < dimension; i++)
@@ -152,6 +159,7 @@ void Universe::initializeEnvironment(int *organismCount, int len)
       else if (i == INSECT)
       {
         int variety = random_range(0, varieties_in_a_Species);
+        tuple<int,int,int> hue = colorList[variety];
 
         coordinates2D posn = {std::get<0>(tempPoints[counter]), std::get<1>(tempPoints[counter])};
         int vision_radius = variety_Insect[variety].vision_radius;
@@ -164,7 +172,7 @@ void Universe::initializeEnvironment(int *organismCount, int len)
         int g = ( temp1 > MaleRatio ) ? FEMALE : MALE ;
 
         // New Insect constructor
-        Insect *temp = new Insect(posn, t, counter, 1, this,g);
+        Insect *temp = new Insect(posn, t, counter, 1, this,g,hue);
         // Insect *temp = new Insect(
         //     std::get<0>(tempPoints[counter]), std::get<1>(tempPoints[counter]),
         //     variety_Insect[variety].vision_radius, NULL,
@@ -207,6 +215,8 @@ void Universe::printMoves(ofstream &outfile)
 
 UpdateUniverse_rt Universe::updateUniverse(int initX, int initY, int finalX, int finalY, ofstream &outfile)
 {
+  if(finalX<0 || finalY<0 || finalX>=dimension || finalY>=dimension)
+    return STOP_PATH;
   Insect *org = (Insect *)getObject(initX, initY);
   if (org == NULL || org->get_speciesID() != INSECT)
     return INVALID_ORGANISM;
@@ -691,8 +701,10 @@ vector<step> Universe::movesToLocationNew(step current_position, int number_of_s
           {
             break;
             step next;
-            next.x = x + x_disp;
-            next.y = y + y_disp;
+            //next.x = x + x_disp;
+            //next.y = y + y_disp;
+            next.x=x+x_disp;
+            next.y=y+y1;
             next.dist = sqrt(next.x * next.x + next.y * next.y);
             next_moves.push_back(next);
             continue;
@@ -701,8 +713,10 @@ vector<step> Universe::movesToLocationNew(step current_position, int number_of_s
         else
         {
           step next;
-          next.x = x + x_disp;
-          next.y = y + y_disp;
+          //next.x = x + x_disp;
+          //next.y = y + y_disp;
+          next.x = x+x_disp;
+          next.y=y+y1;
           next.dist = sqrt(next.x * next.x + next.y * next.y);
           next_moves.push_back(next);
           safe_last = i + 1;
@@ -722,8 +736,10 @@ vector<step> Universe::movesToLocationNew(step current_position, int number_of_s
           {
             break;
             step next;
-            next.x = x + x_disp;
-            next.y = y + y_disp;
+            //next.x = x + x_disp;
+            //next.y = y + y_disp;
+            next.x=x+x1;
+            next.y=y+y_disp;
             next.dist = sqrt(next.x * next.x + next.y * next.y);
             next_moves.push_back(next);
             continue;
@@ -732,8 +748,10 @@ vector<step> Universe::movesToLocationNew(step current_position, int number_of_s
         else
         {
           step next;
-          next.x = x + x_disp;
-          next.y = y + y_disp;
+          //next.x = x + x_disp;
+          //next.y = y + y_disp;
+          next.x=x+x1;
+          next.y=y+y_disp;
           next.dist = sqrt(next.x * next.x + next.y * next.y);
           next_moves.push_back(next);
           safe_last = i + 1;
@@ -871,7 +889,7 @@ bool Universe::locked(coordinates2D pos)
 
 void Universe::reSpawnPlant()
 {
-  vector<coordinates2D> newcells = emptycells(plantSpawnNumber);
+ vector<coordinates2D> newcells = emptycells(((initialPlantCount)/(plantSpawnFreq)));
   outfile << "New plants spawned: " << newcells.size() << '\n';
   vector<biodata_Plant> plantvariety = __PLANT_VARIETY;
   for (auto ele : newcells)

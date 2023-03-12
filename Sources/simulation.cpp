@@ -8,9 +8,9 @@
 #define BIRTH 1
 #define SPLIT 2
 #define DIE 3
+#define MATED 4
 #define Asexual 0
 #define Sexual 1
-#define REPRODUCETYPE Sexual
 #define increaseSexualUrge 1
 
 extern std::ofstream outfile;
@@ -55,6 +55,7 @@ void Universe::run()
             if (baby)
             {
               addInsect(baby);
+              moveResult = MATED;
             }
           }
         }
@@ -69,6 +70,10 @@ void Universe::run()
       if (moveResult == DYING_ORGANISM)
       {
         killInsect(currInsect);
+      }
+      else if(moveResult==MATED)
+      {
+          simulationFile << iterNum + 1 << "," << currInsect->get_x() << "," << currInsect->get_y() << "," << currInsect->get_speciesID() << "," << currInsect->get_aadhar_number() << "," << MATED << "\n";
       }
       // Asexual Reproduction
       else
@@ -87,6 +92,7 @@ void Universe::run()
     std::random_shuffle(insects.begin(), insects.end());
 
     // Plant Spawning
+    int plantSpawnInterval = ((iterationCount)/(plantSpawnFreq));
     if (iterNum % plantSpawnInterval == 0)
     {
       reSpawnPlant();

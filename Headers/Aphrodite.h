@@ -1,8 +1,7 @@
 #pragma once
 #include "Traits.h"
 #include "Universe.h"
-#define iterationCount 400  //Have to think of a way to #define it elsewhere
-#define plantSpawnInterval ((iterationCount)/(plantSpawnFreq))
+#include "uservalues.h"
 
 class Aphrodite
 {

@@ -39,6 +39,7 @@ bool Aphrodite::godSaidYes(Insect* insect)
 vector<Insect*> Aphrodite::split(Insect* insect)
 {
     coordinates2D posn1 = insect->get_posn();
+    tuple<int,int,int> col = insect->get_color();
     vector<coordinates2D> adj_posns = universe->adjacent_posns(posn1);
     int len = adj_posns.size();
     if(len == 0)
@@ -49,9 +50,9 @@ vector<Insect*> Aphrodite::split(Insect* insect)
     Traits* t1 = v[0];
     Traits* t2 = v[1];
     unsigned a1 = Organism::get_latest_organism_ID()+1;
-    Insect* d1 = new Insect(posn1,*t1,a1,insectIndex,universe,MALE);
+    Insect* d1 = new Insect(posn1,*t1,a1,insectIndex,universe,MALE,col);
     unsigned a2 = Organism::get_latest_organism_ID()+1;
-    Insect* d2 = new Insect(posn2,*t2,a2,insectIndex,universe,MALE);
+    Insect* d2 = new Insect(posn2,*t2,a2,insectIndex,universe,MALE,col);
     universe->killInsect(insect);
     return {d1,d2};
 }
@@ -120,8 +121,14 @@ Insect* Aphrodite::mating(Insect* insect1,Insect* insect2)
 {
     insect1->updateSexualUrge(0);
     insect2->updateSexualUrge(0);
+
     coordinates2D posn1 = insect1->get_posn();
     coordinates2D posn2 = insect2->get_posn();
+
+    tuple<int,int,int> col1 = insect1->get_color();
+    tuple<int,int,int> col2 = insect2->get_color();
+    tuple<int,int,int> col = { (get<0>(col1)+get<0>(col2))/2 , (get<1>(col1)+get<1>(col2))/2 , (get<2>(col1)+get<2>(col2))/2 };
+
     vector<coordinates2D> adj_posns1 = universe->adjacent_posns(posn1);
     vector<coordinates2D> adj_posns2 = universe->adjacent_posns(posn2);
     vector<coordinates2D> adj_posns;
@@ -141,7 +148,7 @@ Insect* Aphrodite::mating(Insect* insect1,Insect* insect2)
     insect2->updateEnergy(e2-childenergy+del);
     unsigned a = Organism::get_latest_organism_ID()+1;
     int g = rand()%2;
-    Insect* offspring = new Insect(posn,v,a,insectIndex,universe,g);
+    Insect* offspring = new Insect(posn,v,a,insectIndex,universe,g,col);
     return offspring;
 }
 
